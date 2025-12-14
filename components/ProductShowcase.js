@@ -39,16 +39,18 @@ export default function ProductShowcase() {
           </Tilt>
 
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
-            <div className={`${styles.card} glass-card`}>
-              <div className={styles.iconWrapper}>
-                <Flower size={48} color="#F59E0B" />
+            <Link href="/mental-tech" className={styles.cardLink}>
+              <div className={`${styles.card} glass-card`}>
+                <div className={styles.iconWrapper}>
+                  <Flower size={48} color="#F59E0B" />
+                </div>
+                <h3 className={styles.cardTitle}>DivyaVani / SoulTalk</h3>
+                <p className={styles.cardDesc}>
+                  AI-driven Spiritual Companion. Converse with the wisdom of scriptures and deities for mental peace.
+                </p>
+                <span className={`${styles.status} ${styles.dev}`}>In Development</span>
               </div>
-              <h3 className={styles.cardTitle}>DivyaVani / SoulTalk</h3>
-              <p className={styles.cardDesc}>
-                AI-driven Spiritual Companion. Converse with the wisdom of scriptures and deities for mental peace.
-              </p>
-              <span className={`${styles.status} ${styles.dev}`}>In Development</span>
-            </div>
+            </Link>
           </Tilt>
         </div>
       </div>
