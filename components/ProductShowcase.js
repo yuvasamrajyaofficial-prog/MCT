@@ -2,6 +2,7 @@
 
 import { Tilt } from "react-tilt";
 import { GraduationCap, Flower } from "lucide-react";
+import Link from "next/link";
 import styles from "./ProductShowcase.module.css";
 
 const defaultOptions = {
@@ -23,16 +24,18 @@ export default function ProductShowcase() {
         <h2 className={styles.heading}>Our Innovations</h2>
         <div className={styles.grid}>
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
-            <div className={`${styles.card} glass-card`}>
-              <div className={styles.iconWrapper}>
-                <GraduationCap size={48} color="#F59E0B" />
+            <Link href="https://zekkers-app2.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.cardLink}>
+              <div className={`${styles.card} glass-card`}>
+                <div className={styles.iconWrapper}>
+                  <GraduationCap size={48} color="#F59E0B" />
+                </div>
+                <h3 className={styles.cardTitle}>Zekkers</h3>
+                <p className={styles.cardDesc}>
+                  The AI Roadmap for Careers. Connecting Students, Colleges, and Employers with predictive skill visualization.
+                </p>
+                <span className={styles.status}>Live / Beta</span>
               </div>
-              <h3 className={styles.cardTitle}>Zekkers</h3>
-              <p className={styles.cardDesc}>
-                The AI Roadmap for Careers. Connecting Students, Colleges, and Employers with predictive skill visualization.
-              </p>
-              <span className={styles.status}>Live / Beta</span>
-            </div>
+            </Link>
           </Tilt>
 
           <Tilt options={defaultOptions} className={styles.cardWrapper}>

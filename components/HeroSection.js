@@ -76,7 +76,7 @@ export default function HeroSection() {
         </p>
 
         <div className={styles.ctaGroup}>
-          <Link href="/zekkers" className={styles.primaryBtn}>
+          <Link href="https://zekkers-app2.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
             Explore Our Innovations
           </Link>
           <Link href="/about" className={styles.secondaryBtn}>
