@@ -4,14 +4,17 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./SanctumInterface.module.css";
 
-const guides = ["Krishna", "Rama", "Shiva", "Jesus", "Buddha"];
+const guides = ["Krishna", "Jesus", "Quranic Wisdom", "Buddha", "Guru Nanak", "Torah Wisdom", "Marcus Aurelius", "Shiva"];
 
 const responses = {
   Krishna: "Set thy heart upon thy work, but never on its reward. (Gita 2.47)",
-  Rama: "Truth controls this world and dharma is rooted in truth.",
-  Shiva: "When you understand the temporary nature of all things, you will find peace.",
-  Jesus: "Peace I leave with you; my peace I give you.",
+  Jesus: "Peace I leave with you; my peace I give you. (John 14:27)",
+  "Quranic Wisdom": "Allah does not burden a soul beyond that it can bear. (Surah Al-Baqarah 2:286)",
   Buddha: "Peace comes from within. Do not seek it without.",
+  "Guru Nanak": "He who regards all men as equals is religious. (Guru Granth Sahib)",
+  "Torah Wisdom": "A soft answer turns away wrath, but a harsh word stirs up anger. (Proverbs 15:1)",
+  "Marcus Aurelius": "You have power over your mind - not outside events. Realize this, and you will find strength.",
+  Shiva: "When you understand the temporary nature of all things, you will find peace.",
 };
 
 export default function SanctumInterface() {

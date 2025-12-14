@@ -21,7 +21,7 @@ export default function AmbientSound() {
     <div className={styles.container}>
       <button onClick={toggleSound} className={styles.toggleBtn} aria-label="Toggle Ambient Sound">
         {isPlaying ? <Volume2 size={24} /> : <VolumeX size={24} />}
-        <span className={styles.label}>{isPlaying ? "Om Chanting On" : "Play Om Sound"}</span>
+        <span className={styles.label}>{isPlaying ? "Universal Frequency On" : "Play 432Hz Frequency"}</span>
       </button>
       <audio ref={audioRef} loop>
         <source src="https://cdn.pixabay.com/download/audio/2022/03/09/audio_c8c8a73467.mp3?filename=om-chanting-19266.mp3" type="audio/mpeg" />
