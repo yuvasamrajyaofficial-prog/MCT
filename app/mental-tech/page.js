@@ -6,9 +6,6 @@ export default function MentalTechPage() {
   return (
     <main>
       <CosmicBackground />
-      <div style={{ position: "relative", zIndex: 1 }}>
-        <SanctumInterface />
-      </div>
       <AmbientSound />
     </main>
   );
