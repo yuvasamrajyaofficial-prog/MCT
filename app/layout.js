@@ -1,6 +1,7 @@
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import CursorEffect from "@/components/CursorEffect";
+import Footer from "@/components/Footer";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className={`${spaceGrotesk.variable} ${inter.variable}`}>
         <CursorEffect />
         {children}
+        <Footer />
       </body>
     </html>
   );
