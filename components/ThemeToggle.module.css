@@ -1,0 +1,32 @@
+.toggleButton {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.toggleButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="light"] .toggleButton {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .toggleButton:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.iconSun {
+  color: #f59e0b;
+}
+
+.iconMoon {
+  color: #334155;
+}

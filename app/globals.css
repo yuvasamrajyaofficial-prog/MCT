@@ -7,6 +7,15 @@
   --glass-border: rgba(255, 255, 255, 0.1);
 }
 
+[data-theme="light"] {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --primary: #d97706;
+  --primary-glow: rgba(217, 119, 6, 0.3);
+  --glass-bg: rgba(0, 0, 0, 0.05);
+  --glass-border: rgba(0, 0, 0, 0.1);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
