@@ -48,17 +48,20 @@ export default function ProductLayout({
       {image && (
         <motion.div
           className={styles.imageWrapper}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          initial={{ opacity: 0, scale: 0.95, y: 20 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          whileHover={{ scale: 1.02 }}
         >
           <Image
             src={image}
             alt={`${title} Screenshot`}
-            width={1200}
-            height={675}
+            width={1400}
+            height={800}
             className={styles.productImage}
             priority
+            quality={100}
           />
         </motion.div>
       )}
