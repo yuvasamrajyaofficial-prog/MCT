@@ -14,8 +14,6 @@ export default function GovtNaukri4uPage() {
   const techStack = [
     "Blogger XML",
     "HTML / CSS",
-    "JavaScript",
-    "Python (Automation)",
     "Google Cloud Platform",
   ];
 
