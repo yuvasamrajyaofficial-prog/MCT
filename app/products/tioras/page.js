@@ -1,6 +1,11 @@
-"use client";
+
 
 import ProductLayout from "@/components/ProductLayout";
+
+export const metadata = {
+  title: "TioraS - AI Fashion Design Platform | Prabas & Co.",
+  description: "TioraS democratizes fashion design with AI. Generate custom embroidery designs from text prompts and order high-quality apparel instantly.",
+};
 
 export default function TiorasPage() {
   const features = [

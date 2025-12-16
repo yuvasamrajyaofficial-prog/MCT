@@ -1,6 +1,9 @@
-"use client";
-
 import ProductLayout from "@/components/ProductLayout";
+
+export const metadata = {
+  title: "GovtNaukri4u - EdTech & Job Portal | Prabas & Co.",
+  description: "GovtNaukri4u simplifies government job notifications with automated PDF parsing and AI-driven data extraction.",
+};
 
 export default function GovtNaukri4uPage() {
   const features = [

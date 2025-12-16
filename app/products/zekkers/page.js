@@ -1,7 +1,9 @@
-"use client";
-
 import ProductLayout from "@/components/ProductLayout";
-import { motion } from "framer-motion";
+
+export const metadata = {
+  title: "Zekkers - AI Job Marketplace | Prabas & Co.",
+  description: "Zekkers is an AI-powered job marketplace connecting students, early-career professionals, and employers through predictive skill visualization and smart matching.",
+};
 
 export default function ZekkersPage() {
   const features = [
