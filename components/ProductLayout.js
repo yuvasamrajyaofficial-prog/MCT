@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import styles from "./ProductLayout.module.css";
@@ -51,7 +52,14 @@ export default function ProductLayout({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <img src={image} alt={`${title} Screenshot`} className={styles.productImage} />
+          <Image
+            src={image}
+            alt={`${title} Screenshot`}
+            width={1200}
+            height={675}
+            className={styles.productImage}
+            priority
+          />
         </motion.div>
       )}
 
