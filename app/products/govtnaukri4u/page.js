@@ -24,6 +24,7 @@ export default function GovtNaukri4uPage() {
       features={features}
       techStack={techStack}
       liveLink="https://govtnaukri4u.com"
+      image="/images/govtnaukri4u-screenshot.png"
     >
       <div className="prose prose-invert max-w-none">
         <p className="text-lg text-gray-300 mb-6">

@@ -11,6 +11,7 @@ export default function ProductLayout({
   features = [],
   techStack = [],
   liveLink,
+  image,
   children,
 }) {
   return (
@@ -42,6 +43,17 @@ export default function ProductLayout({
           </a>
         )}
       </motion.header>
+
+      {image && (
+        <motion.div
+          className={styles.imageWrapper}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          <img src={image} alt={`${title} Screenshot`} className={styles.productImage} />
+        </motion.div>
+      )}
 
       <div className={styles.contentGrid}>
         <motion.div

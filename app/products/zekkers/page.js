@@ -29,6 +29,7 @@ export default function ZekkersPage() {
       features={features}
       techStack={techStack}
       liveLink="https://zekkers-app2.vercel.app/"
+      image="/images/zekkers-screenshot.png"
     >
       <div className="prose prose-invert max-w-none">
         <p className="text-lg text-gray-300 mb-6">

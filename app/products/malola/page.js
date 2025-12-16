@@ -27,6 +27,7 @@ export default function MalolaPage() {
       features={features}
       techStack={techStack}
       liveLink="https://studio-mocha-tau-22.vercel.app/"
+      image="/images/malola-screenshot.png"
     >
       <div className="prose prose-invert max-w-none">
         <p className="text-lg text-gray-300 mb-6">

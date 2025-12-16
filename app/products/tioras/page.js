@@ -28,6 +28,7 @@ export default function TiorasPage() {
       features={features}
       techStack={techStack}
       liveLink="https://tiora-s.vercel.app/"
+      image="/images/tioras-screenshot.png"
     >
       <div className="prose prose-invert max-w-none">
         <p className="text-lg text-gray-300 mb-6">

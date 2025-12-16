@@ -65,6 +65,20 @@
   box-shadow: 0 4px 12px rgba(245, 158, 11, 0.1);
 }
 
+.imageWrapper {
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .contentGrid {
   display: grid;
   grid-template-columns: 1fr 300px;
