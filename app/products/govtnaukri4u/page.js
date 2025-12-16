@@ -12,13 +12,11 @@ export default function GovtNaukri4uPage() {
   ];
 
   const techStack = [
-    "Python",
-    "Django",
-    "React",
-    "PostgreSQL",
-    "OCR / Tesseract",
-    "Redis",
-    "AWS",
+    "Blogger XML",
+    "HTML / CSS",
+    "JavaScript",
+    "Python (Automation)",
+    "Google Cloud Platform",
   ];
 
   return (
