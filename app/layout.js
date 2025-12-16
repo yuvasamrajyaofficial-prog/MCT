@@ -19,17 +19,13 @@ export const metadata = {
     "Pioneering AI solutions for Education, Mental Wellness, and Human Potential.",
 };
 
-import { ThemeProvider } from "@/components/ThemeProvider";
-
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={`${spaceGrotesk.variable} ${inter.variable}`}>
-        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem={false}>
-          <CursorEffect />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <CursorEffect />
+        {children}
+        <Footer />
       </body>
     </html>
   );

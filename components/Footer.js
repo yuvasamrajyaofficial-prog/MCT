@@ -4,18 +4,13 @@ import Link from "next/link";
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 import styles from "./Footer.module.css";
 
-import ThemeToggle from "./ThemeToggle";
-
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.content}>
           <div className={styles.brand}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-              <h3 className={styles.logo}>PraBaS & Co.</h3>
-              <ThemeToggle />
-            </div>
+            <h3 className={styles.logo}>PraBaS & Co.</h3>
             <p className={styles.quote}>&quot;Guided by Paramananda. Driven by Logic.&quot;</p>
           </div>
 
