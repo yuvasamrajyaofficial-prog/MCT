@@ -8,13 +8,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import styles from "./HeroSection.module.css";
 
+import SolarSystem from "./SolarSystem";
+
 function StarField(props) {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 20 }));
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+    ref.current.rotation.x -= delta / 20;
+    ref.current.rotation.y -= delta / 30;
   });
 
   return (
@@ -22,10 +24,11 @@ function StarField(props) {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
         <PointMaterial
           transparent
-          color="#F59E0B"
-          size={0.005}
+          color="#fff"
+          size={0.02}
           sizeAttenuation={true}
           depthWrite={false}
+          opacity={0.6}
         />
       </Points>
     </group>
@@ -46,8 +49,10 @@ export default function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.canvasContainer}>
-        <Canvas camera={{ position: [0, 0, 1] }}>
+        <Canvas camera={{ position: [0, 8, 12], fov: 45 }}>
+          <ambientLight intensity={0.1} />
           <StarField />
+          <SolarSystem />
         </Canvas>
       </div>
 
