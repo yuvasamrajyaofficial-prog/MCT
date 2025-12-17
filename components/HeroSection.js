@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import styles from "./HeroSection.module.css";
 
-import SolarSystem from "./SolarSystem";
+import NeuralNetwork from "./NeuralNetwork";
 
 function StarField(props) {
   const ref = useRef();
@@ -49,10 +49,10 @@ export default function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.canvasContainer}>
-        <Canvas shadows="soft" camera={{ position: [0, 15, 20], fov: 45 }}>
-          <ambientLight intensity={0.05} />
+        <Canvas camera={{ position: [0, 0, 15], fov: 75 }}>
+          <ambientLight intensity={0.5} />
           <StarField />
-          <SolarSystem />
+          <NeuralNetwork count={150} />
         </Canvas>
       </div>
 
