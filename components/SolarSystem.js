@@ -6,12 +6,12 @@ import { Line, Sphere } from "@react-three/drei";
 import * as THREE from "three";
 
 const PLANETS = [
-  { name: "Mercury", color: "#A0A0A0", size: 0.08, distance: 3, speed: 1.5 },
-  { name: "Venus", color: "#E6B800", size: 0.15, distance: 4.5, speed: 1.2 },
-  { name: "Earth", color: "#2E8BC0", size: 0.16, distance: 6.5, speed: 1.0 },
-  { name: "Mars", color: "#C1440E", size: 0.12, distance: 8.5, speed: 0.8 },
-  { name: "Jupiter", color: "#D9A066", size: 0.4, distance: 12, speed: 0.5 },
-  { name: "Saturn", color: "#EDDCA8", size: 0.35, distance: 16, speed: 0.4, ring: true },
+  { name: "Mercury", color: "#A0A0A0", size: 0.2, distance: 3.5, speed: 1.5 },
+  { name: "Venus", color: "#E6B800", size: 0.3, distance: 5, speed: 1.2 },
+  { name: "Earth", color: "#2E8BC0", size: 0.32, distance: 7, speed: 1.0 },
+  { name: "Mars", color: "#C1440E", size: 0.25, distance: 9, speed: 0.8 },
+  { name: "Jupiter", color: "#D9A066", size: 0.8, distance: 13, speed: 0.5 },
+  { name: "Saturn", color: "#EDDCA8", size: 0.7, distance: 17, speed: 0.4, ring: true },
 ];
 
 function Planet({ planet }) {
@@ -70,17 +70,17 @@ export default function SolarSystem() {
 
       {/* Sun Core */}
       <mesh>
-        <sphereGeometry args={[1, 64, 64]} />
+        <sphereGeometry args={[1.5, 64, 64]} />
         <meshBasicMaterial color="#FDB813" />
       </mesh>
       
       {/* Sun Glow Layers */}
       <mesh scale={[1.2, 1.2, 1.2]}>
-        <sphereGeometry args={[1, 64, 64]} />
+        <sphereGeometry args={[1.5, 64, 64]} />
         <meshBasicMaterial color="#F59E0B" transparent opacity={0.3} />
       </mesh>
       <mesh scale={[1.5, 1.5, 1.5]}>
-        <sphereGeometry args={[1, 64, 64]} />
+        <sphereGeometry args={[1.5, 64, 64]} />
         <meshBasicMaterial color="#D97706" transparent opacity={0.1} />
       </mesh>
 

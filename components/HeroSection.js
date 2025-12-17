@@ -49,7 +49,7 @@ export default function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.canvasContainer}>
-        <Canvas shadows camera={{ position: [0, 10, 15], fov: 40 }}>
+        <Canvas shadows="soft" camera={{ position: [0, 15, 20], fov: 45 }}>
           <ambientLight intensity={0.05} />
           <StarField />
           <SolarSystem />
