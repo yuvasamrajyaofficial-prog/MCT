@@ -19,13 +19,17 @@ export const metadata = {
     "Pioneering AI solutions for Education, Mental Wellness, and Human Potential.",
 };
 
+import TransitionProvider from "@/components/TransitionProvider";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} ${inter.variable}`}>
         <CursorEffect />
-        {children}
-        <Footer />
+        <TransitionProvider>
+          {children}
+          <Footer />
+        </TransitionProvider>
       </body>
     </html>
   );
