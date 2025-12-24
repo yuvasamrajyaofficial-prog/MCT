@@ -13,22 +13,17 @@ export default function ContactSection() {
     setStatus("");
 
     const formData = new FormData(e.target);
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); // User will need to replace this
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzlXMQtGqxPZ9tbtmc-P69C0hWiDcjdPC7iSUy02wvVqUSdJ3EQPu0RqzWO6PwJmCTrAQ/exec", {
         method: "POST",
-        body: formData
+        body: formData,
+        mode: "no-cors" // Apps Script requires no-cors for simple POST redirects
       });
 
-      const data = await response.json();
-
-      if (data.success) {
-        setStatus("success");
-        e.target.reset();
-      } else {
-        setStatus("error");
-      }
+      // Since no-cors doesn't return a readable response, we assume success if no error is thrown
+      setStatus("success");
+      e.target.reset();
     } catch (error) {
       setStatus("error");
     } finally {
