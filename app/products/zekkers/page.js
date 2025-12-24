@@ -24,6 +24,16 @@ export default function ZekkersPage() {
     "OpenAI API",
   ];
 
+  const caseStudy = {
+    problem: "The Challenge",
+    solution: "Students often struggle to understand how their academic achievements translate to industry requirements. Zekkers solves this by visualizing the 'skill gap' and providing a clear roadmap to bridge it.",
+    stats: [
+      { value: "40%", label: "Faster Hiring" },
+      { value: "85%", label: "Match Accuracy" },
+      { value: "2k+", label: "Active Students" }
+    ]
+  };
+
   return (
     <ProductLayout
       title="Zekkers"
@@ -32,6 +42,7 @@ export default function ZekkersPage() {
       techStack={techStack}
       liveLink="https://zekkers-app2.vercel.app/"
       image="/images/zekkers-screenshot.png"
+      caseStudy={caseStudy}
     >
       <div className="prose prose-invert max-w-none">
         <p className="text-lg text-gray-300 mb-6">

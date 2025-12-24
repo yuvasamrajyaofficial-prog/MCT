@@ -11,8 +11,10 @@ export default function ProductLayout({
   description,
   features = [],
   techStack = [],
+  techStack = [],
   liveLink,
   image,
+  caseStudy,
   children,
 }) {
   return (
@@ -80,6 +82,24 @@ export default function ProductLayout({
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {caseStudy && (
+            <div className={styles.section}>
+              <h2 className={styles.sectionTitle}>Case Study</h2>
+              <div className={styles.caseStudyContent}>
+                <h3 className={styles.caseStudyHeading}>{caseStudy.problem}</h3>
+                <p className={styles.caseStudyText}>{caseStudy.solution}</p>
+                <div className={styles.caseStudyStats}>
+                  {caseStudy.stats.map((stat, index) => (
+                    <div key={index} className={styles.statItem}>
+                      <span className={styles.statValue}>{stat.value}</span>
+                      <span className={styles.statLabel}>{stat.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
         </motion.div>
