@@ -32,7 +32,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className={styles.contact}>
+    <section id="contact" className={styles.contact}>
       <div className="container">
         <h2 className={styles.heading}>Connect with Us</h2>
         <div className={styles.wrapper}>

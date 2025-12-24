@@ -21,12 +21,14 @@ export const metadata = {
 
 import TransitionProvider from "@/components/TransitionProvider";
 import { Analytics } from "@vercel/analytics/next";
+import BackButton from "@/components/BackButton";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} ${inter.variable}`}>
         <CursorEffect />
+        <BackButton />
         <TransitionProvider>
           {children}
           <Footer />

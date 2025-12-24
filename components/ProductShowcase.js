@@ -21,7 +21,15 @@ export default function ProductShowcase() {
   return (
     <section className={styles.showcase}>
       <div className="container">
-        <h2 className={styles.heading}>Our Innovations</h2>
+        <div className={styles.header}>
+          <h2 className={styles.heading}>Our Innovations</h2>
+          <button 
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className={styles.quickNav}
+          >
+            Jump to Contact ↓
+          </button>
+        </div>
         <div className={styles.grid}>
           {/* Zekkers */}
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
