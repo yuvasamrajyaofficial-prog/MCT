@@ -81,9 +81,12 @@ export default function HeroSection() {
         </p>
 
         <div className={styles.ctaGroup}>
-          <Link href="https://zekkers-app2.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
+          <button 
+            onClick={() => document.getElementById('innovations')?.scrollIntoView({ behavior: 'smooth' })}
+            className={styles.primaryBtn}
+          >
             Explore Our Innovations
-          </Link>
+          </button>
           <Link href="/about" className={styles.secondaryBtn}>
             Our Legacy
           </Link>

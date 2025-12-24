@@ -17,12 +17,7 @@ export default function ProductLayout({
 }) {
   return (
     <div className={styles.container}>
-      <div className={styles.backLinkWrapper}>
-        <Link href="/" className={styles.backLink}>
-          <ArrowLeft size={20} />
-          <span>Back to Home</span>
-        </Link>
-      </div>
+
 
       <motion.header
         className={styles.header}

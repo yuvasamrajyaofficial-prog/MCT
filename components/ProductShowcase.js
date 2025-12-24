@@ -19,7 +19,7 @@ const defaultOptions = {
 
 export default function ProductShowcase() {
   return (
-    <section className={styles.showcase}>
+    <section id="innovations" className={styles.showcase}>
       <div className="container">
         <div className={styles.header}>
           <h2 className={styles.heading}>Our Innovations</h2>

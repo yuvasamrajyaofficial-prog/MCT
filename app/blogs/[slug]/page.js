@@ -27,7 +27,7 @@ export default function BlogPostPage() {
           animate={{ opacity: 1, y: 0 }}
           className={styles.header}
         >
-          <Link href="/blogs" className={styles.backLink}>← Back to Blogs</Link>
+
           <span className={styles.category}>{post.category}</span>
           <h1 className={styles.title}>{post.title}</h1>
           <div className={styles.meta}>
