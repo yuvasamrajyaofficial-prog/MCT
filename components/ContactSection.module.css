@@ -61,3 +61,17 @@
   background: #d97706;
   transform: translateY(-2px);
 }
+
+.successMsg {
+  color: #10b981;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.errorMsg {
+  color: #ef4444;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
