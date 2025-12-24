@@ -11,7 +11,7 @@ export default function ProductLayout({
   description,
   features = [],
   techStack = [],
-  techStack = [],
+
   liveLink,
   image,
   caseStudy,
