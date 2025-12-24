@@ -22,6 +22,7 @@ export default function Footer() {
               <Link href="/team">Team</Link>
               <Link href="/careers">Careers (Remote First)</Link>
               <Link href="/investors">Investors</Link>
+              <Link href="/sitemap.xml">Sitemap</Link>
             </div>
             <div className={styles.column}>
               <h4>Connect</h4>
