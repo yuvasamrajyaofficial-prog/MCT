@@ -8,13 +8,13 @@ export default function OriginSection() {
     <section className={styles.origin}>
       <div className={`container ${styles.container}`}>
         <div className={styles.imageWrapper}>
-          <Image 
-            src="/images/legacy-image.png" 
-            alt="Legacy of Basayya - The Origin" 
-            fill
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img 
+            src="https://api.dicebear.com/9.x/avataaars/svg?seed=Basayya&backgroundColor=b6e3f4" 
+            alt="Legacy of Basayya" 
             className={styles.image}
-            sizes="(max-width: 768px) 100vw, 500px"
-            priority
+            width={200}
+            height={200}
           />
         </div>
         <div className={styles.content}>
