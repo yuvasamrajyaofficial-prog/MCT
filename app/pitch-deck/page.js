@@ -1,10 +1,5 @@
 "use client";
 
-export const metadata = {
-  title: "Pitch Deck - Malola | MCT",
-  description: "Professional pitch deck for Malola - AI Wellness Platform by Malola Cosmic Technologies. Harmonizing modern mental health support with traditional cultural wisdom.",
-};
-
 import { motion } from "framer-motion";
 import { 
   TrendingUp, 
