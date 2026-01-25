@@ -9,9 +9,6 @@ export default function sitemap() {
     '/team',
     '/careers',
     '/investors',
-    '/products/zekkers',
-    '/products/tioras',
-    '/products/govtnaukri4u',
     '/products/malola',
   ].map((route) => ({
     url: `${baseUrl}${route}`,

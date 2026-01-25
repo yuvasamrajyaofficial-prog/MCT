@@ -7,18 +7,12 @@ import styles from "./Testimonials.module.css";
 const TESTIMONIALS = [
   {
     id: 1,
-    text: "PraBaS & Co. transformed our hiring process. Zekkers is a game-changer for finding top-tier talent efficiently.",
-    author: "Sarah Jenkins",
-    role: "HR Director, TechFlow",
-  },
-  {
-    id: 2,
     text: "The strategic insights from their AI solutions have helped us optimize our operations in ways we never imagined.",
     author: "David Chen",
     role: "CTO, FutureScale",
   },
   {
-    id: 3,
+    id: 2,
     text: "Their commitment to ethical AI and human values sets them apart. A true partner in innovation.",
     author: "Elena Rodriguez",
     role: "Founder, GreenSpace",
