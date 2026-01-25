@@ -37,6 +37,18 @@ export default function MalolaPage() {
           Malola (also known as Soulink) explores the intersection of technology and spirituality. It offers a holistic approach to wellness by combining AI-powered conversational therapy with deep astrological insights.
         </p>
 
+        <div className="mb-8 flex gap-4">
+          <a 
+            href="/pitch-deck" 
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all hover:scale-105 shadow-lg"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            View Full Pitch Deck
+          </a>
+        </div>
+
         <h3 className="text-2xl font-bold text-white mb-4">My Role</h3>
         <ul className="list-disc pl-6 mb-8 text-gray-300 space-y-2">
           <li>

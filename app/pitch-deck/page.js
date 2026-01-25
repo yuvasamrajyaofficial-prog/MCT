@@ -8,12 +8,16 @@ import {
   Zap, 
   Globe, 
   DollarSign,
-  Brain,
-  Heart,
+  BookOpen,
+  Mic,
+  Star,
+  MessageCircle,
   Sparkles,
   ArrowRight,
   CheckCircle2,
-  Star
+  Code,
+  Smartphone,
+  Database
 } from "lucide-react";
 import styles from "./PitchDeck.module.css";
 
@@ -36,28 +40,53 @@ export default function PitchDeckPage() {
           >
             <div className={styles.badge}>
               <Sparkles size={16} />
-              <span>Google for Startups Application</span>
+              <span>Pre-Launch - Seeking Developers</span>
             </div>
             <h1 className={styles.heroTitle}>
               MALOLA
-              <span className={styles.gradient}>AI Wellness Platform</span>
+              <span className={styles.gradient}>Culturally-Rooted AI Platform</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Harmonizing Modern Mental Health Support with Traditional Cultural Wisdom
+              Ancient Wisdom Meets Modern Technology - Your Daily AI Companion for Spiritual & Cultural Guidance
             </p>
             <div className={styles.heroStats}>
               <div className={styles.statItem}>
-                <strong>$537B</strong>
+                <strong>$50B</strong>
                 <span>Global Market</span>
               </div>
               <div className={styles.statItem}>
-                <strong>450M</strong>
-                <span>People Affected</span>
+                <strong>500M+</strong>
+                <span>Potential Users</span>
               </div>
               <div className={styles.statItem}>
-                <strong>10x</strong>
-                <span>More Affordable</span>
+                <strong>4-in-1</strong>
+                <span>Unified Platform</span>
               </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className={`${styles.section} ${styles.visionSection}`}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Target className={styles.icon} />
+              Our Vision
+            </h2>
+            <div className={styles.visionContent}>
+              <p className={styles.visionText}>
+                We are building a <strong>culturally rooted, AI-powered knowledge and guidance platform</strong> designed to serve everyday users—starting with Indian households and expanding globally. Our core product combines digital scriptures, audio libraries, astrology, and conversational AI into a single personalized experience.
+              </p>
+              <p className={styles.visionText}>
+                Users can <strong>read, listen, ask questions, and receive guidance</strong> about life, spirituality, traditions, and daily decisions in their preferred language, making ancient and cultural knowledge accessible, conversational, and practical for modern life.
+              </p>
             </div>
           </motion.div>
         </div>
@@ -74,28 +103,28 @@ export default function PitchDeckPage() {
           >
             <h2 className={styles.sectionTitle}>
               <Target className={styles.icon} />
-              The Problem
+              The Problem: Fragmented Solutions
             </h2>
             <div className={styles.problemGrid}>
               <div className={styles.problemCard}>
-                <div className={styles.problemNumber}>450M</div>
-                <h3>Mental Health Crisis</h3>
-                <p>People worldwide suffer from mental health issues</p>
+                <BookOpen size={48} className={styles.problemIcon} />
+                <h3>Static Scripture Apps</h3>
+                <p>Non-interactive, no Q&A, just reading</p>
               </div>
               <div className={styles.problemCard}>
-                <div className={styles.problemNumber}>75%</div>
-                <h3>Untreated Cases</h3>
-                <p>In developing countries go without treatment</p>
+                <Star size={48} className={styles.problemIcon} />
+                <h3>Manual Astrology</h3>
+                <p>Inconsistent, expensive, no personalization</p>
               </div>
               <div className={styles.problemCard}>
-                <div className={styles.problemNumber}>$300</div>
-                <h3>Expensive Therapy</h3>
-                <p>Per session, inaccessible to billions</p>
+                <Mic size={48} className={styles.problemIcon} />
+                <h3>Generic Audio Platforms</h3>
+                <p>No cultural context or personalization</p>
               </div>
               <div className={styles.problemCard}>
-                <div className={styles.problemNumber}>0</div>
-                <h3>Cultural Context</h3>
-                <p>Traditional apps lack cultural awareness</p>
+                <Globe size={48} className={styles.problemIcon} />
+                <h3>Global AI Lacks Context</h3>
+                <p>No spiritual, cultural, or regional understanding</p>
               </div>
             </div>
           </motion.div>
@@ -113,43 +142,46 @@ export default function PitchDeckPage() {
           >
             <h2 className={styles.sectionTitle}>
               <Zap className={styles.icon} />
-              The Solution
+              The Solution: Unified AI Ecosystem
             </h2>
             <div className={styles.solutionContent}>
               <div className={styles.solutionText}>
-                <h3>Malola/Soulink: AI-Powered Holistic Wellness</h3>
+                <h3>4-in-1 Intelligent Platform</h3>
                 <p className={styles.subtitle}>
-                  The first AI wellness platform that harmonizes modern mental health 
-                  support with traditional cultural wisdom
+                  All the features users need in one unified, personalized AI companion
                 </p>
                 <div className={styles.featureList}>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span>24/7 AI-driven mental health assistant</span>
+                    <span><strong>Digital Scripture Library:</strong> Read & listen to sacred texts</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span>Vedic astrology-based compatibility matching</span>
+                    <span><strong>Personalized Audio:</strong> Cultural stories, mantras, wisdom</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span>Culturally contextualized wellness insights</span>
+                    <span><strong>AI Astrology:</strong> Personalized life guidance & predictions</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span>Personalized daily guidance & affirmations</span>
+                    <span><strong>Conversational AI:</strong> Text & voice assistant in your language</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span>Secure, private, judgment-free space</span>
+                    <span><strong>Vernacular-First:</strong> Hindi, Tamil, Telugu, Bengali & more</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>Future Hardware:</strong> AI talking clocks, home assistants</span>
                   </div>
                 </div>
               </div>
               <div className={styles.solutionVisual}>
                 <div className={styles.productShowcase}>
                   <img 
-                    src="/images/malola-product-showcase.jpg" 
-                    alt="Malola Product Showcase - AI Wellness Platform" 
+                    src="/images/mal ola-full-showcase.jpg" 
+                    alt="Malola Platform Showcase" 
                     className={styles.productImage}
                   />
                 </div>
@@ -159,8 +191,47 @@ export default function PitchDeckPage() {
         </div>
       </section>
 
-      {/* Market Opportunity */}
+      {/* Target Market */}
       <section className={styles.section}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Users className={styles.icon} />
+              Target Market
+            </h2>
+            <div className={styles.marketGrid}>
+              <div className={styles.targetCard}>
+                <h3>Primary Customers</h3>
+                <ul>
+                  <li>Indian middle-class families</li>
+                  <li>Individuals seeking spiritual clarity</li>
+                  <li>Astrology users</li>
+                  <li>Audio-first learners</li>
+                  <li>Tier-2, Tier-3 city residents</li>
+                  <li>Vernacular language speakers</li>
+                </ul>
+              </div>
+              <div className={styles.targetCard}>
+                <h3>Future Expansion</h3>
+                <ul>
+                  <li>Indian diaspora globally</li>
+                  <li>International spiritual seekers</li>
+                  <li>Cultural learning enthusiasts</li>
+                  <li>Religious institutions (B2B)</li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Market Opportunity */}
+      <section className={`${styles.section} ${styles.marketSection}`}>
         <div className="container">
           <motion.div
             initial="hidden"
@@ -172,30 +243,97 @@ export default function PitchDeckPage() {
               <TrendingUp className={styles.icon} />
               Market Opportunity
             </h2>
-            <div className={styles.marketGrid}>
+            <div className={styles.marketOpportunityGrid}>
               <div className={styles.marketCard}>
                 <div className={styles.marketLabel}>TAM</div>
-                <div className={styles.marketValue}>$537B</div>
-                <p>Global Mental Health Market by 2030</p>
+                <div className={styles.marketValue}>$50B</div>
+                <p>Global Wellness + Spiritual Guidance Market</p>
                 <div className={styles.progressBar}>
                   <div className={styles.progress} style={{ width: '100%' }}></div>
                 </div>
               </div>
               <div className={styles.marketCard}>
                 <div className={styles.marketLabel}>SAM</div>
-                <div className={styles.marketValue}>$20.4B</div>
-                <p>Digital Mental Health Market by 2028</p>
+                <div className={styles.marketValue}>$30B</div>
+                <p>Indian Spiritual & Wellness Market by 2028</p>
                 <div className={styles.progressBar}>
                   <div className={styles.progress} style={{ width: '75%' }}></div>
                 </div>
               </div>
               <div className={styles.marketCard}>
                 <div className={styles.marketLabel}>SOM</div>
-                <div className={styles.marketValue}>$2.8B</div>
-                <p>India Mental Wellness Market</p>
+                <div className={styles.marketValue}>$5B</div>
+                <p>Our Target Segment (Tier 2/3 + Vernacular)</p>
                 <div className={styles.progressBar}>
                   <div className={styles.progress} style={{ width: '50%' }}></div>
                 </div>
+              </div>
+            </div>
+
+            <div className={styles.marketInsights}>
+              <h3>Market Insights</h3>
+              <div className={styles.insightsGrid}>
+                <div className={styles.insightCard}>
+                  <strong>500M+</strong>
+                  <p>Potential Tier 2/3 digital users in India</p>
+                </div>
+                <div className={styles.insightCard}>
+                  <strong>$12.8B</strong>
+                  <p>Global astrology app market</p>
+                </div>
+                <div className={styles.insightCard}>
+                  <strong>$5B</strong>
+                  <p>Audio content market in India</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Competitive Advantage */}
+      <section className={`${styles.section} ${styles.competitiveSection}`}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Globe className={styles.icon} />
+              Why We Win
+            </h2>
+            <div className={styles.competitiveGrid}>
+              <div className={styles.advantageCard}>
+                <CheckCircle2 size={32} className={styles.advantageIcon} />
+                <h3>Unified Platform</h3>
+                <p>Only solution combining scriptures, audio, astrology & AI in one app</p>
+              </div>
+              <div className={styles.advantageCard}>
+                <CheckCircle2 size={32} className={styles.advantageIcon} />
+                <h3>Cultural Context</h3>
+                <p>Deep understanding of Indian traditions, festivals, and spiritual practices</p>
+              </div>
+              <div className={styles.advantageCard}>
+                <CheckCircle2 size={32} className={styles.advantageIcon} />
+                <h3>Vernacular-First</h3>
+                <p>Voice-first design for Hindi, Tamil, Telugu, Bengali & 10+ languages</p>
+              </div>
+              <div className={styles.advantageCard}>
+                <CheckCircle2 size={32} className={styles.advantageIcon} />
+                <h3>Personalization</h3>
+                <p>AI learns user preferences, life events, and spiritual journey</p>
+              </div>
+              <div className={styles.advantageCard}>
+                <CheckCircle2 size={32} className={styles.advantageIcon} />
+                <h3>Hardware Roadmap</h3>
+                <p>Beyond app: AI talking clocks & home assistants for daily rituals</p>
+              </div>
+              <div className={styles.advantageCard}>
+                <CheckCircle2 size={32} className={styles.advantageIcon} />
+                <h3>Trust & Authenticity</h3>
+                <p>Verified content from religious scholars and institutions</p>
               </div>
             </div>
           </motion.div>
@@ -220,53 +358,52 @@ export default function PitchDeckPage() {
                 <h3>Free</h3>
                 <div className={styles.price}>$0<span>/month</span></div>
                 <ul className={styles.pricingFeatures}>
-                  <li>Basic AI chat</li>
+                  <li>Basic scripture library</li>
+                  <li>Limited audio content</li>
+                  <li>Basic AI chat (10 msgs/day)</li>
                   <li>Daily horoscope</li>
-                  <li>Mood tracking</li>
-                  <li>Limited features</li>
                 </ul>
               </div>
               <div className={`${styles.pricingCard} ${styles.featured}`}>
                 <div className={styles.popularBadge}>Most Popular</div>
                 <h3>Premium</h3>
-                <div className={styles.price}>$9.99<span>/month</span></div>
+                <div className={styles.price}>$4.99<span>/month</span></div>
                 <ul className={styles.pricingFeatures}>
-                  <li>Unlimited AI sessions</li>
-                  <li>Full astrology reports</li>
-                  <li>Compatibility matching</li>
-                  <li>Priority support</li>
+                  <li>Full scripture library</li>
+                  <li>Unlimited audio content</li>
+                  <li>Unlimited AI conversations</li>
+                  <li>Personalized astrology</li>
+                  <li>Voice assistant</li>
+                  <li>Offline access</li>
                 </ul>
               </div>
               <div className={styles.pricingCard}>
-                <h3>Premium Plus</h3>
-                <div className={styles.price}>$19.99<span>/month</span></div>
+                <h3>Family Plan</h3>
+                <div className={styles.price}>$9.99<span>/month</span></div>
                 <ul className={styles.pricingFeatures}>
-                  <li>1-on-1 expert calls</li>
-                  <li>Custom birth chart</li>
-                  <li>Personalized remedies</li>
                   <li>All Premium features</li>
+                  <li>Up to 5 family members</li>
+                  <li>Personalized for each member</li>
+                  <li>Family astrology insights</li>
+                  <li>Priority support</li>
                 </ul>
               </div>
             </div>
-            
-            <div className={styles.unitEconomics}>
-              <h3>Unit Economics</h3>
-              <div className={styles.metricsGrid}>
-                <div className={styles.metric}>
-                  <div className={styles.metricValue}>$15-25</div>
-                  <div className={styles.metricLabel}>CAC</div>
+
+            <div className={styles.revenueStreams}>
+              <h3>Additional Revenue Streams</h3>
+              <div className={styles.streamsGrid}>
+                <div className={styles.streamCard}>
+                  <h4>Enterprise/B2B</h4>
+                  <p>Partnerships with temples, religious institutions, and cultural organizations</p>
                 </div>
-                <div className={styles.metric}>
-                  <div className={styles.metricValue}>$180-240</div>
-                  <div className={styles.metricLabel}>LTV</div>
+                <div className={styles.streamCard}>
+                  <h4>Hardware Devices</h4>
+                  <p>AI-powered talking clocks, home assistants (launching 2027)</p>
                 </div>
-                <div className={styles.metric}>
-                  <div className={styles.metricValue}>7-12x</div>
-                  <div className={styles.metricLabel}>LTV:CAC</div>
-                </div>
-                <div className={styles.metric}>
-                  <div className={styles.metricValue}>85%+</div>
-                  <div className={styles.metricLabel}>Gross Margin</div>
+                <div className={styles.streamCard}>
+                  <h4>Platform Integrations</h4>
+                  <p>API access for third-party apps and smart devices</p>
                 </div>
               </div>
             </div>
@@ -274,7 +411,7 @@ export default function PitchDeckPage() {
         </div>
       </section>
 
-      {/* Financial Projections */}
+      {/* Projections */}
       <section className={styles.section}>
         <div className="container">
           <motion.div
@@ -285,68 +422,68 @@ export default function PitchDeckPage() {
           >
             <h2 className={styles.sectionTitle}>
               <TrendingUp className={styles.icon} />
-              3-Year Financial Projections
+              Growth Projections (3 Years)
             </h2>
-            <div className={styles.financialTable}>
-              <div className={styles.tableRow}>
-                <div className={styles.tableHeader}>Year</div>
-                <div className={styles.tableHeader}>Users</div>
-                <div className={styles.tableHeader}>Conversion</div>
-                <div className={styles.tableHeader}>ARR</div>
-                <div className={styles.tableHeader}>Net</div>
+            
+            <div className={styles.projectionsContainer}>
+              <div className={styles.growthChart}>
+                <h3>User Growth Trajectory</h3>
+                <div className={styles.chartBars}>
+                  <div className={styles.barContainer}>
+                    <div className={styles.bar} style={{height: '10%'}}>
+                      <span className={styles.barLabel}>10K</span>
+                    </div>
+                    <div className={styles.barYear}>2026 Beta</div>
+                  </div>
+                  <div className={styles.barContainer}>
+                    <div className={styles.bar} style={{height: '40%'}}>
+                      <span className={styles.barLabel}>100K</span>
+                    </div>
+                    <div className={styles.barYear}>2027</div>
+                  </div>
+                  <div className={styles.barContainer}>
+                    <div className={styles.bar} style={{height: '100%'}}>
+                      <span className={styles.barLabel}>500K</span>
+                    </div>
+                    <div className={styles.barYear}>2028</div>
+                  </div>
+                </div>
               </div>
-              <div className={styles.tableRow}>
-                <div className={styles.tableCell}><strong>2026</strong></div>
-                <div className={styles.tableCell}>10,000</div>
-                <div className={styles.tableCell}>5%</div>
-                <div className={styles.tableCell}>$60K</div>
-                <div className={styles.tableCell} style={{color: '#ef4444'}}>-$90K</div>
-              </div>
-              <div className={styles.tableRow}>
-                <div className={styles.tableCell}><strong>2027</strong></div>
-                <div className={styles.tableCell}>100,000</div>
-                <div className={styles.tableCell}>8%</div>
-                <div className={styles.tableCell}>$960K</div>
-                <div className={styles.tableCell} style={{color: '#22c55e'}}>$460K</div>
-              </div>
-              <div className={styles.tableRow}>
-                <div className={styles.tableCell}><strong>2028</strong></div>
-                <div className={styles.tableCell}>500,000</div>
-                <div className={styles.tableCell}>10%</div>
-                <div className={styles.tableCell}>$6M</div>
-                <div className={styles.tableCell} style={{color: '#22c55e'}}>$4M</div>
+
+              <div className={styles.revenueChart}>
+                <h3>Revenue Projections</h3>
+                <div className={styles.chartBars}>
+                  <div className={styles.barContainer}>
+                    <div className={styles.bar} style={{height: '8%', background: 'linear-gradient(180deg, #22c55e, #16a34a)'}}>
+                      <span className={styles.barLabel}>$50K</span>
+                    </div>
+                    <div className={styles.barYear}>2026</div>
+                  </div>
+                  <div className={styles.barContainer}>
+                    <div className={styles.bar} style={{height: '35%', background: 'linear-gradient(180deg, #22c55e, #16a34a)'}}>
+                      <span className={styles.barLabel}>$500K</span>
+                    </div>
+                    <div className={styles.barYear}>2027</div>
+                  </div>
+                  <div className={styles.barContainer}>
+                    <div className={styles.bar} style={{height: '100%', background: 'linear-gradient(180deg, #22c55e, #16a34a)'}}>
+                      <span className={styles.barLabel}>$3M</span>
+                    </div>
+                    <div className={styles.barYear}>2028</div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className={styles.growthChart}>
-              <h3>Revenue Growth Trajectory</h3>
-              <div className={styles.chartBars}>
-                <div className={styles.barContainer}>
-                  <div className={styles.bar} style={{height: '10%'}}>
-                    <span className={styles.barLabel}>$60K</span>
-                  </div>
-                  <div className={styles.barYear}>2026</div>
-                </div>
-                <div className={styles.barContainer}>
-                  <div className={styles.bar} style={{height: '40%'}}>
-                    <span className={styles.barLabel}>$960K</span>
-                  </div>
-                  <div className={styles.barYear}>2027</div>
-                </div>
-                <div className={styles.barContainer}>
-                  <div className={styles.bar} style={{height: '100%'}}>
-                    <span className={styles.barLabel}>$6M</span>
-                  </div>
-                  <div className={styles.barYear}>2028</div>
-                </div>
-              </div>
+            <div className={styles.assumptions}>
+              <p><strong>Assumptions:</strong> 5% conversion in Year 1, 8% in Year 2, 10% in Year 3 | Avg. ARPU $5/month</p>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Competitive Advantage */}
-      <section className={`${styles.section} ${styles.competitiveSection}`}>
+      {/* Roadmap */}
+      <section className={`${styles.section} ${styles.roadmapSection}`}>
         <div className="container">
           <motion.div
             initial="hidden"
@@ -355,37 +492,65 @@ export default function PitchDeckPage() {
             variants={fadeInUp}
           >
             <h2 className={styles.sectionTitle}>
-              <Globe className={styles.icon} />
-              Competitive Advantage
+              <ArrowRight className={styles.icon} />
+              Product Roadmap
             </h2>
-            <div className={styles.competitiveGrid}>
-              <div className={styles.advantageCard}>
-                <CheckCircle2 size={32} className={styles.advantageIcon} />
-                <h3>Only Platform</h3>
-                <p>Combining AI therapy + Vedic astrology</p>
+            <div className={styles.timeline}>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineBadge}>Q1 2026</div>
+                <div className={styles.timelineContent}>
+                  <h3>Phase 1: Development</h3>
+                  <ul>
+                    <li>Complete mobile app development (React Native)</li>
+                    <li>Scripture library + Audio player</li>
+                    <li>Basic AI chat (text)</li>
+                    <li>Astrology integration</li>
+                  </ul>
+                </div>
               </div>
-              <div className={styles.advantageCard}>
-                <CheckCircle2 size={32} className={styles.advantageIcon} />
-                <h3>Cultural Intelligence</h3>
-                <p>Built into every conversation</p>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineBadge}>Q2 2026</div>
+                <div className={styles.timelineContent}>
+                  <h3>Phase 2: Beta Launch</h3>
+                  <ul>
+                    <li>Beta launch in 3 Indian cities</li>
+                    <li>Voice AI integration</li>
+                    <li>Hindi + English support</li>
+                    <li>Target: 10,000 users</li>
+                  </ul>
+                </div>
               </div>
-              <div className={styles.advantageCard}>
-                <CheckCircle2 size={32} className={styles.advantageIcon} />
-                <h3>10x Affordable</h3>
-                <p>Compared to traditional therapy</p>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineBadge}>Q3-Q4 2026</div>
+                <div className={styles.timelineContent}>
+                  <h3>Phase 3: Public Launch</h3>
+                  <ul>
+                    <li>Full product launch</li>
+                    <li>5+ regional languages</li>
+                    <li>Advanced personalization</li>
+                    <li>Target: 100,000 users</li>
+                  </ul>
+                </div>
               </div>
-              <div className={styles.advantageCard}>
-                <CheckCircle2 size={32} className={styles.advantageIcon} />
-                <h3>Holistic Approach</h3>
-                <p>Mind, body, and spirit</p>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineBadge}>2027</div>
+                <div className={styles.timelineContent}>
+                  <h3>Phase 4: Scale & Hardware</h3>
+                  <ul>
+                    <li>10+ languages, pan-India expansion</li>
+                    <li>Hardware prototypes (talking clocks)</li>
+                    <li>B2B partnerships with temples</li>
+                    <li>Target: 500,000 users</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* The Ask */}
-      <section className={styles.section}>
+      {/* The Ask - Seeking Developers */}
+      <section className={`${styles.section} ${styles.askSection}`}>
         <div className="container">
           <motion.div
             initial="hidden"
@@ -394,42 +559,52 @@ export default function PitchDeckPage() {
             variants={fadeInUp}
           >
             <h2 className={styles.sectionTitle}>
-              <Users className={styles.icon} />
-              What We Need from Google for Startups
+              <Code className={styles.icon} />
+              We're Seeking Professional Developers
             </h2>
-            <div className={styles.askGrid}>
-              <div className={styles.askCard}>
-                <h3>Google Cloud Credits</h3>
-                <p>For AI/ML infrastructure and scaling</p>
+            <div className={styles.developersNeeded}>
+              <p className={styles.hiringText}>
+                We are in <strong>pre-launch phase</strong> and actively seeking skilled developers to build this platform with <strong>all features perfectly integrated</strong>. This is an opportunity to build something meaningful that impacts millions of lives.
+              </p>
+            </div>
+
+            <div className={styles.rolesGrid}>
+              <div className={styles.roleCard}>
+                <Smartphone size={32} />
+                <h3>Mobile Developers</h3>
+                <p>React Native or Flutter experts to build cross-platform app with offline-first architecture</p>
               </div>
-              <div className={styles.askCard}>
-                <h3>Technical Mentorship</h3>
-                <p>Firebase optimization, Android development</p>
+              <div className={styles.roleCard}>
+                <Code size={32} />
+                <h3>Full-Stack Engineers</h3>
+                <p>Node.js/Python backend, React frontend, experience with scalable microservices</p>
               </div>
-              <div className={styles.askCard}>
-                <h3>Marketing Support</h3>
-                <p>User acquisition best practices</p>
+              <div className={styles.roleCard}>
+                <MessageCircle size={32} />
+                <h3>AI/ML Engineers</h3>
+                <p>NLP, LLM fine-tuning, multilingual AI, voice recognition & synthesis</p>
               </div>
-              <div className={styles.askCard}>
-                <h3>Network Access</h3>
-                <p>Healthcare and wellness partners</p>
+              <div className={styles.roleCard}>
+                <Database size={32} />
+                <h3>Backend & DevOps</h3>
+                <p>Cloud infrastructure (AWS/GCP), databases, API design, CI/CD pipelines</p>
               </div>
             </div>
 
             <div className={styles.fundingBox}>
-              <h3>Current Fundraising</h3>
+              <h3>Investment & Partnership Opportunities</h3>
               <div className={styles.fundingDetails}>
                 <div className={styles.fundingItem}>
                   <strong>Stage:</strong> Pre-seed
                 </div>
                 <div className={styles.fundingItem}>
-                  <strong>Target:</strong> $250K
+                  <strong>Seeking:</strong> $250K for development & team
                 </div>
                 <div className={styles.fundingItem}>
-                  <strong>Use:</strong> Product development, user acquisition, team building
+                  <strong>Use of Funds:</strong> Hiring developers, product development, beta launch
                 </div>
                 <div className={styles.fundingItem}>
-                  <strong>Timeline:</strong> Next 6 months
+                  <strong>Timeline:</strong> 6-month runway to beta launch
                 </div>
               </div>
             </div>
@@ -438,7 +613,7 @@ export default function PitchDeckPage() {
       </section>
 
       {/* Vision & Impact */}
-      <section className={`${styles.section} ${styles.visionSection}`}>
+      <section className={`${styles.section} ${styles.finalVisionSection}`}>
         <div className="container">
           <motion.div
             initial="hidden"
@@ -449,25 +624,30 @@ export default function PitchDeckPage() {
           >
             <h2 className={styles.sectionTitle}>
               <Sparkles className={styles.icon} />
-              Vision & Impact
+              Long-Term Vision
             </h2>
             <blockquote className={styles.mission}>
-              "To make mental wellness accessible, affordable, and culturally relevant for every soul on Earth"
+              "To become the default AI companion for spiritual understanding, cultural learning, and life guidance—trusted, accessible, and available to every household."
             </blockquote>
             
             <div className={styles.impactGrid}>
               <div className={styles.impactCard}>
-                <div className={styles.impactNumber}>10M</div>
-                <p>Users supported globally</p>
+                <div className={styles.impactNumber}>10M+</div>
+                <p>Households served by 2030</p>
               </div>
               <div className={styles.impactCard}>
-                <div className={styles.impactNumber}>50%</div>
-                <p>Reduction in therapy costs</p>
+                <div className={styles.impactNumber}>20+</div>
+                <p>Languages supported</p>
               </div>
               <div className={styles.impactCard}>
-                <div className={styles.impactNumber}>100+</div>
-                <p>Languages & cultures</p>
+                <div className={styles.impactNumber}>100%</div>
+                <p>Cultural authenticity</p>
               </div>
+            </div>
+
+            <div className={styles.futurePlans}>
+              <h3>Beyond Software</h3>
+              <p>We're not just building an app—we're creating a <strong>daily companion embedded into users' routines</strong> through dedicated AI-powered hardware like talking clocks and home assistants that provide morning mantras, daily guidance, and spiritual reminders.</p>
             </div>
           </motion.div>
         </div>
@@ -483,14 +663,17 @@ export default function PitchDeckPage() {
             variants={fadeInUp}
             className={styles.ctaContent}
           >
-            <h2>Ready to Transcend Through Technology?</h2>
-            <p>Join us in revolutionizing mental wellness for billions</p>
+            <h2>Ready to Build the Future of Cultural AI?</h2>
+            <p>Join us in making ancient wisdom accessible to millions</p>
             <div className={styles.ctaButtons}>
               <a href="https://studio-mocha-tau-22.vercel.app/" className={styles.primaryBtn} target="_blank" rel="noopener noreferrer">
-                View Live Demo <ArrowRight size={20} />
+                View Product Demo <ArrowRight size={20} />
+              </a>
+              <a href="mailto:ph293815@gmail.com" className={styles.primaryBtn}>
+                Join as Developer
               </a>
               <a href="mailto:ph293815@gmail.com" className={styles.secondaryBtn}>
-                Contact Us
+                Investment Inquiry
               </a>
             </div>
             <div className={styles.contactInfo}>

@@ -847,3 +847,361 @@
     justify-content: center;
   }
 }
+
+/* New Section Styles for Pitch Deck Rebuild */
+
+/* Vision Text */
+.visionText {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.visionText strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Problem Icons */
+.problemIcon {
+  color: #7c3aed;
+  margin-bottom: 1rem;
+}
+
+/* Target Cards */
+.targetCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+.targetCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.targetCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.targetCard li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  color: #cbd5e1;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.targetCard li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Market Section */
+.marketSection {
+  background: rgba(124, 58, 237, 0.05);
+}
+
+/* Market Opportunity Grid */
+.marketOpportunityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Market Insights */
+.marketInsights {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.marketInsights h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.insightsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.insightCard {
+  text-align: center;
+}
+
+.insightCard strong {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.insightCard p {
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+/* Projections Container */
+.projectionsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.revenueChart {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.revenueChart h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.assumptions {
+  text-align: center;
+  color: #94a3b8;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+/* Revenue Streams */
+.revenueStreams {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.revenueStreams h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.streamsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.streamCard {
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.streamCard h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.streamCard p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Roadmap Section */
+.roadmapSection {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #7c3aed, #3b82f6);
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.timelineItem:nth-child(even) {
+  direction: rtl;
+}
+
+.timelineItem:nth-child(even) .timelineContent {
+  direction: ltr;
+}
+
+.timelineBadge {
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.timelineContent {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.timelineContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.timelineContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timelineContent li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  color: #cbd5e1;
+  position: relative;
+}
+
+.timelineContent li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  color: #7c3aed;
+}
+
+/* Developer Recruitment Section */
+.askSection {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(59, 130, 246, 0.1));
+}
+
+.developersNeeded {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.hiringText {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.hiringText strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.rolesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.roleCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.roleCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 10px 40px rgba(124, 58, 237, 0.3);
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.roleCard svg {
+  color: #7c3aed;
+  margin-bottom: 1rem;
+}
+
+.roleCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.roleCard p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Final Vision Section */
+.finalVisionSection {
+  background: radial-gradient(ellipse at center, rgba(124, 58, 237, 0.2), transparent);
+}
+
+.futurePlans {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.futurePlans h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.futurePlans p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.futurePlans strong {
+  color: #fff;
+}
