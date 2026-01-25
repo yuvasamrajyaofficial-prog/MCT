@@ -17,7 +17,9 @@ import {
   CheckCircle2,
   Code,
   Smartphone,
-  Database
+  Database,
+  PieChart,
+  BarChart3
 } from "lucide-react";
 import styles from "./PitchDeck.module.css";
 
@@ -364,13 +366,18 @@ export default function PitchDeckPage() {
             </h2>
             <div className={styles.pricingGrid}>
               <div className={styles.pricingCard}>
-                <h3>Free</h3>
+                <h3>Free with Ads</h3>
                 <div className={styles.price}>$0<span>/month</span></div>
                 <ul className={styles.pricingFeatures}>
-                  <li>Basic scripture library</li>
-                  <li>Limited audio content</li>
-                  <li>Basic AI chat (10 msgs/day)</li>
-                  <li>Daily horoscope</li>
+                  <li>✅ Basic scripture library (100 pages/month)</li>
+                  <li>✅ Limited audio content (10 hours/month)</li>
+                  <li>✅ AI chat (10 messages/day)</li>
+                  <li>✅ Daily horoscope only</li>
+                  <li>🎯 <strong>Ads displayed between content</strong></li>
+                  <li>❌ No voice AI assistant</li>
+                  <li>❌ No soul matching</li>
+                  <li>❌ No physical book ordering</li>
+                  <li>❌ No offline access</li>
                 </ul>
               </div>
               <div className={`${styles.pricingCard} ${styles.featured}`}>
@@ -378,12 +385,15 @@ export default function PitchDeckPage() {
                 <h3>Premium</h3>
                 <div className={styles.price}>$4.99<span>/month</span></div>
                 <ul className={styles.pricingFeatures}>
-                  <li>Full scripture library</li>
-                  <li>Unlimited audio content</li>
-                  <li>Unlimited AI conversations</li>
-                  <li>Personalized astrology</li>
-                  <li>Voice assistant</li>
-                  <li>Offline access</li>
+                  <li>✅ Unlimited scripture library</li>
+                  <li>✅ Unlimited audio content</li>
+                  <li>✅ Unlimited AI conversations (text + voice)</li>
+                  <li>✅ Full astrology insights & birth chart</li>
+                  <li>✅ Soul matching for marriage</li>
+                  <li>✅ <strong>Ad-free experience</strong></li>
+                  <li>✅ Physical book ordering</li>
+                  <li>✅ Offline downloads</li>
+                  <li>✅ Priority customer support</li>
                 </ul>
               </div>
               <div className={styles.pricingCard}>
@@ -403,15 +413,27 @@ export default function PitchDeckPage() {
               <h3>Additional Revenue Streams</h3>
               <div className={styles.streamsGrid}>
                 <div className={styles.streamCard}>
-                  <h4>Enterprise/B2B</h4>
+                  <h4>📢 Ad Revenue (Free Users)</h4>
+                  <p>$2-5 per user/year from display ads shown to free tier users</p>
+                </div>
+                <div className={styles.streamCard}>
+                  <h4>📚 Physical Book Sales</h4>
+                  <p>10-20% margin on authentic scripture books delivered to homes</p>
+                </div>
+                <div className={styles.streamCard}>
+                  <h4>🏢 Enterprise/B2B</h4>
                   <p>Partnerships with temples, religious institutions, and cultural organizations</p>
                 </div>
                 <div className={styles.streamCard}>
-                  <h4>Hardware Devices</h4>
+                  <h4>🔮 Hardware Devices</h4>
                   <p>AI-powered talking clocks, home assistants (launching 2027)</p>
                 </div>
                 <div className={styles.streamCard}>
-                  <h4>Platform Integrations</h4>
+                  <h4>⭐ Astrology Consultations</h4>
+                  <p>One-time reports, live consultations, soul matching services</p>
+                </div>
+                <div className={styles.streamCard}>
+                  <h4>🔌 Platform Integrations</h4>
                   <p>API access for third-party apps and smart devices</p>
                 </div>
               </div>
