@@ -264,6 +264,28 @@
   margin-top: 0.5rem;
 }
 
+/* Product Showcase */
+.productShowcase {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid rgba(124, 58, 237, 0.3);
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.4);
+  transition: all 0.3s ease;
+}
+
+.productImage:hover {
+  transform: scale(1.02);
+  box-shadow: 0 30px 80px rgba(124, 58, 237, 0.6);
+  border-color: rgba(124, 58, 237, 0.6);
+}
+
 /* Market Section */
 .marketGrid {
   display: grid;

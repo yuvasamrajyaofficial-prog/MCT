@@ -151,19 +151,12 @@ export default function PitchDeckPage() {
                 </div>
               </div>
               <div className={styles.solutionVisual}>
-                <div className={styles.appPreview}>
-                  <div className={styles.appScreen}>
-                    <Brain size={64} className={styles.appIcon} />
-                    <p>AI Therapy</p>
-                  </div>
-                  <div className={styles.appScreen}>
-                    <Heart size={64} className={styles.appIcon} />
-                    <p>Wellness Tools</p>
-                  </div>
-                  <div className={styles.appScreen}>
-                    <Star size={64} className={styles.appIcon} />
-                    <p>Astrology</p>
-                  </div>
+                <div className={styles.productShowcase}>
+                  <img 
+                    src="/images/malola-product-showcase.jpg" 
+                    alt="Malola Product Showcase - AI Wellness Platform" 
+                    className={styles.productImage}
+                  />
                 </div>
               </div>
             </div>
