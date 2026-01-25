@@ -489,13 +489,13 @@ export default function PitchDeckPage() {
               <a href="https://studio-mocha-tau-22.vercel.app/" className={styles.primaryBtn} target="_blank" rel="noopener noreferrer">
                 View Live Demo <ArrowRight size={20} />
               </a>
-              <a href="mailto:contact@malolacosmictech.com" className={styles.secondaryBtn}>
+              <a href="mailto:ph293815@gmail.com" className={styles.secondaryBtn}>
                 Contact Us
               </a>
             </div>
             <div className={styles.contactInfo}>
               <p><strong>MCT (Malola Cosmic Technologies)</strong></p>
-              <p>contact@malolacosmictech.com | malolacosmictech.com</p>
+              <p>ph293815@gmail.com | malolacosmictech.com</p>
             </div>
           </motion.div>
         </div>

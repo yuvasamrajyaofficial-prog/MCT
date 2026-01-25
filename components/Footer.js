@@ -22,6 +22,7 @@ export default function Footer() {
               <Link href="/team">Team</Link>
               <Link href="/careers">Careers (Remote First)</Link>
               <Link href="/investors">Investors</Link>
+              <Link href="/pitch-deck">Pitch Deck</Link>
               <Link href="/sitemap.xml">Sitemap</Link>
             </div>
             <div className={styles.column}>
@@ -30,7 +31,7 @@ export default function Footer() {
                 <a href="#" aria-label="GitHub"><Github size={20} /></a>
                 <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
                 <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
-                <a href="mailto:contact@malolacosmictech.com" aria-label="Email"><Mail size={20} /></a>
+                <a href="mailto:ph293815@gmail.com" aria-label="Email"><Mail size={20} /></a>
               </div>
             </div>
           </div>
