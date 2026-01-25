@@ -254,6 +254,14 @@ export default function PitchDeckPage() {
               <TrendingUp className={styles.icon} />
               Market Opportunity
             </h2>
+            {/* Market Visualization */}
+            <div className={styles.chartContainer}>
+              <img 
+                src="/images/market-opportunity-funnel.png" 
+                alt="Market Opportunity"
+                style={{maxWidth: '700px', width: '100%', margin: '2rem auto', display: 'block', borderRadius: '12px'}}
+              />
+            </div>
             <div className={styles.marketOpportunityGrid}>
               <div className={styles.marketCard}>
                 <div className={styles.marketLabel}>TAM</div>
@@ -351,6 +359,46 @@ export default function PitchDeckPage() {
         </div>
       </section>
 
+      {/* COMPETITIVE ANALYSIS TABLE */}
+      <section className={styles.section}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Globe className={styles.icon} />
+              Competitive Analysis
+            </h2>
+            
+            <div style={{overflowX: 'auto', marginTop: '2rem'}}>
+              <table style={{width: '100%', borderCollapse: 'collapse', background: 'rgba(255,255,255,0.03)', borderRadius: '12px'}}>
+                <thead>
+                  <tr style={{background: 'rgba(124, 58, 237, 0.2)'}}>
+                    <th style={{padding: '1rem', textAlign: 'left', border: '1px solid rgba(255,255,255,0.1)'}}>Feature</th>
+                    <th style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>Scripture Apps</th>
+                    <th style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>Astrology</th>
+                    <th style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>Generic AI</th>
+                    <th style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(124, 58, 237, 0.3)'}}>MALOLA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td style={{padding: '1rem', border: '1px solid rgba(255,255,255,0.1)'}}>Digital Scriptures</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>✅</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(124, 58, 237, 0.2)', fontWeight: 700}}>✅</td></tr>
+                  <tr><td style={{padding: '1rem', border: '1px solid rgba(255,255,255,0.1)'}}>Audio Library</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>Partial</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(124, 58, 237, 0.2)', fontWeight: 700}}>✅</td></tr>
+                  <tr><td style={{padding: '1rem', border: '1px solid rgba(255,255,255,0.1)'}}>AI Chatbot</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>Generic</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(124, 58, 237, 0.2)', fontWeight: 700}}>✅ Cultural</td></tr>
+                  <tr><td style={{padding: '1rem', border: '1px solid rgba(255,255,255,0.1)'}}>Voice AI</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>Partial</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(124, 58, 237, 0.2)', fontWeight: 700}}>✅</td></tr>
+                  <tr><td style={{padding: '1rem', border: '1px solid rgba(255,255,255,0.1)'}}>Astrology</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>Manual</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(124, 58, 237, 0.2)', fontWeight: 700}}>✅ AI</td></tr>
+                  <tr><td style={{padding: '1rem', border: '1px solid rgba(255,255,255,0.1)'}}>Soul Matching</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(124, 58, 237, 0.2)', fontWeight: 700}}>✅ Unique</td></tr>
+                  <tr><td style={{padding: '1rem', border: '1px solid rgba(255,255,255,0.1)'}}>Physical Books</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)'}}>❌</td><td style={{padding: '1rem', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(124, 58, 237, 0.2)', fontWeight: 700}}>✅ Unique</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Business Model */}
       <section className={`${styles.section} ${styles.businessSection}`}>
         <div className="container">
@@ -437,6 +485,66 @@ export default function PitchDeckPage() {
                   <p>API access for third-party apps and smart devices</p>
                 </div>
               </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* UNIT ECONOMICS */}
+      <section className={styles.section} style={{background: 'rgba(124, 58, 237, 0.05)'}}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <BarChart3 className={styles.icon} />
+              Unit Economics - Proven Model
+            </h2>
+            
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginTop: '3rem'}}>
+              <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', padding: '2rem', textAlign: 'center'}}>
+                <div style={{fontSize: '3rem', fontWeight: 800, background: 'linear-gradient(135deg, #7c3aed, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '1rem'}}>$15-25</div>
+                <h4 style={{fontSize: '1.2rem', marginBottom: '0.5rem'}}>CAC</h4>
+                <p style={{color: '#94a3b8', fontSize: '0.9rem'}}>Customer Acquisition Cost</p>
+              </div>
+              <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', padding: '2rem', textAlign: 'center'}}>
+                <div style={{fontSize: '3rem', fontWeight: 800, background: 'linear-gradient(135deg, #7c3aed, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '1rem'}}>$180-240</div>
+                <h4 style={{fontSize: '1.2rem', marginBottom: '0.5rem'}}>LTV</h4>
+                <p style={{color: '#94a3b8', fontSize: '0.9rem'}}>Lifetime Value (3 years)</p>
+              </div>
+              <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', padding: '2rem', textAlign: 'center'}}>
+                <div style={{fontSize: '3rem', fontWeight: 800, background: 'linear-gradient(135deg, #7c3aed, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '1rem'}}>7-12x</div>
+                <h4 style={{fontSize: '1.2rem', marginBottom: '0.5rem'}}>LTV:CAC</h4>
+                <p style={{color: '#94a3b8', fontSize: '0.9rem'}}>World-class ratio</p>
+              </div>
+              <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', padding: '2rem', textAlign: 'center'}}>
+                <div style={{fontSize: '3rem', fontWeight: 800, background: 'linear-gradient(135deg, #7c3aed, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '1rem'}}>85%</div>
+                <h4 style={{fontSize: '1.2rem', marginBottom: '0.5rem'}}>Margin</h4>
+                <p style={{color: '#94a3b8', fontSize: '0.9rem'}}>Gross margin</p>
+              </div>
+              <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', padding: '2rem', textAlign: 'center'}}>
+                <div style={{fontSize: '3rem', fontWeight: 800, background: 'linear-gradient(135deg, #7c3aed, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '1rem'}}>5-8%</div>
+                <h4 style={{fontSize: '1.2rem', marginBottom: '0.5rem'}}>Conversion</h4>
+                <p style={{color: '#94a3b8', fontSize: '0.9rem'}}>Free → Premium</p>
+              </div>
+              <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', padding: '2rem', textAlign: 'center'}}>
+                <div style={{fontSize: '3rem', fontWeight: 800, background: 'linear-gradient(135deg, #7c3aed, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '1rem'}}>18mo</div>
+                <h4 style={{fontSize: '1.2rem', marginBottom: '0.5rem'}}>Retention</h4>
+                <p style={{color: '#94a3b8', fontSize: '0.9rem'}}>Average customer stay</p>
+              </div>
+            </div>
+
+            {/* Revenue Pie Chart */}
+            <div style={{marginTop: '4rem'}}>
+              <h3 style={{textAlign: 'center', fontSize: '2rem', marginBottom: '2rem'}}>Revenue Breakdown</h3>
+              <img 
+                src="/images/revenue-pie-chart.png" 
+                alt="Revenue Streams"
+                style={{maxWidth: '600px', width: '100%', margin: '0 auto', display: 'block', borderRadius: '12px'}}
+              />
             </div>
           </motion.div>
         </div>
@@ -679,6 +787,63 @@ export default function PitchDeckPage() {
             <div className={styles.futurePlans}>
               <h3>Beyond Software</h3>
               <p>We're not just building an app—we're creating a <strong>daily companion embedded into users' routines</strong> through dedicated AI-powered hardware like talking clocks and home assistants that provide morning mantras, daily guidance, and spiritual reminders.</p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* DEVELOPER RECRUITMENT */}
+      <section className={`${styles.section} ${styles.recruitmentSection}`} style={{background: 'linear-gradient(135deg, rgba(15, 15, 35, 0.8), rgba(26, 11, 46, 0.8))'}}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Code className={styles.icon} />
+              The Ask - Join Our Pre-Launch Team
+            </h2>
+            
+            <div className={styles.askContent} style={{marginTop: '3rem'}}>
+              <div className={styles.askText} style={{textAlign: 'center', marginBottom: '3rem'}}>
+                <h3 style={{fontSize: '2rem', marginBottom: '1rem'}}>We're Pre-Launch & Seeking Professional Developers</h3>
+                <p style={{fontSize: '1.2rem', color: '#cbd5e1', maxWidth: '800px', margin: '0 auto'}}>Malola is in active development. We're looking for talented engineers who are passionate about cultural AI and want to build something meaningful that impacts millions.</p>
+              </div>
+
+              <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginBottom: '3rem'}}>
+                <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', padding: '2.5rem', textAlign: 'center'}}>
+                  <Smartphone size={48} style={{color: '#7c3aed', marginBottom: '1rem'}} />
+                  <h4 style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>Mobile Developers</h4>
+                  <p style={{color: '#3b82f6', fontWeight: 600}}>React Native or Flutter</p>
+                </div>
+                <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', padding: '2.5rem', textAlign: 'center'}}>
+                  <Database size={48} style={{color: '#7c3aed', marginBottom: '1rem'}} />
+                  <h4 style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>Backend Engineers</h4>
+                  <p style={{color: '#3b82f6', fontWeight: 600}}>Node.js / Python</p>
+                </div>
+                <div style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', padding: '2.5rem', textAlign: 'center'}}>
+                  <Code size={48} style={{color: '#7c3aed', marginBottom: '1rem'}} />
+                  <h4 style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>AI/ML Engineers</h4>
+                  <p style={{color: '#3b82f6', fontWeight: 600}}>NLP, LLM fine-tuning</p>
+                </div>
+              </div>
+
+              <div style={{background: 'linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(59, 130, 246, 0.2))', border: '2px solid rgba(124, 58, 237, 0.5)', borderRadius: '20px', padding: '3rem', textAlign: 'center'}}>
+                <h3 style={{fontSize: '2rem', marginBottom: '2rem'}}>💰 Funding Request: $250K Seed Round</h3>
+                <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem'}}>
+                  <div style={{background: 'rgba(0,0,0,0.3)', padding: '1.5rem', borderRadius: '12px'}}>
+                    <strong style={{display: 'block', fontSize: '1.3rem', color: '#7c3aed'}}>$150K</strong> Development
+                  </div>
+                  <div style={{background: 'rgba(0,0,0,0.3)', padding: '1.5rem', borderRadius: '12px'}}>
+                    <strong style={{display: 'block', fontSize: '1.3rem', color: '#7c3aed'}}>$50K</strong> AI Infra
+                  </div>
+                  <div style={{background: 'rgba(0,0,0,0.3)', padding: '1.5rem', borderRadius: '12px'}}>
+                    <strong style={{display: 'block', fontSize: '1.3rem', color: '#7c3aed'}}>$30K</strong> Marketing
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
