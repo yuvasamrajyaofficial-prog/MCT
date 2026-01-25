@@ -40,27 +40,28 @@ export default function PitchDeckPage() {
           >
             <div className={styles.badge}>
               <Sparkles size={16} />
-              <span>Pre-Launch - Seeking Developers</span>
+              <span>Pre-Launch - Seeking Developers & Investment</span>
             </div>
             <h1 className={styles.heroTitle}>
               MALOLA
-              <span className={styles.gradient}>Culturally-Rooted AI Platform</span>
+              <span className={styles.gradient}>Complete Cultural AI Ecosystem</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Ancient Wisdom Meets Modern Technology - Your Daily AI Companion for Spiritual & Cultural Guidance
+              Scriptures • Audio • AI Chat • Astrology • Soul Matching • Book Store<br/>
+              Everything For Your Spiritual Journey, In One Platform
             </p>
             <div className={styles.heroStats}>
               <div className={styles.statItem}>
-                <strong>$50B</strong>
-                <span>Global Market</span>
+                <strong>$256B</strong>
+                <span>Total Market (TAM)</span>
               </div>
               <div className={styles.statItem}>
-                <strong>500M+</strong>
-                <span>Potential Users</span>
+                <strong>700M+</strong>
+                <span>Indian Smartphones</span>
               </div>
               <div className={styles.statItem}>
-                <strong>4-in-1</strong>
-                <span>Unified Platform</span>
+                <strong>49.19%</strong>
+                <span>Astrology CAGR</span>
               </div>
             </div>
           </motion.div>
@@ -82,10 +83,10 @@ export default function PitchDeckPage() {
             </h2>
             <div className={styles.visionContent}>
               <p className={styles.visionText}>
-                We are building a <strong>culturally rooted, AI-powered knowledge and guidance platform</strong> designed to serve everyday users—starting with Indian households and expanding globally. Our core product combines digital scriptures, audio libraries, astrology, and conversational AI into a single personalized experience.
+                We are building a <strong>complete cultural AI ecosystem</strong> that unifies 7 essential features: digital scripture library, audio content, AI voice & text chat, astrology insights, soul matching for marriage, physical book ordering, and e-commerce—all in one platform designed for Indian households and expanding globally.
               </p>
               <p className={styles.visionText}>
-                Users can <strong>read, listen, ask questions, and receive guidance</strong> about life, spirituality, traditions, and daily decisions in their preferred language, making ancient and cultural knowledge accessible, conversational, and practical for modern life.
+                Users can <strong>read scriptures, listen to mantras, chat with AI, consult astrology, find soul mates, and order physical books</strong>—all while receiving personalized guidance in their native language, making ancient wisdom accessible and practical for modern life.
               </p>
             </div>
           </motion.div>
@@ -146,34 +147,42 @@ export default function PitchDeckPage() {
             </h2>
             <div className={styles.solutionContent}>
               <div className={styles.solutionText}>
-                <h3>4-in-1 Intelligent Platform</h3>
+                <h3>7-in-1 Complete Ecosystem</h3>
                 <p className={styles.subtitle}>
-                  All the features users need in one unified, personalized AI companion
+                  Everything users need for their spiritual journey, unified in one platform
                 </p>
                 <div className={styles.featureList}>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span><strong>Digital Scripture Library:</strong> Read & listen to sacred texts</span>
+                    <span><strong>📖 Digital Scripture Library:</strong> Read sacred texts anytime, anywhere</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span><strong>Personalized Audio:</strong> Cultural stories, mantras, wisdom</span>
+                    <span><strong>🎧 Audio Library:</strong> Listen to mantras, stories, wisdom during commute</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span><strong>AI Astrology:</strong> Personalized life guidance & predictions</span>
+                    <span><strong>🤖 AI Voice & Text Chat:</strong> Ask spiritual questions, get personalized guidance</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span><strong>Conversational AI:</strong> Text & voice assistant in your language</span>
+                    <span><strong>⭐ Astrology Insights:</strong> Birth chart, daily predictions, life guidance</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span><strong>Vernacular-First:</strong> Hindi, Tamil, Telugu, Bengali & more</span>
+                    <span><strong>💕 Soul Matching:</strong> Astrology-based compatibility for marriage</span>
                   </div>
                   <div className={styles.feature}>
                     <CheckCircle2 size={20} />
-                    <span><strong>Future Hardware:</strong> AI talking clocks, home assistants</span>
+                    <span><strong>📚 Physical Book Store:</strong> Order authentic scriptures delivered home</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>🗣️ Vernacular-First:</strong> Hindi, Tamil, Telugu, Bengali & 10+ languages</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>🔮 Future Hardware:</strong> AI talking clocks, home assistants (2027)</span>
                   </div>
                 </div>
               </div>
@@ -246,24 +255,24 @@ export default function PitchDeckPage() {
             <div className={styles.marketOpportunityGrid}>
               <div className={styles.marketCard}>
                 <div className={styles.marketLabel}>TAM</div>
-                <div className={styles.marketValue}>$50B</div>
-                <p>Global Wellness + Spiritual Guidance Market</p>
+                <div className={styles.marketValue}>$256B</div>
+                <p>Global Mental Wellness ($186B) + Spiritual Market ($70B) - 2025</p>
                 <div className={styles.progressBar}>
                   <div className={styles.progress} style={{ width: '100%' }}></div>
                 </div>
               </div>
               <div className={styles.marketCard}>
                 <div className={styles.marketLabel}>SAM</div>
-                <div className={styles.marketValue}>$30B</div>
-                <p>Indian Spiritual & Wellness Market by 2028</p>
+                <div className={styles.marketValue}>$72B</div>
+                <p>Indian Wellness + Digital Spiritual Market - 2025</p>
                 <div className={styles.progressBar}>
                   <div className={styles.progress} style={{ width: '75%' }}></div>
                 </div>
               </div>
               <div className={styles.marketCard}>
                 <div className={styles.marketLabel}>SOM</div>
-                <div className={styles.marketValue}>$5B</div>
-                <p>Our Target Segment (Tier 2/3 + Vernacular)</p>
+                <div className={styles.marketValue}>$8.1B</div>
+                <p>Astrology Apps ($1.8B) + AI Companions + Vernacular Platforms</p>
                 <div className={styles.progressBar}>
                   <div className={styles.progress} style={{ width: '50%' }}></div>
                 </div>

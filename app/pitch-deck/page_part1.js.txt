@@ -1,0 +1,653 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { 
+  TrendingUp, 
+  Users, 
+  Target, 
+  Zap, 
+  Globe, 
+  DollarSign,
+  BookOpen,
+  Mic,
+  Star,
+  MessageCircle,
+  Sparkles,
+  ArrowRight,
+  CheckCircle2,
+  Code,
+  Smartphone,
+  Database,
+  Heart,
+  ShoppingCart,
+  Video,
+  Volume2,
+  BarChart3,
+  PieChart,
+  TrendingDown
+} from "lucide-react";
+import styles from "./PitchDeck.module.css";
+
+export default function PitchDeckPage() {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  };
+
+  return (
+    <main className={styles.main}>
+      {/* CHAPTER 1: HERO & VISION */}
+      <section className={styles.hero}>
+        <div className="container">
+          <motion.div 
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className={styles.heroContent}
+          >
+            <div className={styles.badge}>
+              <Sparkles size={16} />
+              <span>Pre-Launch - Seeking Developers & Investment</span>
+            </div>
+            <h1 className={styles.heroTitle}>
+              MALOLA
+              <span className={styles.gradient}>Your Culturally-Rooted AI Companion</span>
+            </h1>
+            <p className={styles.heroSubtitle}>
+              Ancient Scriptures • Astrology • AI Guidance • Soul Matching <br/>
+              Everything Your Spiritual Journey Needs, In One Platform
+            </p>
+            <div className={styles.heroStats}>
+              <div className={styles.statItem}>
+                <strong>$256B</strong>
+                <span>Total Market (TAM)</span>
+              </div>
+              <div className={styles.statItem}>
+                <strong>700M+</strong>
+                <span>Indian Smartphone Users</span>
+              </div>
+              <div className={styles.statItem}>
+                <strong>49.19%</strong>
+                <span>Astrology Market CAGR</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CHAPTER 2: THE VISION */}
+      <section className={`${styles.section} ${styles.visionSection}`}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Target className={styles.icon} />
+              Chapter 1: Our Vision
+            </h2>
+            <div className={styles.visionContent}>
+              <p className={styles.visionText}>
+                We are building a <strong>culturally rooted, AI-powered platform</strong> that combines sacred scriptures, astrology, AI guidance, and e-commerce into a single unified experience for Indian households and the global diaspora.
+              </p>
+              <p className={styles.visionText}>
+                Users can <strong>read digital scriptures, listen to audio libraries, chat with AI (voice & text), consult astrology, find soul matches for marriage, and purchase physical scriptures</strong> - all while receiving personalized guidance in their native language.
+              </p>
+              <div className={styles.visionImage}>
+                <img 
+                  src="/images/ai-cultural-assistant.png" 
+                  alt="Spiritual AI Platform"
+                  className={styles.chartImage}
+                />
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CHAPTER 3: THE PROBLEM */}
+      <section className={styles.section}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <TrendingDown className={styles.icon} />
+              Chapter 2: The Problem - Fragmented Solutions
+            </h2>
+            <div className={styles.problemGrid}>
+              <div className={styles.problemCard}>
+                <BookOpen size={48} className={styles.problemIcon} />
+                <h3>Static Scripture Apps</h3>
+                <p>Just reading, no interaction, no AI assistance</p>
+              </div>
+              <div className={styles.problemCard}>
+                <Star size={48} className={styles.problemIcon} />
+                <h3>Manual Astrology</h3>
+                <p>Expensive, inconsistent, no digital soul matching</p>
+              </div>
+              <div className={styles.problemCard}>
+                <Mic size={48} className={styles.problemIcon} />
+                <h3>Separate Audio Platforms</h3>
+                <p>No cultural context, no personalization</p>
+              </div>
+              <div className={styles.problemCard}>
+                <MessageCircle size={48} className={styles.problemIcon} />
+                <h3>Generic AI Chatbots</h3>
+                <p>No spiritual or cultural understanding</p>
+              </div>
+              <div className={styles.problemCard}>
+                <Heart size={48} className={styles.problemIcon} />
+                <h3>Disconnected Matrimony</h3>
+                <p>No astrology-based soul matching integration</p>
+              </div>
+              <div className={styles.problemCard}>
+                <ShoppingCart size={48} className={styles.problemIcon} />
+                <h3>Physical Book Hassle</h3>
+                <p>Hard to find authentic religious texts</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CHAPTER 4: THE SOLUTION - COMPLETE PLATFORM */}
+      <section className={`${styles.section} ${styles.solutionSection}`}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Zap className={styles.icon} />
+              Chapter 3: Our Solution - All-in-One Platform
+            </h2>
+            <div className={styles.solutionContent}>
+              <div className={styles.solutionText}>
+                <h3>7 Powerful Features, One Unified Experience</h3>
+                <p className={styles.subtitle}>
+                  Everything users need for their spiritual and cultural journey
+                </p>
+                <div className={styles.featureList}>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>📖 Digital Scripture Library:</strong> Read sacred texts anytime, anywhere</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>🎧 Audio Library:</strong> Listen to mantras, stories, wisdom in commute</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>🤖 AI Voice & Text Chat:</strong> Ask spiritual questions, get personalized guidance</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>⭐ Astrology Insights:</strong> Birth chart, daily predictions, life guidance</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>💕 Soul Matching:</strong> Astrology-based compatibility for marriage</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>📚 Physical Book Store:</strong> Order authentic scriptures delivered home</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <CheckCircle2 size={20} />
+                    <span><strong>🗣️ Vernacular-First:</strong> Hindi, Tamil, Telugu, Bengali & 10+ languages</span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.solutionVisual}>
+                <div className={styles.productShowcase}>
+                  <img 
+                    src="/images/malola-full-showcase.jpg" 
+                    alt="Malola Complete Platform"
+                    className={styles.productImage}
+                  />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CHAPTER 5: MARKET OPPORTUNITY WITH REAL DATA */}
+      <section className={`${styles.section} ${styles.marketSection}`}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <TrendingUp className={styles.icon} />
+              Chapter 4: Market Opportunity - $256B TAM
+            </h2>
+            
+            {/* Market Funnel */}
+            <div className={styles.marketFunnelImage}>
+              <img 
+                src="/images/market-opportunity-funnel.png" 
+                alt="Market Opportunity Funnel"
+                className={styles.chartImage}
+              />
+            </div>
+
+            <div className={styles.marketBreakdown}>
+              <div className={styles.marketCard}>
+                <div className={styles.marketLabel}>TAM</div>
+                <div className={styles.marketValue}>$256B</div>
+                <p>Global Mental Wellness ($186B) + Spiritual Market ($70B)</p>
+              </div>
+              <div className={styles.marketCard}>
+                <div className={styles.marketLabel}>SAM</div>
+                <div className={styles.marketValue}>$72B</div>
+                <p>Indian Wellness + Digital Spiritual Market (2025)</p>
+              </div>
+              <div className={styles.marketCard}>
+                <div className={styles.marketLabel}>SOM</div>
+                <div className={styles.marketValue}>$8.1B</div>
+                <p>Astrology Apps ($1.8B) + AI Companions + Vernacular Platforms</p>
+              </div>
+            </div>
+
+            {/* CAGR Comparison */}
+            <div className={styles.cagrSection}>
+              <h3>Market Growth Rates (CAGR)</h3>
+              <div className={styles.chartContainer}>
+                <img 
+                  src="/images/cagr-comparison-chart.png" 
+                  alt="Market Growth Comparison"
+                  className={styles.chartImage}
+                />
+              </div>
+              <div className={styles.cagrInsights}>
+                <div className={styles.insightCard}>
+                  <strong>49.19%</strong>
+                  <p>Indian Astrology Apps CAGR (Fastest Growing!)</p>
+                </div>
+                <div className={styles.insightCard}>
+                  <strong>30.8%</strong>
+                  <p>AI Companion Devices CAGR</p>
+                </div>
+                <div className={styles.insightCard}>
+                  <strong>$163M → $1.8B</strong>
+                  <p>Indian Astrology Market (2024-2030)</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tier 2/3 Opportunity */}
+            <div className={styles.tierSection}>
+              <h3>Tier 2/3 India - The Untapped Goldmine</h3>
+              <div className={styles.chartContainer}>
+                <img 
+                  src="/images/india-tier-cities-map.png" 
+                  alt="Tier 2/3 Cities Opportunity"
+                  className={styles.chartImage}
+                />
+              </div>
+              <div className={styles.tierStats}>
+                <div className={styles.statCard}>
+                  <strong>60%</strong>
+                  <p>of Indian e-commerce transactions from Tier 2/3</p>
+                </div>
+                <div className={styles.statCard}>
+                  <strong>95%</strong>
+                  <p>of Tier 2/3 users prefer vernacular content</p>
+                </div>
+                <div className={styles.statCard}>
+                  <strong>700M+</strong>
+                  <p>Smartphone users in India</p>
+                </div>
+                <div className={styles.statCard}>
+                  <strong>950M+</strong>
+                  <p>Internet users in India</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CHAPTER 6: BUSINESS MODEL & MONETIZATION */}
+      <section className={`${styles.section} ${styles.businessSection}`}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <DollarSign className={styles.icon} />
+              Chapter 5: Business Model & Monetization
+            </h2>
+
+            {/* Free vs Premium */}
+            <div className={styles.pricingComparison}>
+              <h3>Free Tier (Ad-Supported) vs Premium</h3>
+              <div className={styles.pricingGrid}>
+                <div className={styles.pricingCard}>
+                  <h3>Free with Ads</h3>
+                  <div className={styles.price}>$0<span>/month</span></div>
+                  <ul className={styles.pricingFeatures}>
+                    <li>✅ Basic scripture reading (100 pages/month)</li>
+                    <li>✅ Limited audio library (10 hours/month)</li>
+                    <li>✅ AI chat (10 messages/day)</li>
+                    <li>✅ Daily horoscope</li>
+                    <li>🎯 Ads displayed between content</li>
+                    <li>❌ No voice AI</li>
+                    <li>❌ No soul matching</li>
+                    <li>❌ No physical book orders</li>
+                  </ul>
+                </div>
+
+                <div className={`${styles.pricingCard} ${styles.featured}`}>
+                  <div className={styles.popularBadge}>Most Popular</div>
+                  <h3>Premium</h3>
+                  <div className={styles.price}>$4.99<span>/month</span></div>
+                  <ul className={styles.pricingFeatures}>
+                    <li>✅ Unlimited scripture library</li>
+                    <li>✅ Unlimited audio content</li>
+                    <li>✅ Unlimited AI chat (text + voice)</li>
+                    <li>✅ Full astrology insights</li>
+                    <li>✅ Soul matching for marriage</li>
+                    <li>✅ Ad-free experience</li>
+                    <li>✅ Offline downloads</li>
+                    <li>✅ Physical book ordering</li>
+                  </ul>
+                </div>
+
+                <div className={styles.pricingCard}>
+                  <h3>Family Plan</h3>
+                  <div className={styles.price}>$9.99<span>/month</span></div>
+                  <ul className={styles.pricingFeatures}>
+                    <li>✅ All Premium features</li>
+                    <li>✅ Up to 5 family members</li>
+                    <li>✅ Personalized for each member</li>
+                    <li>✅ Family astrology insights</li>
+                    <li>✅ Bulk book discounts</li>
+                    <li>✅ Priority customer support</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Revenue Streams */}
+            <div className={styles.revenueSection}>
+              <h3>Revenue Streams Breakdown</h3>
+              <div className={styles.revenueChartContainer}>
+                <img 
+                  src="/images/revenue-pie-chart.png" 
+                  alt="Revenue Streams"
+                  className={styles.chartImageSmall}
+                />
+                <div className={styles.revenueList}>
+                  <div className={styles.revenueItem}>
+                    <strong>60% - Premium Subscriptions</strong>
+                    <p>$4.99-9.99/month recurring revenue</p>
+                  </div>
+                  <div className={styles.revenueItem}>
+                    <strong>20% - Astrology Consultations</strong>
+                    <p>One-time and recurring astrology services</p>
+                  </div>
+                  <div className={styles.revenueItem}>
+                    <strong>15% - Hardware Devices (Future)</strong>
+                    <p>AI talking clocks, home assistants (2027)</p>
+                  </div>
+                  <div className={styles.revenueItem}>
+                    <strong>5% - B2B/Enterprise</strong>
+                    <p>Temples, institutions, corporate wellness</p>
+                  </div>
+                  <div className={styles.revenueItem}>
+                    <strong>Ad Revenue (Free Tier)</strong>
+                    <p>$2-5 per user/year from display ads</p>
+                  </div>
+                  <div className={styles.revenueItem}>
+                    <strong>Physical Book Sales</strong>
+                    <p>10-20% margin on scripture sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Unit Economics */}
+            <div className={styles.unitEconomics}>
+              <h3>Unit Economics</h3>
+              <div className={styles.metricsGrid}>
+                <div className={styles.metric}>
+                  <div className={styles.metricValue}>$15-25</div>
+                  <div className={styles.metricLabel}>CAC (Customer Acquisition Cost)</div>
+                </div>
+                <div className={styles.metric}>
+                  <div className={styles.metricValue}>$180-240</div>
+                  <div className={styles.metricLabel}>LTV (Lifetime Value, 3 years)</div>
+                </div>
+                <div className={styles.metric}>
+                  <div className={styles.metricValue}>7-12x</div>
+                  <div className={styles.metricLabel}>LTV:CAC Ratio</div>
+                </div>
+                <div className={styles.metric}>
+                  <div className={styles.metricValue}>85%</div>
+                  <div className={styles.metricLabel}>Gross Margin</div>
+                </div>
+                <div className={styles.metric}>
+                  <div className={styles.metricValue}>5-8%</div>
+                  <div className={styles.metricLabel}>Free → Premium Conversion</div>
+                </div>
+                <div className={styles.metric}>
+                  <div className={styles.metricValue">18 months</div>
+                  <div className={styles.metricLabel}>Avg. Customer Retention</div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CHAPTER 7: TARGET MARKET & USER SEGMENTATION */}
+      <section className={styles.section}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Users className={styles.icon} />
+              Chapter 6: Target Market & User Segmentation
+            </h2>
+            
+            <div className={styles.segmentationChart}>
+              <img 
+                src="/images/user-segmentation-chart.png" 
+                alt="User Segmentation"
+                className={styles.chartImage}
+              />
+            </div>
+
+            <div className={styles.targetMarketGrid}>
+              <div className={styles.targetCard}>
+                <h3>Primary: Tier 2/3 Cities (65%)</h3>
+                <ul>
+                  <li>Middle-class Indian families</li>
+                  <li>Age 25-55, spiritual seekers</li>
+                  <li>Vernacular language preference</li>
+                  <li>Smartphone-savvy, value-conscious</li>
+                  <li>Strong cultural and religious roots</li>
+                </ul>
+              </div>
+              <div className={styles.targetCard}>
+                <h3>Secondary: Metro Cities (25%)</h3>
+                <ul>
+                  <li>Urban professionals seeking balance</li>
+                  <li>English + regional language users</li>
+                  <li>Higher willingness to pay</li>
+                  <li>Soul matching for marriage</li>
+                </ul>
+              </div>
+              <div className={styles.targetCard}>
+                <h3>Tertiary: Global Diaspora (10%)</h3>
+                <ul>
+                  <li>NRIs in US, UK, Middle East</li>
+                  <li>Seeking cultural connection</li>
+                  <li>Premium ARPU potential</li>
+                  <li>Physical book shipping</li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CHAPTER 8: COMPETITIVE ANALYSIS */}
+      <section className={`${styles.section} ${styles.competitiveSection}`}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className={styles.sectionTitle}>
+              <Globe className={styles.icon} />
+              Chapter 7: Competitive Landscape - Why We Win
+            </h2>
+            
+            <div className={styles.competitiveTable}>
+              <table className={styles.comparisonTable}>
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Scripture Apps</th>
+                    <th>Astrology Platforms</th>
+                    <th>Generic AI</th>
+                    <th className={styles.ourColumn}>Malola (Us)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Digital Scriptures</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td className={styles.ourColumn}>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Audio Library</td>
+                    <td>Partial</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td className={styles.ourColumn}>✅</td>
+                  </tr>
+                  <tr>
+                    <td>AI Chatbot</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✅ (Generic)</td>
+                    <td className={styles.ourColumn}>✅ (Cultural)</td>
+                  </tr>
+                  <tr>
+                    <td>Voice AI</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>Partial</td>
+                    <td className={styles.ourColumn}>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Astrology</td>
+                    <td>❌</td>
+                    <td>✅ (Manual)</td>
+                    <td>❌</td>
+                    <td className={styles.ourColumn}>✅ (AI-Powered)</td>
+                  </tr>
+                  <tr>
+                    <td>Soul Matching</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td className={styles.ourColumn}>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Physical Books</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td className={styles.ourColumn}>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Vernacular Support</td>
+                    <td>Partial</td>
+                    <td>Partial</td>
+                    <td>❌</td>
+                    <td className={styles.ourColumn}>✅ 10+ Languages</td>
+                  </tr>
+                  <tr>
+                    <td>Cultural Context</td>
+                    <td>Partial</td>
+                    <td>Partial</td>
+                    <td>❌</td>
+                    <td className={styles.ourColumn}>✅ Deep</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className={styles.competitiveAdvantages}>
+              <h3>Our Unique Advantages</h3>
+              <div className={styles.advantageGrid}>
+                <div className={styles.advantageCard}>
+                  <CheckCircle2 size={32} className={styles.advantageIcon} />
+                  <h4>Only All-in-One Platform</h4>
+                  <p>7 features unified - scriptures, audio, AI, astrology, soul matching, books</p>
+                </div>
+                <div className={styles.advantageCard}>
+                  <CheckCircle2 size={32} className={styles.advantageIcon} />
+                  <h4>Cultural AI Intelligence</h4>
+                  <p>Trained on Indian scriptures, traditions, festivals, cultural nuances</p>
+                </div>
+                <div className={styles.advantageCard}>
+                  <CheckCircle2 size={32} className={styles.advantageIcon} />
+                  <h4>Vernacular-First Design</h4>
+                  <p>10+ Indian languages with voice support - not just translations</p>
+                </div>
+                <div className={styles.advantageCard}>
+                  <CheckCircle2 size={32} className={styles.advantageIcon} />
+                  <h4>Freemium + Ads Model</h4>
+                  <p>Accessible to all with free tier, sustainable with premium + ads</p>
+                </div>
+                <div className={styles.advantageCard}>
+                  <CheckCircle2 size={32} className={styles.advantageIcon} />
+                  <h4>Hardware Vision</h4>
+                  <p>Beyond app: AI talking clocks, home assistants for daily rituals (2027)</p>
+                </div>
+                <div className={styles.advantageCard}>
+                  <CheckCircle2 size={32} className={styles.advantageIcon} />
+                  <h4>E-commerce Integration</h4>
+                  <p>Digital to physical - order authentic scriptures delivered home</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* TO BE CONTINUED - Due to length, splitting into parts */}
+      {/* Will continue with: Roadmap, Financial Projections, The Ask, Vision sections */}
+      
+    </main>
+  );
+}
