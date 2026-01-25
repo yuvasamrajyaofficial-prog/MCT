@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://prabas.co/sitemap.xml',
+    sitemap: 'https://malolacosmictech.com/sitemap.xml',
   };
 }

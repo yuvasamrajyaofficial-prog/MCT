@@ -73,11 +73,11 @@ export default function HeroSection() {
         </div>
 
         <h2 className={styles.staticText}>
-          Building the Future on the Foundation of Values.
+          Malola Cosmic Technologies - Transcending through Technology.
         </h2>
 
         <p className={styles.subHeadline}>
-          PraBaS & Co. pioneers AI solutions for Education, Mental Wellness, and Human Potential.
+          MCT pioneers AI solutions for Mental Wellness and Human Potential.
         </p>
 
         <div className={styles.ctaGroup}>

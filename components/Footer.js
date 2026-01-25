@@ -10,8 +10,8 @@ export default function Footer() {
       <div className="container">
         <div className={styles.content}>
           <div className={styles.brand}>
-            <h3 className={styles.logo}>PraBaS & Co.</h3>
-            <p className={styles.quote}>&quot;Guided by Paramananda. Driven by Logic.&quot;</p>
+            <h3 className={styles.logo}>MCT</h3>
+            <p className={styles.quote}>&quot;Malola Cosmic Technologies - Transcending through Technology.&quot;</p>
           </div>
 
           <div className={styles.links}>
@@ -30,13 +30,13 @@ export default function Footer() {
                 <a href="#" aria-label="GitHub"><Github size={20} /></a>
                 <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
                 <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
-                <a href="mailto:contact@prabas.co" aria-label="Email"><Mail size={20} /></a>
+                <a href="mailto:contact@malolacosmictech.com" aria-label="Email"><Mail size={20} /></a>
               </div>
             </div>
           </div>
         </div>
         <div className={styles.copyright}>
-          <p>© 2025 PraBaS & Co. | Established in India.</p>
+          <p>© 2025 MCT - Malola Cosmic Technologies | Established in India.</p>
         </div>
       </div>
     </footer>

@@ -20,7 +20,7 @@ export default function OriginSection() {
         <div className={styles.content}>
           <h2 className={styles.heading}>The Origin</h2>
           <p className={styles.text}>
-            &quot;PraBaS is not just a company; it is a promise. Founded by Prashant Hiremath, it carries the resilient DNA of Basayya and the vision of Neelaganga Agro. We combine the hard work of the past with the smart strategy of the future.&quot;
+            &quot;MCT is not just a company; it is a cosmic mission. Founded by Prashant Hiremath, Malola Cosmic Technologies transcends traditional boundaries to merge ancient wisdom with cutting-edge AI, creating pathways to mental wellness and human potential.&quot;
           </p>
         </div>
       </div>

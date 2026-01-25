@@ -14,9 +14,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "PraBaS & Co. | The Digital Enlightenment",
+  title: "MCT | Malola Cosmic Technologies",
   description:
-    "Pioneering AI solutions for Education, Mental Wellness, and Human Potential.",
+    "Pioneering AI solutions for Mental Wellness and Human Potential. Malola Cosmic Technologies.",
 };
 
 import TransitionProvider from "@/components/TransitionProvider";

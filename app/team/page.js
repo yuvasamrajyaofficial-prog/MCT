@@ -51,7 +51,7 @@ export default function TeamPage() {
             transition={{ delay: 0.1 }}
             className={styles.subtitle}
           >
-            The minds behind PraBaS & Co., dedicated to building a future grounded in values and powered by intelligence.
+            The minds behind MCT, dedicated to building a future through AI-powered wellness and human potential.
           </motion.p>
         </div>
       </section>

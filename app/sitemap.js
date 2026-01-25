@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://prabas.co';
+  const baseUrl = 'https://malolacosmictech.com';
   
   // Static routes
   const routes = [

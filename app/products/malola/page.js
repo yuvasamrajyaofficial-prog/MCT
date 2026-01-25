@@ -1,8 +1,8 @@
 import ProductLayout from "@/components/ProductLayout";
 
 export const metadata = {
-  title: "Malola / Soulink - AI Wellness Platform | Prabas & Co.",
-  description: "Malola (Soulink) combines AI conversational support with Vedic astrology to provide holistic mental and spiritual wellness guidance.",
+  title: "Malola / Soulink - AI Wellness Platform | MCT",
+  description: "Malola (Soulink) by Malola Cosmic Technologies combines AI conversational support with Vedic astrology to provide holistic mental and spiritual wellness guidance.",
 };
 
 export default function MalolaPage() {

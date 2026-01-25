@@ -1,4 +1,4 @@
-# PraBaS Website
+# MCT Website - Malola Cosmic Technologies
 
 A modern, dynamic website built with Next.js, featuring immersive 3D elements and smooth animations.
 
