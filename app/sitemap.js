@@ -9,6 +9,7 @@ export default function sitemap() {
     '/team',
     '/careers',
     '/investors',
+    '/pitch-deck',
     '/products/malola',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
