@@ -1205,3 +1205,303 @@
 .futurePlans strong {
   color: #fff;
 }
+
+/* Unit Economics Section */
+.economicsSection {
+  background: rgba(124, 58, 237, 0.05);
+}
+
+.economicsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.economicCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.economicCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(124, 58, 237, 0.5);
+}
+
+.economicValue {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.economicCard h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.economicCard p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Chart Images */
+.chartImageMedium {
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.chartContainer {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+/* Competitive Analysis Table */
+.competitiveTableContainer {
+  overflow-x: auto;
+  margin-top: 2rem;
+  border-radius: 12px;
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.comparisonTable th,
+.comparisonTable td {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparisonTable thead {
+  background: rgba(124, 58, 237, 0.2);
+}
+
+.comparisonTable th {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.comparisonTable td {
+  color: #cbd5e1;
+}
+
+.comparisonTable tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ourColumn {
+  background: rgba(124, 58, 237, 0.3) !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+/* Developer Recruitment */
+.recruitmentSection {
+  background: linear-gradient(135deg, rgba(15, 15, 35, 0.8), rgba(26, 11, 46, 0.8));
+}
+
+.askContent {
+  margin-top: 3rem;
+}
+
+.askText {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.askText h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.askText p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rolesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.roleCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.roleCard:hover {
+  transform: translateY(-10px);
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
+}
+
+.roleCard svg {
+  color: #7c3aed;
+  margin-bottom: 1rem;
+}
+
+.roleCard h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.roleCard p {
+  color: #3b82f6;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.roleCard ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.roleCard li {
+  padding: 0.5rem 0;
+  color: #cbd5e1;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.roleCard li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #7c3aed;
+  font-weight: bold;
+}
+
+.fundingAsk {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(59, 130, 246, 0.2));
+  border: 2px solid rgba(124, 58, 237, 0.5);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.fundingAsk h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.fundingBreakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.fundingItem {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.fundingItem:hover {
+  transform: scale(1.05);
+}
+
+.fundingItem strong {
+  display: block;
+  font-size: 1.3rem;
+  color: #7c3aed;
+  margin-bottom: 0.5rem;
+}
+
+.fundingTimeline {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+.fundingTimeline strong {
+  color: #fff;
+}
+
+/* Revenue Detail Grid */
+.revenueDetailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.revenueDetailCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.revenueDetailCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+}
+
+.revenueDetailCard h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.revenueDetailCard p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.revenueDetailCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.revenueDetailCard li {
+  padding: 0.5rem 0;
+  color: #cbd5e1;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.revenueDetailCard li::before {
+  content: '?';
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+}
