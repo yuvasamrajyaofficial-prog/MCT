@@ -1505,3 +1505,74 @@
   left: 0;
   color: #3b82f6;
 }
+
+/* FIXES FOR SPACING AND STRUCTURE */
+.section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.sectionTitle {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.economicsSection {
+  background: rgba(124, 58, 237, 0.05);
+}
+
+.recruitmentSection {
+  background: linear-gradient(135deg, rgba(15, 15, 35, 0.8), rgba(26, 11, 46, 0.8));
+}
+
+.tableContainer {
+  overflow-x: auto;
+  margin-top: 3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.comparisonTable th, .comparisonTable td {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  min-width: 150px;
+}
+
+.comparisonTable th {
+  background: rgba(124, 58, 237, 0.2);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.comparisonTable td {
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.highlightCell {
+  background: rgba(124, 58, 237, 0.2) !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+.chartContainer {
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.chartImage {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

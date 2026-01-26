@@ -259,7 +259,7 @@ export default function PitchDeckPage() {
               <img 
                 src="/images/market-opportunity-funnel.png" 
                 alt="Market Opportunity"
-                style={{maxWidth: '700px', width: '100%', margin: '2rem auto', display: 'block', borderRadius: '12px'}}
+                className={styles.chartImage}
               />
             </div>
             <div className={styles.marketOpportunityGrid}>
@@ -373,8 +373,8 @@ export default function PitchDeckPage() {
               Competitive Analysis
             </h2>
             
-            <div style={{overflowX: 'auto', marginTop: '2rem'}}>
-              <table style={{width: '100%', borderCollapse: 'collapse', background: 'rgba(255,255,255,0.03)', borderRadius: '12px'}}>
+            <div className={styles.tableContainer}>
+              <table className={styles.comparisonTable}>
                 <thead>
                   <tr style={{background: 'rgba(124, 58, 237, 0.2)'}}>
                     <th style={{padding: '1rem', textAlign: 'left', border: '1px solid rgba(255,255,255,0.1)'}}>Feature</th>
@@ -491,7 +491,8 @@ export default function PitchDeckPage() {
       </section>
 
       {/* UNIT ECONOMICS */}
-      <section className={styles.section} style={{background: 'rgba(124, 58, 237, 0.05)'}}>
+      {/* UNIT ECONOMICS */}
+      <section className={`${styles.section} ${styles.economicsSection}`}>
         <div className="container">
           <motion.div
             initial="hidden"
@@ -543,7 +544,7 @@ export default function PitchDeckPage() {
               <img 
                 src="/images/revenue-pie-chart.png" 
                 alt="Revenue Streams"
-                style={{maxWidth: '600px', width: '100%', margin: '0 auto', display: 'block', borderRadius: '12px'}}
+                className={styles.chartImage}
               />
             </div>
           </motion.div>
@@ -688,68 +689,7 @@ export default function PitchDeckPage() {
         </div>
       </section>
 
-      {/* The Ask - Seeking Developers */}
-      <section className={`${styles.section} ${styles.askSection}`}>
-        <div className="container">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <h2 className={styles.sectionTitle}>
-              <Code className={styles.icon} />
-              We're Seeking Professional Developers
-            </h2>
-            <div className={styles.developersNeeded}>
-              <p className={styles.hiringText}>
-                We are in <strong>pre-launch phase</strong> and actively seeking skilled developers to build this platform with <strong>all features perfectly integrated</strong>. This is an opportunity to build something meaningful that impacts millions of lives.
-              </p>
-            </div>
 
-            <div className={styles.rolesGrid}>
-              <div className={styles.roleCard}>
-                <Smartphone size={32} />
-                <h3>Mobile Developers</h3>
-                <p>React Native or Flutter experts to build cross-platform app with offline-first architecture</p>
-              </div>
-              <div className={styles.roleCard}>
-                <Code size={32} />
-                <h3>Full-Stack Engineers</h3>
-                <p>Node.js/Python backend, React frontend, experience with scalable microservices</p>
-              </div>
-              <div className={styles.roleCard}>
-                <MessageCircle size={32} />
-                <h3>AI/ML Engineers</h3>
-                <p>NLP, LLM fine-tuning, multilingual AI, voice recognition & synthesis</p>
-              </div>
-              <div className={styles.roleCard}>
-                <Database size={32} />
-                <h3>Backend & DevOps</h3>
-                <p>Cloud infrastructure (AWS/GCP), databases, API design, CI/CD pipelines</p>
-              </div>
-            </div>
-
-            <div className={styles.fundingBox}>
-              <h3>Investment & Partnership Opportunities</h3>
-              <div className={styles.fundingDetails}>
-                <div className={styles.fundingItem}>
-                  <strong>Stage:</strong> Pre-seed
-                </div>
-                <div className={styles.fundingItem}>
-                  <strong>Seeking:</strong> $250K for development & team
-                </div>
-                <div className={styles.fundingItem}>
-                  <strong>Use of Funds:</strong> Hiring developers, product development, beta launch
-                </div>
-                <div className={styles.fundingItem}>
-                  <strong>Timeline:</strong> 6-month runway to beta launch
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Vision & Impact */}
       <section className={`${styles.section} ${styles.finalVisionSection}`}>
@@ -793,7 +733,7 @@ export default function PitchDeckPage() {
       </section>
 
       {/* DEVELOPER RECRUITMENT */}
-      <section className={`${styles.section} ${styles.recruitmentSection}`} style={{background: 'linear-gradient(135deg, rgba(15, 15, 35, 0.8), rgba(26, 11, 46, 0.8))'}}>
+      <section className={`${styles.section} ${styles.recruitmentSection}`}>
         <div className="container">
           <motion.div
             initial="hidden"
