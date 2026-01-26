@@ -33,10 +33,6 @@ export default function MalolaPage() {
       image="/images/malola-full-showcase.jpg"
     >
       <div className="prose prose-invert max-w-none">
-        <p className="text-lg text-gray-300 mb-6">
-          Malola (also known as Soulink) explores the intersection of technology and spirituality. It offers a holistic approach to wellness by combining AI-powered conversational therapy with deep astrological insights.
-        </p>
-
         <div className="mb-8 flex gap-4">
           <a 
             href="/pitch-deck" 
