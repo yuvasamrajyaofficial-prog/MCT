@@ -15,7 +15,7 @@ export default function ContactSection() {
     const formData = new FormData(e.target);
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbzlXMQtGqxPZ9tbtmc-P69C0hWiDcjdPC7iSUy02wvVqUSdJ3EQPu0RqzWO6PwJmCTrAQ/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycby0H7QhKhqCpu-ZMTO0q7kC77SiuurbE5feLgY0QQtrgneCw2JizOIRiVCMYY4HEPlJ0w/exec", {
         method: "POST",
         body: formData,
         mode: "no-cors" // Apps Script requires no-cors for simple POST redirects
@@ -61,6 +61,22 @@ export default function ContactSection() {
             </div>
             <div className={styles.group}>
               <input type="email" name="email" placeholder="Your Email" className={styles.input} required />
+            </div>
+            <div className={styles.group}>
+              <input type="tel" name="phone" placeholder="Phone Number" className={styles.input} required />
+            </div>
+            <div className={styles.group}>
+              <select name="service" className={styles.input} required defaultValue="">
+                <option value="" disabled>Select a Service Package</option>
+                <option value="Business Starter Website (₹14,999)">Business Starter Website (₹14,999)</option>
+                <option value="E-Commerce Website (₹29,999)">E-Commerce Website (₹29,999)</option>
+                <option value="Local SEO Lite (₹7,999/mo)">Local SEO Lite (₹7,999/mo)</option>
+                <option value="Social Growth Pro (₹12,999/mo)">Social Growth Pro (₹12,999/mo)</option>
+                <option value="Market Dominator (₹19,999/mo)">Market Dominator (₹19,999/mo)</option>
+                <option value="WhatsApp API Setup (₹4,999)">WhatsApp API Setup (₹4,999)</option>
+                <option value="AI Sales Agent (₹9,999/mo)">AI Sales Agent (₹9,999/mo)</option>
+                <option value="Custom Requirement">Custom Requirement</option>
+              </select>
             </div>
             <div className={styles.group}>
               <textarea name="message" placeholder="Your Message" rows="5" className={styles.textarea} required></textarea>
