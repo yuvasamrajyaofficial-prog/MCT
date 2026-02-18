@@ -36,6 +36,25 @@ export default function ContactSection() {
       <div className="container">
         <h2 className={styles.heading}>Connect with Us</h2>
         <div className={styles.wrapper}>
+          <div className={styles.contactInfo} style={{ marginBottom: "2rem", textAlign: "center", color: "#cbd5e1" }}>
+            <p>Ready to grow? Chat with us directly.</p>
+            <a 
+              href="https://wa.me/919902857694" 
+              target="_blank" 
+              style={{ 
+                display: "inline-flex", 
+                alignItems: "center", 
+                gap: "0.5rem", 
+                color: "#22c55e", 
+                fontWeight: "bold", 
+                fontSize: "1.1rem",
+                marginTop: "0.5rem",
+                textDecoration: "none"
+              }}
+            >
+              <span style={{ fontSize: "1.5rem" }}>📱</span> +91 99028 57694
+            </a>
+          </div>
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.group}>
               <input type="text" name="name" placeholder="Your Name" className={styles.input} required />

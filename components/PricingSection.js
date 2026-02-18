@@ -128,7 +128,7 @@ export default function PricingSection() {
 
   const handleWhatsAppClick = (message) => {
     const text = encodeURIComponent(message);
-    window.open(`https://wa.me/917204526317?text=${text}`, "_blank");
+    window.open(`https://wa.me/919902857694?text=${text}`, "_blank");
   };
 
   return (
