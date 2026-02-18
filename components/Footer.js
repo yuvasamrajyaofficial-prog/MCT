@@ -26,9 +26,9 @@ export default function Footer() {
             <div className={styles.column}>
               <h4>Connect</h4>
               <div className={styles.socials}>
-                <a href="#" aria-label="GitHub"><Github size={20} /></a>
-                <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
-                <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
+                <a href="https://github.com/prashant13-bh" target="_blank" aria-label="Personal GitHub"><Github size={20} /></a>
+                <a href="https://github.com/yuvasamrajyaofficial-prog" target="_blank" aria-label="Organization GitHub"><Github size={20} /></a>
+                <a href="https://www.linkedin.com/in/prashant-hiremath-13pbh" target="_blank" aria-label="LinkedIn"><Linkedin size={20} /></a>
                 <a href="mailto:ph293815@gmail.com" aria-label="Email"><Mail size={20} /></a>
               </div>
             </div>
