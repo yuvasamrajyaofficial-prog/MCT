@@ -1,0 +1,266 @@
+.section {
+  padding: 6rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(124, 58, 237, 0.05) 100%
+  );
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #94a3b8;
+}
+
+/* Tabs */
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.tabs {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem;
+  border-radius: 50px;
+  display: flex;
+  gap: 0.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  transition: color 0.3s ease;
+  outline: none;
+}
+
+.tab:hover {
+  color: #fff;
+}
+
+.activeTab {
+  color: #fff;
+}
+
+.activeTabIndicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #7c3aed;
+  border-radius: 40px;
+  z-index: -1;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.popularCard {
+  border-color: rgba(124, 58, 237, 0.5);
+  background: rgba(124, 58, 237, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: #7c3aed;
+}
+
+.popularBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7c3aed;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+}
+
+.cardHeader {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.planTitle {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.period {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.description {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+  flex-grow: 1;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.disabled {
+  color: #64748b;
+  text-decoration: line-through;
+}
+
+.checkIcon {
+  color: #10b981;
+  display: flex;
+  align-items: center;
+}
+
+.xIcon {
+  color: #64748b;
+  display: flex;
+  align-items: center;
+}
+
+.ctaButton {
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
+  color: #0f172a;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.popularCard .ctaButton {
+  background: #7c3aed;
+  color: #fff;
+}
+
+.ctaButton:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.popularCard .ctaButton:hover {
+  background: #6d28d9;
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+.customQuote {
+  text-align: center;
+  margin-top: 3rem;
+  color: #94a3b8;
+}
+
+.contactLink {
+  background: none;
+  border: none;
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
+.contactLink:hover {
+  color: #6d28d9;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
