@@ -21,8 +21,6 @@ export default function Footer() {
               <Link href="/blogs">Blogs</Link>
               <Link href="/team">Team</Link>
               <Link href="/careers">Careers (Remote First)</Link>
-              <Link href="/investors">Investors</Link>
-              <Link href="/pitch-deck">Pitch Deck</Link>
               <Link href="/sitemap.xml">Sitemap</Link>
             </div>
             <div className={styles.column}>
