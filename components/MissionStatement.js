@@ -14,7 +14,7 @@ export default function MissionStatement() {
         className="container"
       >
         <p className={styles.text}>
-          "We are a technology house rooted in critical thinking. From the legacy of Neelaganga Agro to the future of Artificial Intelligence, we build tools that empower the human spirit."
+          &quot;We empower businesses to thrive in the digital ecosystem. Combining creative strategy with technical excellence, we turn your vision into measurable growth.&quot;
         </p>
       </motion.div>
     </section>

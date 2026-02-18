@@ -5,7 +5,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import styles from "./HeroSection.module.css";
 
 import NeuralNetwork from "./NeuralNetwork";
@@ -37,14 +36,14 @@ function StarField(props) {
 
 export default function HeroSection() {
   const [headlineIndex, setHeadlineIndex] = useState(0);
-  const headlines = ["Wisdom.", "Strategy.", "Innovation."];
+  const headlines = ["Growth.", "Visibility.", "Excellence."];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setHeadlineIndex((prev) => (prev + 1) % headlines.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [headlines.length]);
 
   return (
     <section className={styles.hero}>
@@ -73,23 +72,26 @@ export default function HeroSection() {
         </div>
 
         <h2 className={styles.staticText}>
-          Malola Cosmic Technologies - Transcending through Technology.
+          Prabas Digital - Elevating Your Business in the Digital Age.
         </h2>
 
         <p className={styles.subHeadline}>
-          MCT pioneers AI solutions for Mental Wellness and Human Potential.
+          We craft data-driven marketing strategies and world-class digital experiences to scale your brand.
         </p>
 
         <div className={styles.ctaGroup}>
           <button 
-            onClick={() => document.getElementById('innovations')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
             className={styles.primaryBtn}
           >
-            Explore Our Innovations
+            Explore Our Services
           </button>
-          <Link href="/about" className={styles.secondaryBtn}>
-            Our Legacy
-          </Link>
+          <button 
+             onClick={() => document.getElementById('innovations')?.scrollIntoView({ behavior: 'smooth' })}
+             className={styles.secondaryBtn}
+          >
+            View Portfolio
+          </button>
         </div>
       </div>
     </section>

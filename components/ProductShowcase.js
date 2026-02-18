@@ -29,7 +29,7 @@ export default function ProductShowcase() {
     <section id="innovations" className={styles.showcase}>
       <div className="container">
         <div className={styles.header}>
-          <h2 className={styles.heading}>Our Innovations</h2>
+          <h2 className={styles.heading}>Our Work Portfolio</h2>
           <button
             onClick={() =>
               document
