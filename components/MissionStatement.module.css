@@ -1,21 +1,83 @@
 .mission {
-  padding: 100px 0;
-  background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
-  text-align: center;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(245, 158, 11, 0.03),
+    transparent
+  );
+}
+
+.mission::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(245, 158, 11, 0.06) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite;
 }
 
 .text {
   font-family: var(--font-space-grotesk);
-  font-size: 2.5rem;
-  line-height: 1.4;
-  color: var(--foreground);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.6;
   max-width: 900px;
   margin: 0 auto;
-  font-weight: 300;
+  background: linear-gradient(
+    135deg,
+    #f59e0b,
+    #ef4444,
+    #ec4899,
+    #7c3aed,
+    #f59e0b
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 8s ease infinite;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.text::before,
+.text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.text::before {
+  top: 0;
+}
+
+.text::after {
+  bottom: 0;
 }
 
 @media (max-width: 768px) {
   .text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+  }
+
+  .mission {
+    padding: 3rem 0;
   }
 }

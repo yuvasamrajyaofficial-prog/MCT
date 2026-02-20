@@ -11,6 +11,9 @@ export default function sitemap() {
     '/investors',
     '/pitch-deck',
     '/products/malola',
+    '/privacy-policy',
+    '/terms-of-service',
+    '/refund-policy',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

@@ -47,6 +47,10 @@ export default function HeroSection() {
 
   return (
     <section className={styles.hero}>
+      {/* Decorative glow orbs */}
+      <div className={styles.glowOrb1} />
+      <div className={styles.glowOrb2} />
+
       <div className={styles.canvasContainer}>
         <Canvas camera={{ position: [0, 0, 15], fov: 75 }}>
           <ambientLight intensity={0.5} />
@@ -55,15 +59,20 @@ export default function HeroSection() {
         </Canvas>
       </div>
 
-      <div className={styles.content}>
+      <motion.div 
+        className={styles.content}
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <div className={styles.headlineContainer}>
           <AnimatePresence mode="wait">
             <motion.h1
               key={headlineIndex}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, y: 30, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -30, scale: 0.9 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
               className={styles.animatedText}
             >
               {headlines[headlineIndex]}
@@ -71,15 +80,30 @@ export default function HeroSection() {
           </AnimatePresence>
         </div>
 
-        <h2 className={styles.staticText}>
-          Prabas Digital - Elevating Your Business in the Digital Age.
-        </h2>
+        <motion.h2 
+          className={styles.staticText}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          Prabas Digital — Elevating Your Business in the Digital Age.
+        </motion.h2>
 
-        <p className={styles.subHeadline}>
+        <motion.p 
+          className={styles.subHeadline}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
           We craft data-driven marketing strategies and world-class digital experiences to scale your brand.
-        </p>
+        </motion.p>
 
-        <div className={styles.ctaGroup}>
+        <motion.div 
+          className={styles.ctaGroup}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+        >
           <button 
             onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
             className={styles.primaryBtn}
@@ -92,7 +116,16 @@ export default function HeroSection() {
           >
             View Portfolio
           </button>
-        </div>
+        </motion.div>
+      </motion.div>
+
+      {/* Scroll indicator */}
+      <div 
+        className={styles.scrollIndicator}
+        onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+      >
+        <span>Scroll</span>
+        <div className={styles.scrollArrow} />
       </div>
     </section>
   );

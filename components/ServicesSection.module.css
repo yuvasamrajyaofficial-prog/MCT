@@ -1,6 +1,29 @@
 .section {
-  padding: 6rem 0;
-  background: rgba(124, 58, 237, 0.05);
+  padding: 7rem 0;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(124, 58, 237, 0.03) 0%,
+    rgba(124, 58, 237, 0.08) 50%,
+    rgba(124, 58, 237, 0.03) 100%
+  );
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-purple),
+    transparent
+  );
+  opacity: 0.5;
 }
 
 .header {
@@ -12,18 +35,20 @@
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+  background: linear-gradient(135deg, #fff 0%, #e2e8f0 40%, #7c3aed 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
   font-size: 1.1rem;
   color: #94a3b8;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .grid {
@@ -34,19 +59,73 @@
 
 .card {
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
   padding: 2.5rem;
-  transition: all 0.3s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
+/* Animated gradient border on hover */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #ec4899,
+    #f59e0b,
+    #3b82f6,
+    #7c3aed
+  );
+  background-size: 300% 300%;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: border-rotate 4s linear infinite;
+}
+
+/* Shimmer sweep on hover */
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(124, 58, 237, 0.05),
+    transparent
+  );
+  transition: left 0.8s ease;
+  pointer-events: none;
+}
+
 .card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(124, 58, 237, 0.5);
-  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.1);
-  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-8px);
+  border-color: transparent;
+  box-shadow:
+    0 20px 40px rgba(124, 58, 237, 0.15),
+    0 0 80px rgba(124, 58, 237, 0.05);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover::after {
+  left: 100%;
 }
 
 .iconWrapper {
@@ -54,26 +133,44 @@
   margin-bottom: 1.5rem;
   padding: 1rem;
   background: rgba(124, 58, 237, 0.1);
-  border-radius: 12px;
+  border-radius: 14px;
   width: fit-content;
-  transition: transform 0.3s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.iconWrapper::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 18px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
 }
 
 .card:hover .iconWrapper {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.15) rotate(5deg);
   background: rgba(124, 58, 237, 0.2);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+.card:hover .iconWrapper::after {
+  opacity: 1;
 }
 
 .cardTitle {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #fff;
   margin-bottom: 0.75rem;
+  font-weight: 700;
 }
 
 .cardDesc {
   color: #cbd5e1;
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 @media (max-width: 768px) {
@@ -83,5 +180,9 @@
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 5rem 0;
   }
 }
