@@ -1,4 +1,5 @@
 import ProductLayout from "@/components/ProductLayout";
+import Image from "next/image";
 
 export const metadata = {
   title: "GovtNaukri4U - Government Job Portal | Prabas Digital",
@@ -54,6 +55,14 @@ export default function GovtNaukri4uPage() {
         <li>Implemented aggressive SEO strategies resulting in top Google rankings for competitive keywords</li>
         <li>Designed mobile-first responsive templates for the Blogger platform</li>
       </ul>
+
+      <h3>Mobile-First Experience</h3>
+      <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 30px rgba(0,0,0,0.3)', margin: '1.5rem 0' }}>
+        <Image src="/images/govtnaukri4u-mobile.png" alt="GovtNaukri4U mobile-responsive design showing job listings, detail view, and notification settings" width={800} height={800} style={{ width: '100%', height: 'auto', display: 'block' }} />
+      </div>
+      <p>
+        Over 75% of our users access the portal from mobile devices. We designed every page to be mobile-first, ensuring aspirants can search and apply for jobs seamlessly on any screen.
+      </p>
 
       <h3>Key Results</h3>
       <div className="infoGrid">

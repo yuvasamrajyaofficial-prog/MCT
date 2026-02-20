@@ -1,4 +1,5 @@
 import ProductLayout from "@/components/ProductLayout";
+import Image from "next/image";
 
 export const metadata = {
   title: "TioraS Studio - AI Fashion Design Platform | Prabas Digital",
@@ -48,6 +49,14 @@ export default function TiorasPage() {
         TioraS Studio was born from the idea that great design shouldn&apos;t be limited to those with professional training. By leveraging Generative AI, we enabled users with zero design experience to create stunning embroidery patterns.
       </p>
 
+      <h3>The Design-to-Print Workflow</h3>
+      <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 30px rgba(0,0,0,0.3)', margin: '1.5rem 0' }}>
+        <Image src="/images/tioras-design-flow.png" alt="TioraS Design-to-Print workflow: Text Input → AI-Generated Pattern → Applied Design on garment" width={800} height={450} style={{ width: '100%', height: 'auto', display: 'block' }} />
+      </div>
+      <p>
+        From a simple text prompt like &quot;Royal peacock embroidery&quot; to a finished product — our AI pipeline handles the entire creative process in seconds, not days.
+      </p>
+
       <h3>What We Built</h3>
       <ul>
         <li>Engineered the core &quot;Design-to-Print&quot; workflow — from AI prompt to manufacturing-ready output</li>
@@ -57,7 +66,7 @@ export default function TiorasPage() {
         <li>Implemented secure payment processing with multiple payment gateways</li>
       </ul>
 
-      <h3>The &quot;Design-to-Print&quot; Magic</h3>
+      <h3>The Technology</h3>
       <div className="infoGrid">
         <div className="infoCard">
           <h4>Prompt Engineering</h4>

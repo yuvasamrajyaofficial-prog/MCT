@@ -1,4 +1,5 @@
 import ProductLayout from "@/components/ProductLayout";
+import Image from "next/image";
 
 export const metadata = {
   title: "Zekkers - AI Job Marketplace | Prabas Digital",
@@ -45,6 +46,14 @@ export default function ZekkersPage() {
     >
       <p>
         Traditional job platforms fail to capture the potential of students with limited work experience. Zekkers uses AI to analyze academic projects, certifications, and skills to build holistic candidate profiles that go beyond a one-page resume.
+      </p>
+
+      <h3>Skill Analytics Dashboard</h3>
+      <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 30px rgba(0,0,0,0.3)', margin: '1.5rem 0' }}>
+        <Image src="/images/zekkers-features.png" alt="Zekkers Analytics Dashboard showing skill radar chart, match scores, and recommended skills" width={800} height={800} style={{ width: '100%', height: 'auto', display: 'block' }} />
+      </div>
+      <p>
+        Our analytics engine compares student skills against real job requirements, generating match scores and actionable upskilling recommendations to close the gap.
       </p>
 
       <h3>What We Built</h3>

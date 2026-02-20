@@ -1,4 +1,5 @@
 import ProductLayout from "@/components/ProductLayout";
+import Image from "next/image";
 
 export const metadata = {
   title: "Malola / Soulink - AI Wellness Platform | Prabas Digital",
@@ -43,6 +44,14 @@ export default function MalolaPage() {
         <li>Created a unified experience blending scientific mental health tools with spiritual guidance</li>
         <li>Implemented multi-language support for Hindi and Kannada users</li>
       </ul>
+
+      <h3>Vedic Compatibility Engine</h3>
+      <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 30px rgba(0,0,0,0.3)', margin: '1.5rem 0' }}>
+        <Image src="/images/malola-features.png" alt="Vedic Compatibility Dashboard showing match scores and personality insights" width={800} height={800} style={{ width: '100%', height: 'auto', display: 'block' }} />
+      </div>
+      <p>
+        Our proprietary compatibility engine uses Vedic astrology principles to analyze birth charts, Rashi compatibility, and Nakshatra alignment — providing users with deep insights into their relationships.
+      </p>
 
       <h3>The Innovation</h3>
       <div className="infoGrid">

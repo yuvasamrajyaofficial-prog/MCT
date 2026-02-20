@@ -1,4 +1,5 @@
 import ProductLayout from "@/components/ProductLayout";
+import Image from "next/image";
 
 export const metadata = {
   title: "LOLA AI - Advanced AI Companion | Prabas Digital",
@@ -46,6 +47,14 @@ export default function LolaAIPage() {
     >
       <p>
         Most AI chatbots feel cold and transactional. LOLA was built with a different philosophy — conversations should feel real, supportive, and naturally human. She&apos;s designed to be the companion you can talk to about anything, anytime.
+      </p>
+
+      <h3>Voice Mode &amp; Safety Controls</h3>
+      <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 30px rgba(0,0,0,0.3)', margin: '1.5rem 0' }}>
+        <Image src="/images/lola-ai-features.png" alt="LOLA AI voice interaction mode with waveform visualization and safety settings panel" width={800} height={800} style={{ width: '100%', height: 'auto', display: 'block' }} />
+      </div>
+      <p>
+        LOLA features a voice-first interface with real-time waveform visualization, and a comprehensive settings panel including Safe Mode, Voice Mode toggle, and memory management — putting users in full control.
       </p>
 
       <h3>What We Built</h3>

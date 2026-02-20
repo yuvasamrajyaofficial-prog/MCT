@@ -1,4 +1,5 @@
 import ProductLayout from "@/components/ProductLayout";
+import Image from "next/image";
 
 export const metadata = {
   title: "AI Fitness Trainer - Personal AI Coach | Prabas Digital",
@@ -48,6 +49,14 @@ export default function AIFitnessPage() {
         We believe fitness guidance shouldn&apos;t be a luxury. The AI Fitness Trainer brings the expertise of a personal coach to everyone&apos;s phone — creating workout plans tailored to your body, goals, and schedule.
       </p>
 
+      <h3>Real-Time Form Analysis</h3>
+      <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 30px rgba(0,0,0,0.3)', margin: '1.5rem 0' }}>
+        <Image src="/images/ai-fitness-features.png" alt="AI Fitness Trainer real-time pose detection with form score and corrective feedback" width={800} height={600} style={{ width: '100%', height: 'auto', display: 'block' }} />
+      </div>
+      <p>
+        Using MediaPipe and TensorFlow.js, our AI analyzes body position in real-time — measuring joint angles, tracking form accuracy with a live score, and providing instant corrective feedback to prevent injuries.
+      </p>
+
       <h3>What We Built</h3>
       <ul>
         <li>Developed AI workout plan generator that considers user&apos;s fitness level, available equipment, and goals</li>
@@ -62,7 +71,7 @@ export default function AIFitnessPage() {
         <div className="infoCard">
           <h4>Pose Detection</h4>
           <p>
-            Using MediaPipe and TensorFlow.js, the app analyzes body position in real-time to correct form and prevent injuries during exercises.
+            Analyzes 33 body landmarks in real-time to measure joint angles, track form accuracy, and provide instant corrective feedback.
           </p>
         </div>
         <div className="infoCard">
