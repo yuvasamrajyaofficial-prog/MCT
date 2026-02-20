@@ -64,8 +64,7 @@ export default function ProductShowcase() {
           {/* GovtNaukri4U */}
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
             <Link
-              href="https://perfect-theme.vercel.app/"
-              target="_blank"
+              href="/products/govtnaukri4u"
               className={styles.cardLink}
             >
               <div className={`${styles.card} glass-card`}>
@@ -85,8 +84,7 @@ export default function ProductShowcase() {
           {/* Zekkers */}
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
             <Link
-              href="https://zekkers-app2.vercel.app/"
-              target="_blank"
+              href="/products/zekkers"
               className={styles.cardLink}
             >
               <div className={`${styles.card} glass-card`}>
@@ -106,8 +104,7 @@ export default function ProductShowcase() {
           {/* TioraS Studio */}
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
             <Link
-              href="https://tiora-s-studio.vercel.app/"
-              target="_blank"
+              href="/products/tioras"
               className={styles.cardLink}
             >
               <div className={`${styles.card} glass-card`}>
