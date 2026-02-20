@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import TransitionProvider from "@/components/TransitionProvider";
+import ThemeProvider from "@/components/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
 
 const spaceGrotesk = Space_Grotesk({
@@ -27,13 +28,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} ${inter.variable}`}>
-        <CursorEffect />
-        <Navbar />
-        <WhatsAppButton />
-        <TransitionProvider>
-          {children}
-          <Footer />
-        </TransitionProvider>
+        <ThemeProvider>
+          <CursorEffect />
+          <Navbar />
+          <WhatsAppButton />
+          <TransitionProvider>
+            {children}
+            <Footer />
+          </TransitionProvider>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
