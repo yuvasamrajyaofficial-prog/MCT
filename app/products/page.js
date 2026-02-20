@@ -12,7 +12,7 @@ const PROJECTS = [
     id: "malola",
     title: "Malola / Soulink",
     category: "AI Platform",
-    image: "/images/malola-dashboard.png",
+    image: "/images/malola-full-showcase.png",
     description: "An innovative AI-powered Vedic astrology compatibility platform. It combines ancient relationship wisdom with modern AI conversational agents to help users find meaningful connections.",
     link: "/products/malola",
     color: "#f59e0b"
@@ -21,7 +21,7 @@ const PROJECTS = [
     id: "lola",
     title: "LOLA AI",
     category: "Voice Assistant",
-    image: "/images/lola-voice.png",
+    image: "/images/lola-ai-screenshot.png",
     description: "A next-generation AI companion feauting real-time voice interaction, emotional intelligence, and safe-mode content filtering for a secure user experience.",
     link: "/products/lola-ai",
     color: "#ec4899"
@@ -30,7 +30,7 @@ const PROJECTS = [
     id: "aifitness",
     title: "AI Fitness Trainer",
     category: "Computer Vision",
-    image: "/images/ai-fitness-form.png",
+    image: "/images/ai-fitness-screenshot.png",
     description: "Uses device camera and pose estimation models to provide real-time feedback on workout form, counting reps and correcting posture instantly.",
     link: "/products/ai-fitness",
     color: "#10b981"
@@ -39,7 +39,7 @@ const PROJECTS = [
     id: "tioras",
     title: "TioraS Studio",
     category: "Generative AI",
-    image: "/images/tioras-workflow.png",
+    image: "/images/tioras-screenshot.png",
     description: "A fashion design studio where users describe clothing in text, and AI generates production-ready 3D mockups and patterns.",
     link: "/products/tioras",
     color: "#7c3aed"
@@ -48,7 +48,7 @@ const PROJECTS = [
     id: "zekkers",
     title: "Zekkers",
     category: "Gig Marketplace",
-    image: "/images/zekkers-analytics.png",
+    image: "/images/zekkers-screenshot.png",
     description: "A decentralized job marketplace connecting freelancers with hyper-local gigs. Features smart matching and secure escrow payments.",
     link: "/products/zekkers",
     color: "#3b82f6"
@@ -57,7 +57,7 @@ const PROJECTS = [
     id: "govtnaukri",
     title: "GovtNaukri4U",
     category: "Web Portal",
-    image: "/images/govtnaukri-mobile.png",
+    image: "/images/govtnaukri4u-screenshot.png",
     description: "A high-traffic government job portal aggregating thousands of vacancies daily, with advanced filtering and instant notification alerts.",
     link: "/products/govtnaukri4u",
     color: "#f97316"
