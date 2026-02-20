@@ -1,42 +1,48 @@
 .main {
   min-height: 100vh;
   background: var(--background);
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .hero {
-  padding: 60px 0;
+  padding: 50px 0 30px;
   text-align: center;
 }
 
 .title {
   font-family: var(--font-space-grotesk);
-  font-size: 4rem;
-  margin-bottom: 20px;
-  color: var(--foreground);
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #f8fafc;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  color: #64748b;
   max-width: 600px;
   margin: 0 auto;
+  line-height: 1.7;
 }
 
 .teamGrid {
-  padding: 80px 0;
+  padding: 40px 0 100px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 @media (max-width: 768px) {
   .title {
     font-size: 2.5rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
