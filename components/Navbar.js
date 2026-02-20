@@ -10,6 +10,7 @@ import styles from "./Navbar.module.css";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
+  { href: "/products", label: "Work" },
   { href: "/about", label: "About" },
   { href: "/blogs", label: "Blog" },
   { href: "/team", label: "Team" },
