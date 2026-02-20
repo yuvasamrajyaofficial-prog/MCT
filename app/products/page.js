@@ -57,7 +57,7 @@ const PROJECTS = [
     id: "govtnaukri",
     title: "GovtNaukri4U",
     category: "Web Portal",
-    image: "/images/govtnaukri4u-screenshot.png",
+    image: "/images/govtnaukri-live.png",
     description: "A high-traffic government job portal aggregating thousands of vacancies daily, with advanced filtering and instant notification alerts.",
     link: "/products/govtnaukri4u",
     color: "#f97316"
