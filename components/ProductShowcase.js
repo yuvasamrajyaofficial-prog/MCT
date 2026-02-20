@@ -127,8 +127,7 @@ export default function ProductShowcase() {
           {/* LOLA AI */}
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
             <Link
-              href="https://lola-ai-mu.vercel.app/"
-              target="_blank"
+              href="/products/lola-ai"
               className={styles.cardLink}
             >
               <div className={`${styles.card} glass-card`}>
@@ -148,8 +147,7 @@ export default function ProductShowcase() {
           {/* AI Fitness Trainer */}
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
             <Link
-              href="https://ai-fitness-trainer-lime.vercel.app/"
-              target="_blank"
+              href="/products/ai-fitness"
               className={styles.cardLink}
             >
               <div className={`${styles.card} glass-card`}>

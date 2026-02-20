@@ -1,77 +1,62 @@
 import ProductLayout from "@/components/ProductLayout";
 
 export const metadata = {
-  title: "Malola / Soulink - AI Wellness Platform | MCT",
-  description: "Malola (Soulink) by Malola Cosmic Technologies combines AI conversational support with Vedic astrology to provide holistic mental and spiritual wellness guidance.",
+  title: "Malola / Soulink - AI Wellness Platform | Prabas Digital",
+  description: "Malola (Soulink) combines AI conversational support with Vedic astrology to provide holistic mental and spiritual wellness guidance.",
 };
 
 export default function MalolaPage() {
   const features = [
-    "AI-driven mental health assistant for conversational support",
-    "Astrology-based compatibility matching algorithm",
-    "Culturally contextualized wellness insights",
-    "Personalized daily guidance and affirmations",
-    "Secure and private user data handling",
+    "AI-driven mental health assistant for empathetic conversational support",
+    "Astrology-based compatibility matching algorithm using Vedic principles",
+    "Culturally contextualized wellness insights for Indian users",
+    "Personalized daily guidance, affirmations, and mantras",
+    "Secure and private user data handling with end-to-end encryption",
   ];
 
   const techStack = [
     "Next.js",
     "OpenAI API",
     "Vedic Astrology APIs",
-    "Tailwind CSS",
     "Firebase",
+    "Framer Motion",
     "Vercel",
   ];
 
   return (
     <ProductLayout
       title="Malola / Soulink"
-      description="A unique AI Wellness Platform that harmonizes modern mental health support with traditional cultural wisdom. Malola provides a safe space for users to seek guidance, understand relationships, and find balance."
+      description="A unique AI Wellness Platform that harmonizes modern mental health support with traditional cultural wisdom. Malola provides a safe space for users to seek guidance, understand relationships, and find balance in their lives."
       features={features}
       techStack={techStack}
       liveLink="https://studio-mocha-tau-22.vercel.app/"
       image="/images/malola-full-showcase.jpg"
     >
-      <div className="prose prose-invert max-w-none">
-        <div className="mb-8 flex gap-4">
-          <a 
-            href="/pitch-deck" 
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all hover:scale-105 shadow-lg"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-            View Full Pitch Deck
-          </a>
+      <p>
+        In a world where mental health tools often feel disconnected from cultural context, Malola bridges the gap. It understands the nuances of Indian culture, family dynamics, and spiritual traditions to offer guidance that truly resonates.
+      </p>
+
+      <h3>What We Built</h3>
+      <ul>
+        <li>Developed the core AI assistant, fine-tuning prompts to ensure empathetic and culturally relevant responses</li>
+        <li>Designed a proprietary compatibility matching algorithm based on Vedic astrology principles</li>
+        <li>Created a unified experience blending scientific mental health tools with spiritual guidance</li>
+        <li>Implemented multi-language support for Hindi and Kannada users</li>
+      </ul>
+
+      <h3>The Innovation</h3>
+      <div className="infoGrid">
+        <div className="infoCard">
+          <h4>Contextual AI</h4>
+          <p>
+            Unlike generic chatbots, Malola understands cultural nuances — from family expectations to festival seasons — making it a more effective companion.
+          </p>
         </div>
-
-        <h3 className="text-2xl font-bold text-white mb-4">My Role</h3>
-        <ul className="list-disc pl-6 mb-8 text-gray-300 space-y-2">
-          <li>
-            Developed the core AI assistant, fine-tuning prompts to ensure empathetic and culturally relevant responses.
-          </li>
-          <li>
-            Designed and implemented a proprietary compatibility matching algorithm based on Vedic astrology principles.
-          </li>
-          <li>
-            Created a unified user experience that seamlessly blends scientific mental health tools with spiritual guidance.
-          </li>
-        </ul>
-
-        <h3 className="text-2xl font-bold text-white mb-4">Cultural Intelligence</h3>
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-            <h4 className="text-xl font-semibold text-amber-500 mb-2">Contextual AI</h4>
-            <p className="text-gray-400">
-              Unlike generic chatbots, Malola understands cultural nuances, making it a more effective companion for its target audience.
-            </p>
-          </div>
-          <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-            <h4 className="text-xl font-semibold text-amber-500 mb-2">Holistic Wellness</h4>
-            <p className="text-gray-400">
-              Addresses both the psychological and spiritual dimensions of well-being, offering a more complete support system.
-            </p>
-          </div>
+        <div className="infoCard">
+          <h4>Holistic Wellness</h4>
+          <p>
+            Addresses both the psychological and spiritual dimensions of well-being, offering a complete support system beyond Western-only approaches.
+          </p>
         </div>
       </div>
     </ProductLayout>

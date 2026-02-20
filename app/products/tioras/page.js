@@ -1,72 +1,75 @@
-
-
 import ProductLayout from "@/components/ProductLayout";
 
 export const metadata = {
-  title: "TioraS - AI Fashion Design Platform | Prabas & Co.",
-  description: "TioraS democratizes fashion design with AI. Generate custom embroidery designs from text prompts and order high-quality apparel instantly.",
+  title: "TioraS Studio - AI Fashion Design Platform | Prabas Digital",
+  description: "TioraS democratizes fashion design with AI. Generate custom embroidery designs from text prompts and order high-quality menswear instantly.",
 };
 
 export default function TiorasPage() {
   const features = [
-    "Design-to-Print workflow using Gemini API",
+    "Design-to-Print workflow powered by Gemini AI",
     "Natural language prompts for embroidery design generation",
-    "Real-time preview of generated designs on products",
-    "Automated print-ready file generation",
-    "Seamless order processing and tracking",
+    "Real-time preview of AI-generated designs on products",
+    "Automated print-ready file generation for manufacturing",
+    "Full e-commerce with product catalog, cart, and checkout",
+    "Admin dashboard for inventory and order management",
   ];
 
   const techStack = [
     "Next.js",
     "Gemini API",
     "Stable Diffusion",
+    "Firebase",
     "Stripe",
-    "Tailwind CSS",
     "Vercel",
-    "PostgreSQL",
   ];
+
+  const caseStudy = {
+    problem: "The Innovation",
+    solution: "Traditional fashion design requires years of training and expensive tools. TioraS lets anyone create professional embroidery designs by simply describing what they want in natural language.",
+    stats: [
+      { value: "90%", label: "Less Design Time" },
+      { value: "50+", label: "Products Listed" },
+      { value: "AI", label: "Powered Design" },
+    ],
+  };
 
   return (
     <ProductLayout
-      title="TioraS"
-      description="An innovative AI-powered e-commerce platform that democratizes fashion design. TioraS allows users to generate custom embroidery designs using natural language prompts and order them on high-quality apparel."
+      title="TioraS Studio"
+      description="An innovative AI-powered e-commerce platform that democratizes fashion design. Users generate custom embroidery designs using natural language prompts and order them on premium menswear apparel — bridging the gap between imagination and physical products."
       features={features}
       techStack={techStack}
-      liveLink="https://tiora-s.vercel.app/"
+      liveLink="https://tiora-s-studio.vercel.app/"
       image="/images/tioras-screenshot.png"
+      caseStudy={caseStudy}
     >
-      <div className="prose prose-invert max-w-none">
-        <p className="text-lg text-gray-300 mb-6">
-          TioraS bridges the gap between imagination and physical products. By leveraging Generative AI, it enables users with no design experience to create professional-grade embroidery patterns simply by describing them.
-        </p>
+      <p>
+        TioraS Studio was born from the idea that great design shouldn&apos;t be limited to those with professional training. By leveraging Generative AI, we enabled users with zero design experience to create stunning embroidery patterns.
+      </p>
 
-        <h3 className="text-2xl font-bold text-white mb-4">My Role</h3>
-        <ul className="list-disc pl-6 mb-8 text-gray-300 space-y-2">
-          <li>
-            Engineered the core "Design-to-Print" workflow, integrating Gemini API for prompt understanding and image generation models for visual output.
-          </li>
-          <li>
-            Developed the frontend interface for customization, allowing users to tweak colors, sizes, and placement.
-          </li>
-          <li>
-            Built the backend logic to convert AI-generated images into print-ready formats suitable for embroidery machines.
-          </li>
-        </ul>
+      <h3>What We Built</h3>
+      <ul>
+        <li>Engineered the core &quot;Design-to-Print&quot; workflow — from AI prompt to manufacturing-ready output</li>
+        <li>Integrated Gemini API for understanding user intent and generating high-fidelity designs</li>
+        <li>Built the frontend with real-time design preview, color/size customization</li>
+        <li>Developed admin dashboard with full inventory management and order processing</li>
+        <li>Implemented secure payment processing with multiple payment gateways</li>
+      </ul>
 
-        <h3 className="text-2xl font-bold text-white mb-4">The "Design-to-Print" Magic</h3>
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-            <h4 className="text-xl font-semibold text-amber-500 mb-2">Prompt Engineering</h4>
-            <p className="text-gray-400">
-              Advanced prompt processing ensures that user descriptions are translated into high-fidelity, stitch-compatible designs.
-            </p>
-          </div>
-          <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-            <h4 className="text-xl font-semibold text-amber-500 mb-2">Automated Production</h4>
-            <p className="text-gray-400">
-              Reduces manual design dependency by 90%, streamlining the path from concept to manufacturing.
-            </p>
-          </div>
+      <h3>The &quot;Design-to-Print&quot; Magic</h3>
+      <div className="infoGrid">
+        <div className="infoCard">
+          <h4>Prompt Engineering</h4>
+          <p>
+            Advanced prompt processing ensures user descriptions translate into high-fidelity, stitch-compatible embroidery designs.
+          </p>
+        </div>
+        <div className="infoCard">
+          <h4>Automated Production</h4>
+          <p>
+            Reduces manual design dependency by 90%, streamlining the entire path from concept to manufactured product.
+          </p>
         </div>
       </div>
     </ProductLayout>

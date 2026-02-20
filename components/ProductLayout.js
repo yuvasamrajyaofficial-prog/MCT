@@ -70,7 +70,9 @@ export default function ProductLayout({
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {children}
+          <div className={styles.childrenContent}>
+            {children}
+          </div>
           
           {features.length > 0 && (
             <div className={styles.section}>

@@ -1,17 +1,17 @@
 import ProductLayout from "@/components/ProductLayout";
 
 export const metadata = {
-  title: "Zekkers - AI Job Marketplace | Prabas & Co.",
-  description: "Zekkers is an AI-powered job marketplace connecting students, early-career professionals, and employers through predictive skill visualization and smart matching.",
+  title: "Zekkers - AI Job Marketplace | Prabas Digital",
+  description: "Zekkers connects students and early-career professionals with employers through AI-powered skill matching and predictive career roadmaps.",
 };
 
 export default function ZekkersPage() {
   const features = [
     "Two-sided marketplace connecting students with employers",
-    "Predictive skill visualization for career planning",
-    "Automated resume parsing and job matching",
-    "Real-time application tracking dashboard",
-    "Integrated messaging system for direct communication",
+    "AI-powered predictive skill visualization for career planning",
+    "Automated resume parsing and intelligent job matching",
+    "Real-time application tracking dashboard for both sides",
+    "Integrated messaging system for direct recruiter communication",
   ];
 
   const techStack = [
@@ -19,66 +19,56 @@ export default function ZekkersPage() {
     "React",
     "Node.js",
     "MongoDB",
-    "Tailwind CSS",
-    "Vercel",
     "OpenAI API",
+    "Vercel",
   ];
 
   const caseStudy = {
     problem: "The Challenge",
-    solution: "Students often struggle to understand how their academic achievements translate to industry requirements. Zekkers solves this by visualizing the 'skill gap' and providing a clear roadmap to bridge it.",
+    solution: "Students struggle to translate academic achievements into industry requirements. Zekkers solves this by visualizing skill gaps and providing clear roadmaps to bridge them — going beyond keyword matching to contextual understanding.",
     stats: [
       { value: "40%", label: "Faster Hiring" },
       { value: "85%", label: "Match Accuracy" },
-      { value: "2k+", label: "Active Students" }
-    ]
+      { value: "2K+", label: "Active Students" },
+    ],
   };
 
   return (
     <ProductLayout
       title="Zekkers"
-      description="An AI-powered job marketplace designed to bridge the gap between students, early-career professionals, and employers. Zekkers revolutionizes the hiring process by focusing on skill-based matching and predictive career roadmaps."
+      description="An AI-powered job marketplace designed to bridge the gap between students, early-career professionals, and employers. Zekkers revolutionizes hiring by focusing on skill-based matching and predictive career roadmaps rather than traditional resume screening."
       features={features}
       techStack={techStack}
       liveLink="https://zekkers-app2.vercel.app/"
       image="/images/zekkers-screenshot.png"
       caseStudy={caseStudy}
     >
-      <div className="prose prose-invert max-w-none">
-        <p className="text-lg text-gray-300 mb-6">
-          Zekkers addresses the disconnect in the early-career job market. Traditional platforms often fail to capture the potential of students with limited experience. Zekkers uses AI to analyze academic projects, certifications, and skills to present a holistic profile to employers.
-        </p>
+      <p>
+        Traditional job platforms fail to capture the potential of students with limited work experience. Zekkers uses AI to analyze academic projects, certifications, and skills to build holistic candidate profiles that go beyond a one-page resume.
+      </p>
 
-        <h3 className="text-2xl font-bold text-white mb-4">My Role</h3>
-        <ul className="list-disc pl-6 mb-8 text-gray-300 space-y-2">
-          <li>
-            Led the complete product lifecycle from user research to deployment.
-          </li>
-          <li>
-            Designed the UI/UX to ensure an intuitive experience for both students and recruiters.
-          </li>
-          <li>
-            Architected the database schema to support complex matching logic.
-          </li>
-          <li>
-            Implemented secure authentication flows and role-based access control.
-          </li>
-        </ul>
+      <h3>What We Built</h3>
+      <ul>
+        <li>Led the complete product lifecycle from user research and wireframing to deployment</li>
+        <li>Designed intuitive UI/UX for both student and recruiter dashboards</li>
+        <li>Architected the database schema to support complex multi-dimensional matching</li>
+        <li>Implemented secure auth flows and role-based access control</li>
+        <li>Built real-time notification system for application status updates</li>
+      </ul>
 
-        <h3 className="text-2xl font-bold text-white mb-4">Key Innovations</h3>
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-            <h4 className="text-xl font-semibold text-amber-500 mb-2">Skill Visualization</h4>
-            <p className="text-gray-400">
-              Dynamic charts that show students where they stand compared to industry demands, offering actionable insights for upskilling.
-            </p>
-          </div>
-          <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-            <h4 className="text-xl font-semibold text-amber-500 mb-2">Smart Matching</h4>
-            <p className="text-gray-400">
-              Algorithms that go beyond keywords, understanding the context of a candidate's experience to find the perfect fit.
-            </p>
-          </div>
+      <h3>Key Innovations</h3>
+      <div className="infoGrid">
+        <div className="infoCard">
+          <h4>Skill Visualization</h4>
+          <p>
+            Dynamic charts showing students where they stand vs. industry demands, with actionable insights for targeted upskilling.
+          </p>
+        </div>
+        <div className="infoCard">
+          <h4>Smart Matching</h4>
+          <p>
+            Algorithms that understand context beyond keywords — analyzing project complexity, certifications, and growth trajectory.
+          </p>
         </div>
       </div>
     </ProductLayout>
