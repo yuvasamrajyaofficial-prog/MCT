@@ -30,7 +30,7 @@ export default function MalolaPage() {
       features={features}
       techStack={techStack}
       liveLink="https://studio-mocha-tau-22.vercel.app/"
-      image="/images/malola-full-showcase.jpg"
+      image="/images/malola-full-showcase.png"
     >
       <p>
         In a world where mental health tools often feel disconnected from cultural context, Malola bridges the gap. It understands the nuances of Indian culture, family dynamics, and spiritual traditions to offer guidance that truly resonates.
