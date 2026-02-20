@@ -19,7 +19,7 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--card-bg);
   padding: 40px;
   border-radius: 12px;
   text-align: center;
@@ -50,6 +50,6 @@
 .cardDesc {
   font-family: var(--font-inter);
   font-size: 1rem;
-  color: #94a3b8;
+  color: var(--text-muted);
   line-height: 1.6;
 }

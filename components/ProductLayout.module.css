@@ -16,7 +16,11 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1.25rem;
-  background: linear-gradient(135deg, #fff 0%, #f59e0b 100%);
+  background: linear-gradient(
+    135deg,
+    var(--foreground) 0%,
+    var(--primary) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -25,7 +29,7 @@
 
 .description {
   font-size: 1.15rem;
-  color: #94a3b8;
+  color: var(--text-muted);
   max-width: 750px;
   margin: 0 auto 2rem;
   line-height: 1.8;
@@ -35,7 +39,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  background: linear-gradient(135deg, var(--primary), #ef4444);
   background-size: 200% 200%;
   color: #fff;
   padding: 12px 28px;
@@ -58,7 +62,7 @@
   margin-bottom: 4rem;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-border);
   box-shadow:
     0 20px 60px rgba(0, 0, 0, 0.4),
     0 0 80px rgba(124, 58, 237, 0.05);
@@ -73,11 +77,11 @@
   padding: 1px;
   background: linear-gradient(
     135deg,
-    #7c3aed,
-    #ec4899,
-    #f59e0b,
-    #3b82f6,
-    #7c3aed
+    var(--accent-purple),
+    var(--accent-pink),
+    var(--primary),
+    var(--accent-blue),
+    var(--accent-purple)
   );
   background-size: 300% 300%;
   -webkit-mask:
@@ -140,7 +144,7 @@
 }
 
 .childrenContent p {
-  color: #94a3b8;
+  color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 1rem;
   font-size: 0.95rem;
@@ -152,7 +156,7 @@
   margin: 2rem 0;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-border);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   position: relative;
 }
@@ -173,7 +177,7 @@
   text-align: center;
   padding: 12px 16px;
   background: rgba(0, 0, 0, 0.4);
-  color: #94a3b8;
+  color: var(--text-muted);
   font-size: 0.85rem;
   font-style: italic;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -211,8 +215,8 @@
 }
 
 .childrenContent .infoCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 16px;
   padding: 24px;
   transition: all 0.4s ease;
@@ -233,7 +237,7 @@
 }
 
 .childrenContent .infoCard p {
-  color: #94a3b8;
+  color: var(--text-muted);
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 0;
@@ -274,10 +278,10 @@
 
 .featureItem {
   padding: 16px 20px;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--card-bg);
   border-radius: 12px;
   border-left: 3px solid var(--primary);
-  color: #e2e8f0;
+  color: var(--foreground);
   font-size: 0.95rem;
   transition: all 0.3s ease;
 }
@@ -297,8 +301,8 @@
 .card {
   padding: 24px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -307,7 +311,7 @@
   font-family: var(--font-space-grotesk);
   font-size: 1.15rem;
   margin-bottom: 1rem;
-  color: #e2e8f0;
+  color: var(--foreground);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -338,8 +342,8 @@
 
 /* Case Study */
 .caseStudyContent {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 20px;
   padding: 2rem;
   margin-top: 1rem;
@@ -354,7 +358,7 @@
 }
 
 .caseStudyText {
-  color: #94a3b8;
+  color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 2rem;
   font-size: 0.95rem;
@@ -364,7 +368,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--card-border);
   padding-top: 1.5rem;
 }
 
@@ -378,7 +382,7 @@
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 4px;
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  background: linear-gradient(135deg, var(--primary), #ef4444);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -386,7 +390,7 @@
 
 .statLabel {
   font-size: 0.8rem;
-  color: #64748b;
+  color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 600;

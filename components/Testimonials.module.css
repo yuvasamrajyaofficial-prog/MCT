@@ -2,9 +2,9 @@
   padding: 7rem 0;
   background: linear-gradient(
     180deg,
-    #0a0e1a,
+    var(--background),
     rgba(245, 158, 11, 0.03),
-    #0a0e1a
+    var(--background)
   );
   position: relative;
 }
@@ -19,7 +19,7 @@
   font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 15px;
-  background: linear-gradient(135deg, #fff 0%, #e2e8f0 40%, #f59e0b 100%);
+  background: linear-gradient(135deg, #fff 0%, var(--foreground) 40%, var(--primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -27,7 +27,7 @@
 
 .subheading {
   font-size: 1.1rem;
-  color: #94a3b8;
+  color: var(--text-muted);
   line-height: 1.7;
 }
 
@@ -38,8 +38,8 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 20px;
   padding: 40px;
   position: relative;
@@ -56,11 +56,11 @@
   padding: 1px;
   background: linear-gradient(
     135deg,
-    #f59e0b,
+    var(--primary),
     #ef4444,
-    #ec4899,
-    #7c3aed,
-    #f59e0b
+    var(--accent-pink),
+    var(--accent-purple),
+    var(--primary)
   );
   background-size: 300% 300%;
   -webkit-mask:
@@ -108,7 +108,7 @@
 }
 
 .author {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--card-border);
   padding-top: 20px;
 }
 

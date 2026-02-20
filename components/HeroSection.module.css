@@ -17,7 +17,7 @@
       rgba(245, 158, 11, 0.1) 0%,
       transparent 50%
     ),
-    radial-gradient(ellipse at center, #111827 0%, #0a0e1a 100%);
+    radial-gradient(ellipse at center, transparent 0%, var(--background) 100%);
 }
 
 .canvasContainer {
@@ -52,12 +52,12 @@
   font-weight: 800;
   background: linear-gradient(
     135deg,
-    #f59e0b,
+    var(--primary),
     #ef4444,
-    #ec4899,
-    #7c3aed,
-    #3b82f6,
-    #f59e0b
+    var(--accent-pink),
+    var(--accent-purple),
+    var(--accent-blue),
+    var(--primary)
   );
   background-size: 300% 300%;
   -webkit-background-clip: text;
@@ -79,7 +79,7 @@
 .subHeadline {
   font-family: var(--font-inter);
   font-size: 1.15rem;
-  color: #94a3b8;
+  color: var(--text-muted);
   margin-bottom: 3rem;
   line-height: 1.7;
   max-width: 600px;
@@ -94,7 +94,7 @@
 }
 
 .primaryBtn {
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  background: linear-gradient(135deg, var(--primary), #ef4444);
   background-size: 200% 200%;
   color: #fff;
   padding: 14px 36px;
@@ -200,7 +200,7 @@
 
 .scrollIndicator span {
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--text-dim);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-family: var(--font-inter);

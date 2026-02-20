@@ -47,7 +47,7 @@
   box-shadow:
     0 20px 60px rgba(0, 0, 0, 0.5),
     0 0 80px rgba(245, 158, 11, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-border);
 }
 
 .heroImage {
@@ -89,14 +89,14 @@
 
 .subtitle {
   font-size: 1.15rem;
-  color: #e2e8f0;
+  color: var(--foreground);
   line-height: 1.8;
   font-weight: 500;
 }
 
 .description {
   font-size: 1rem;
-  color: #94a3b8;
+  color: var(--text-muted);
   line-height: 1.8;
 }
 
@@ -154,7 +154,7 @@
   font-weight: 800;
   text-align: center;
   margin-bottom: 3.5rem;
-  background: linear-gradient(135deg, #fff, #e2e8f0, #7c3aed);
+  background: linear-gradient(135deg, #fff, var(--foreground), var(--accent-purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -167,8 +167,8 @@
 }
 
 .valueCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 20px;
   padding: 2.5rem 2rem;
   text-align: center;
@@ -183,7 +183,7 @@
   inset: 0;
   border-radius: 20px;
   padding: 1px;
-  background: linear-gradient(135deg, #f59e0b, #ec4899, #7c3aed, #f59e0b);
+  background: linear-gradient(135deg, var(--primary), var(--accent-pink), var(--accent-purple), var(--primary));
   background-size: 300% 300%;
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -231,7 +231,7 @@
 .cardDesc {
   font-family: var(--font-inter);
   font-size: 0.95rem;
-  color: #94a3b8;
+  color: var(--text-muted);
   line-height: 1.7;
 }
 

@@ -1,5 +1,5 @@
 .footer {
-  background: #0a0e1a;
+  background: var(--background);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding: 60px 0 20px;
   color: var(--foreground);
@@ -17,11 +17,11 @@
   height: 2px;
   background: linear-gradient(
     90deg,
-    #7c3aed,
-    #ec4899,
-    #f59e0b,
-    #3b82f6,
-    #7c3aed
+    var(--accent-purple),
+    var(--accent-pink),
+    var(--primary),
+    var(--accent-blue),
+    var(--accent-purple)
   );
   background-size: 300% 100%;
   animation: border-rotate 6s linear infinite;
@@ -44,7 +44,7 @@
   font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 15px;
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  background: linear-gradient(135deg, var(--primary), #ef4444);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -52,7 +52,7 @@
 
 .quote {
   font-style: italic;
-  color: #64748b;
+  color: var(--text-dim);
   line-height: 1.7;
   font-size: 0.9rem;
 }
@@ -66,7 +66,7 @@
   font-family: var(--font-space-grotesk);
   font-size: 1rem;
   margin-bottom: 20px;
-  color: #e2e8f0;
+  color: var(--foreground);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -75,7 +75,7 @@
 
 .column a {
   display: block;
-  color: #64748b;
+  color: var(--text-dim);
   margin-bottom: 12px;
   transition: all 0.3s ease;
   font-size: 0.9rem;
@@ -116,7 +116,7 @@
   height: 40px;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 12px;
-  color: #94a3b8;
+  color: var(--text-muted);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -137,7 +137,7 @@
   text-align: center;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.04);
-  color: #475569;
+  color: var(--text-dim);
   font-size: 0.85rem;
 }
 

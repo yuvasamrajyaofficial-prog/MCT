@@ -17,12 +17,12 @@
   font-family: var(--font-space-grotesk);
   font-size: 2.5rem;
   font-weight: 800;
-  color: #f8fafc;
+  color: var(--foreground);
   margin-bottom: 12px;
 }
 
 .subtitle {
-  color: #64748b;
+  color: var(--text-dim);
   font-size: 1.05rem;
 }
 
@@ -33,8 +33,8 @@
 }
 
 .item {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 14px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -58,7 +58,7 @@
   padding: 20px 24px;
   background: none;
   border: none;
-  color: #e2e8f0;
+  color: var(--foreground);
   font-size: 1rem;
   font-weight: 600;
   text-align: left;
@@ -68,12 +68,12 @@
 }
 
 .question:hover {
-  color: #f59e0b;
+  color: var(--primary);
 }
 
 .chevron {
   flex-shrink: 0;
-  color: #64748b;
+  color: var(--text-dim);
   transition:
     transform 0.3s ease,
     color 0.3s ease;
@@ -81,7 +81,7 @@
 
 .chevron.rotated {
   transform: rotate(180deg);
-  color: #f59e0b;
+  color: var(--primary);
 }
 
 .answer {
@@ -90,7 +90,7 @@
 
 .answer p {
   padding: 0 24px 20px;
-  color: #94a3b8;
+  color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.8;
   margin: 0;

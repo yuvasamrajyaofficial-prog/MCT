@@ -14,12 +14,12 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 16px;
-  color: #f8fafc;
+  color: var(--foreground);
 }
 
 .subtitle {
   font-size: 1.1rem;
-  color: #64748b;
+  color: var(--text-dim);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.7;

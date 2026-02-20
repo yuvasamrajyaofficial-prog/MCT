@@ -17,12 +17,12 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 16px;
-  color: #f8fafc;
+  color: var(--foreground);
 }
 
 .subtitle {
   font-size: 1.1rem;
-  color: #64748b;
+  color: var(--text-dim);
   max-width: 650px;
   margin: 0 auto 50px;
   line-height: 1.7;
@@ -38,8 +38,8 @@
 }
 
 .perkCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 16px;
   padding: 28px 20px;
   transition: all 0.3s ease;
@@ -59,12 +59,12 @@
   font-family: var(--font-space-grotesk);
   font-size: 1rem;
   font-weight: 700;
-  color: #e2e8f0;
+  color: var(--foreground);
   margin-bottom: 6px;
 }
 
 .perkDescription {
-  color: #64748b;
+  color: var(--text-dim);
   font-size: 0.85rem;
   line-height: 1.5;
 }
@@ -79,8 +79,8 @@
 }
 
 .jobCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 18px;
   padding: 28px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -88,7 +88,7 @@
 
 .jobCard:hover {
   transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--glass-bg);
   border-color: rgba(245, 158, 11, 0.3);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
@@ -97,13 +97,13 @@
   font-family: var(--font-space-grotesk);
   font-size: 1.25rem;
   font-weight: 700;
-  color: #e2e8f0;
+  color: var(--foreground);
   margin-bottom: 8px;
 }
 
 .jobType {
   font-size: 0.82rem;
-  color: #f59e0b;
+  color: var(--primary);
   font-weight: 700;
   margin-bottom: 14px;
   text-transform: uppercase;
@@ -111,7 +111,7 @@
 }
 
 .jobDesc {
-  color: #94a3b8;
+  color: var(--text-muted);
   margin-bottom: 20px;
   line-height: 1.6;
   font-size: 0.95rem;
@@ -120,7 +120,7 @@
 .applyBtn {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  background: linear-gradient(135deg, var(--primary), #ef4444);
   border: none;
   color: #fff;
   border-radius: 10px;
@@ -136,12 +136,12 @@
 }
 
 .cta {
-  color: #64748b;
+  color: var(--text-dim);
   font-size: 1rem;
 }
 
 .contactLink {
-  color: #f59e0b;
+  color: var(--primary);
   font-weight: 600;
   text-decoration: none;
   margin-left: 6px;
@@ -149,7 +149,7 @@
 }
 
 .contactLink:hover {
-  color: #fbbf24;
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {

@@ -37,11 +37,11 @@
   margin: 0 auto;
   background: linear-gradient(
     135deg,
-    #f59e0b,
+    var(--primary),
     #ef4444,
-    #ec4899,
-    #7c3aed,
-    #f59e0b
+    var(--accent-pink),
+    var(--accent-purple),
+    var(--primary)
   );
   background-size: 300% 300%;
   -webkit-background-clip: text;

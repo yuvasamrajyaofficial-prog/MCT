@@ -24,7 +24,7 @@
 }
 
 .iconSun {
-  color: #f59e0b;
+  color: var(--primary);
 }
 
 .iconMoon {
