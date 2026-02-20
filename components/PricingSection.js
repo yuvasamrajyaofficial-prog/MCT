@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X, Smartphone, Globe, BarChart3, Bot, MessageCircle } from "lucide-react";
+import { Check, X, Smartphone, Globe, BarChart3, Bot, MessageCircle, PenTool, Linkedin, Mail } from "lucide-react";
 import styles from "./PricingSection.module.css";
 
 const categories = [
-  { id: "web", label: "Website Design", icon: <Globe size={18} /> },
-  { id: "marketing", label: "Digital Marketing", icon: <BarChart3 size={18} /> },
-  { id: "automation", label: "AI & Automation", icon: <Bot size={18} /> },
+  { id: "web", label: "Web & App", icon: <Globe size={18} /> },
+  { id: "social", label: "Social & Brand", icon: <Linkedin size={18} /> },
+  { id: "content", label: "Content & SEO", icon: <PenTool size={18} /> },
 ];
 
 const pricingData = {
@@ -17,108 +17,158 @@ const pricingData = {
       title: "Business Starter",
       price: "₹14,999",
       period: "one-time",
-      description: "Perfect for local businesses needing a professional online presence.",
+      description: "Professional website to establish your digital presence.",
+      popular: false,
       features: [
-        "5-Page Custom Website (Next.js)",
+        "5-Page Custom Website",
         "Mobile Responsive Design",
         "WhatsApp Chat Integration",
         "Free Domain & Hosting (1 Year)",
         "Contact Form with Email Alerts",
-        "Google Maps Integration"
+        "Basic SEO Setup"
       ],
-      notIncluded: ["E-commerce Functionality", "Admin Dashboard"],
       cta: "Book this Package",
-      message: "Hi, I am interested in the Business Starter Website package for ₹14,999."
+      message: "Hi, I am interested in the Business Starter Website package."
     },
     {
       title: "E-Commerce Pro",
       price: "₹29,999",
       period: "one-time",
       popular: true,
-      description: "Start selling your products online with a secure store.",
+      description: "Full-featured online store with payment gateway.",
       features: [
-        "Complete Online Store Setup",
-        "Product Listing (up to 50)",
+        "Complete Online Store (50 Products)",
         "Payment Gateway (UPI/Cards)",
         "Admin Dashboard for Orders",
+        "Cart & Checkout System",
         "1 Year Priority Support",
-        "Basic SEO Optimization"
+        "User Login & Profiles"
       ],
-      notIncluded: [],
       cta: "Start Selling Now",
-      message: "Hi, I want to build an E-Commerce Website. Please guide me."
-    }
-  ],
-  marketing: [
-    {
-      title: "Local SEO Lite",
-      price: "₹7,999",
-      period: "/month",
-      description: "Get found on Google by customers in your area.",
-      features: [
-        "Google My Business Optimization",
-        "2 SEO Blog Posts/Month",
-        "Local Keyword Ranking",
-        "Monthly Traffic Report",
-        "Review Management Strategy"
-      ],
-      notIncluded: ["Social Media Management", "Video Editing"],
-      cta: "Boost My Ranking",
-      message: "Hi, I need help with Local SEO for my business."
+      message: "Hi, I want to build an E-Commerce Website."
     },
     {
-      title: "Social Growth Pro",
-      price: "₹12,999",
-      period: "/month",
-      popular: true,
-      description: "Build a loyal community on Instagram & LinkedIn.",
+      title: "Custom App Dev",
+      price: "₹49,999",
+      period: "starts from",
+      description: "Native Android/iOS app for your business.",
+      popular: false,
       features: [
-        "12 Creative Posts (Insta/FB)",
-        "4 Professional Reels/Shorts",
-        "Content Strategy & Hashtags",
-        "Community Engagement",
-        "Monthly Performance Analytics",
-        "WhatsApp Support"
+        "Android & iOS App (Flutter/React Native)",
+        "Push Notifications",
+        "User Authentication",
+        "Real-time Database",
+        "Google Maps / Location Services",
+        "App Store & Play Store Submission"
       ],
-      notIncluded: [],
-      cta: "Grow My Brand",
-      message: "Hi, I am interested in the Social Growth Pro marketing package."
+      cta: "Discuss App Idea",
+      message: "Hi, I have an app idea and want to discuss development."
     }
   ],
-  automation: [
+  social: [
     {
-      title: "WhatsApp API Setup",
-      price: "₹4,999",
-      period: "one-time",
-      description: "Never miss a customer query with auto-replies.",
-      features: [
-        "Official WhatsApp Business API",
-        "Welcome Message Automation",
-        "FAQ Auto-Replies",
-        "Catalog Integration",
-        "Link to Website/Socials"
-      ],
-      notIncluded: ["AI Chatbot Intelligence"],
-      cta: "Automate WhatsApp",
-      message: "Hi, I want to set up WhatsApp Business API for my number."
-    },
-    {
-      title: "AI Sales Agent",
+      title: "Social Starter",
       price: "₹9,999",
       period: "/month",
-      popular: true,
-      description: "Your 24/7 employee that answers and sells.",
+      description: "Consistent presence on Instagram & Facebook.",
+      popular: false,
       features: [
-        "Custom AI Chatbot on Website",
-        "Trained on Your Data",
-        "Lead Qualification",
-        "Appointment Booking",
-        "24/7 Customer Support",
-        "Monthly Conversation Logs"
+        "12 Creative Posts/Month",
+        "4 Reels/Shorts",
+        "Content Strategy & Hashtags",
+        "Community Engagement",
+        "Monthly Performance Report",
+        "WhatsApp Support"
       ],
-      notIncluded: [],
-      cta: "Hire AI Agent",
-      message: "Hi, I want to install an AI Sales Agent on my website."
+      cta: "Start Growing",
+      message: "Hi, I need help with Social Media Marketing (Starter)."
+    },
+    {
+      title: "LinkedIn Personal Brand",
+      price: "₹19,999",
+      period: "/month",
+      popular: true,
+      description: "Build authority and generate leads on LinkedIn.",
+      features: [
+        "Profile Optimization & Revamp",
+        "3 High-Quality Posts/Week",
+        "Ghostwriting (Articles/Stories)",
+        "Network Growth Strategy",
+        "Lead Generation Tactics",
+        "Weekly Analytics Review"
+      ],
+      cta: "Build My Brand",
+      message: "Hi, I want to build my Personal Brand on LinkedIn."
+    },
+    {
+      title: "360° Brand Growth",
+      price: "₹34,999",
+      period: "/month",
+      description: "Complete domination across all platforms.",
+      popular: false,
+      features: [
+        "Manage Insta, FB, LinkedIn, Twitter",
+        "Daily Posting Schedule",
+        "8 Professional Reels/Month",
+        "Ad Campaign Management",
+        "Influencer Outreach Strategy",
+        "Dedicated Account Manager"
+      ],
+      cta: "Go Viral",
+      message: "Hi, I am interested in the 360° Brand Growth package."
+    }
+  ],
+  content: [
+    {
+      title: "Blogger Package",
+      price: "₹6,999",
+      period: "/month",
+      description: "Keep your website fresh and rank higher.",
+      popular: false,
+      features: [
+        "4 SEO-Optimized Blogs (Weekly)",
+        "Keyword Research & Strategy",
+        "Plagiarism-Free Content",
+        "Stock Images Included",
+        "Uploaded to Your Grid/CMS",
+        "Internal Linking Strategy"
+      ],
+      cta: "Start Blogging",
+      message: "Hi, I need weekly blog writing services."
+    },
+    {
+      title: "SEO Authority",
+      price: "₹14,999",
+      period: "/month",
+      popular: true,
+      description: "Aggressive SEO to capture #1 rankings.",
+      features: [
+        "8 High-Intent Blogs/Month",
+        "Technical SEO Audit & Fixes",
+        "Backlink Building Strategy",
+        "Competitor Analysis",
+        "Google My Business Optimization",
+        "Conversion Rate Optimization"
+      ],
+      cta: "Rank #1",
+      message: "Hi, I want to aggressively improve my SEO rankings."
+    },
+    {
+      title: "Email & Copy",
+      price: "₹9,999",
+      period: "/month",
+      description: "Nurture leads and close sales with words.",
+      popular: false,
+      features: [
+        "Weekly Newsletter Campaigns",
+        "Automated Drip Sequences",
+        "Landing Page Copywriting",
+        "Sales Email Scripts",
+        "A/B Testing Subject Lines",
+        "List Segmentation"
+      ],
+      cta: "Boost Sales",
+      message: "Hi, I need Email Marketing and Copywriting services."
     }
   ]
 };
@@ -137,7 +187,7 @@ export default function PricingSection() {
         <div className={styles.header}>
           <h2 className={styles.title}>Transparent Pricing</h2>
           <p className={styles.subtitle}>
-            Choose the perfect plan to scale your business. No hidden fees.
+            Scalable packages for businesses of all sizes. No hidden costs.
           </p>
         </div>
 
@@ -176,7 +226,7 @@ export default function PricingSection() {
                 className={`${styles.card} ${plan.popular ? styles.popularCard : ""}`}
               >
                 {plan.popular && (
-                  <div className={styles.popularBadge}>Best Value</div>
+                  <div className={styles.popularBadge}>Most Popular</div>
                 )}
                 <div className={styles.cardHeader}>
                   <h3 className={styles.planTitle}>{plan.title}</h3>
@@ -196,14 +246,6 @@ export default function PricingSection() {
                       <span>{feature}</span>
                     </li>
                   ))}
-                  {plan.notIncluded && plan.notIncluded.map((feature, i) => (
-                    <li key={i} className={`${styles.featureItem} ${styles.disabled}`}>
-                      <div className={styles.xIcon}>
-                        <X size={16} />
-                      </div>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
                 </ul>
 
                 <button
@@ -219,12 +261,12 @@ export default function PricingSection() {
         </div>
 
         <div className={styles.customQuote}>
-          <p>Need a custom solution?</p>
+          <p>Need something custom?</p>
           <button 
              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
              className={styles.contactLink}
           >
-            Book a Free Consultation &rarr;
+            Get a Custom Quote &rarr;
           </button>
         </div>
       </div>

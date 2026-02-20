@@ -7,7 +7,10 @@ import {
   PenTool, 
   Smartphone, 
   BrainCircuit, 
-  Megaphone
+  Megaphone,
+  Users,
+  Mail,
+  Palette
 } from "lucide-react";
 import styles from "./ServicesSection.module.css";
 
@@ -15,22 +18,27 @@ const services = [
   {
     icon: <Search size={40} />,
     title: "SEO & SEM",
-    description: "Boost your visibility on Google with data-driven SEO strategies and targeted ad campaigns."
+    description: "Dominate Google rankings with data-driven SEO and targeted PPC campaigns."
   },
   {
     icon: <Megaphone size={40} />,
     title: "Social Media Marketing",
-    description: "Engage your audience and build brand loyalty across Instagram, LinkedIn, and Facebook."
+    description: "End-to-end management for Instagram, Facebook, and Twitter to build loyal communities."
+  },
+  {
+    icon: <Users size={40} />, // Need to import Users
+    title: "LinkedIn Personal Branding",
+    description: "Position yourself as an industry thought leader with optimized profiles and ghostwriting."
   },
   {
     icon: <Code size={40} />,
-    title: "Web Development",
-    description: "Custom websites built with Next.js and React for speed, improved SEO, and scalability."
+    title: "Web Design & Dev",
+    description: "Stunning, high-performance websites built with Next.js and React for maximum conversion."
   },
   {
     icon: <PenTool size={40} />,
-    title: "Content & Branding",
-    description: "Compelling storytelling and visual identity design that resonates with your target market."
+    title: "Content Writing",
+    description: "SEO-optimized blogs, convincing copy, and whitepapers that drive authority and sales."
   },
   {
     icon: <Smartphone size={40} />,
@@ -39,8 +47,18 @@ const services = [
   },
   {
     icon: <BrainCircuit size={40} />,
-    title: "AI Solutions",
-    description: "Integrate AI chatbots and automation to streamline customer service and operations."
+    title: "AI Automation",
+    description: "Custom chatbots and workflow automations to save time and reduce operational costs."
+  },
+  {
+    icon: <Mail size={40} />, // Need to import Mail
+    title: "Email Marketing",
+    description: "High-converting newsletters and automated drip campaigns to nurture your leads."
+  },
+  {
+    icon: <Palette size={40} />, // Need to import Palette
+    title: "Creative Design",
+    description: "Logo design, branding kits, and social media graphics that make your brand reference."
   }
 ];
 
