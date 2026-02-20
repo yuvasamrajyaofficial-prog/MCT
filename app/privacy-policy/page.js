@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Introduction</h2>
           <p className={styles.paragraph}>
-            Prabas Digital (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting the privacy of our clients and website visitors. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage our services.
+            PraBaS Digital (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting the privacy of our clients and website visitors. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage our services.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function PrivacyPolicyPage() {
             If you have any questions about this Privacy Policy, please reach out:
           </p>
           <div className={styles.contactInfo}>
-            <p><strong>Prabas Digital</strong></p>
+            <p><strong>PraBaS Digital</strong></p>
             <p>Email: <a href="mailto:ph293815@gmail.com">ph293815@gmail.com</a></p>
             <p>WhatsApp: <a href="https://wa.me/919902857694">+91 99028 57694</a></p>
             <p>Location: Karnataka, India</p>

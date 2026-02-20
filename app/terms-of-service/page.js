@@ -37,13 +37,13 @@ export default function TermsOfServicePage() {
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Agreement to Terms</h2>
           <p className={styles.paragraph}>
-            By engaging Prabas Digital (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) for any services or by accessing our website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our services.
+            By engaging PraBaS Digital (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) for any services or by accessing our website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our services.
           </p>
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Services Offered</h2>
-          <p className={styles.paragraph}>Prabas Digital provides the following digital services:</p>
+          <p className={styles.paragraph}>PraBaS Digital provides the following digital services:</p>
           <ul className={styles.list}>
             <li>Website Design &amp; Development (Static, Dynamic, E-Commerce)</li>
             <li>Search Engine Optimization (SEO) &amp; Search Engine Marketing (SEM)</li>
@@ -76,7 +76,7 @@ export default function TermsOfServicePage() {
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Intellectual Property</h2>
           <p className={styles.paragraph}>
-            Upon full payment, all final deliverables (website code, design files, content) become the property of the client. Prabas Digital retains the right to showcase completed work in our portfolio unless specifically requested otherwise in writing.
+            Upon full payment, all final deliverables (website code, design files, content) become the property of the client. PraBaS Digital retains the right to showcase completed work in our portfolio unless specifically requested otherwise in writing.
           </p>
           <p className={styles.paragraph}>
             Third-party assets (stock images, fonts, plugins) used in your project may be subject to their own licensing terms.
@@ -103,7 +103,7 @@ export default function TermsOfServicePage() {
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Limitation of Liability</h2>
           <p className={styles.paragraph}>
-            Prabas Digital shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services, including but not limited to loss of revenue, data, or business opportunities. Our total liability shall not exceed the total fees paid by the client for the specific service in question.
+            PraBaS Digital shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services, including but not limited to loss of revenue, data, or business opportunities. Our total liability shall not exceed the total fees paid by the client for the specific service in question.
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export default function TermsOfServicePage() {
           <h2 className={styles.sectionTitle}>Contact</h2>
           <p className={styles.paragraph}>For any questions regarding these terms:</p>
           <div className={styles.contactInfo}>
-            <p><strong>Prabas Digital</strong></p>
+            <p><strong>PraBaS Digital</strong></p>
             <p>Email: <a href="mailto:ph293815@gmail.com">ph293815@gmail.com</a></p>
             <p>WhatsApp: <a href="https://wa.me/919902857694">+91 99028 57694</a></p>
             <p>Location: Karnataka, India</p>

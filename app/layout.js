@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Prabas Digital | AI-Powered Digital Marketing Agency",
+  title: "PraBaS Digital | AI-Powered Digital Marketing Agency",
   description:
-    "Prabas Digital — Premium digital marketing, website development, AI solutions, and brand strategy for businesses that demand results.",
+    "PraBaS Digital — Premium digital marketing, website development, AI solutions, and brand strategy for businesses that demand results.",
 };
 
 export default function RootLayout({ children }) {

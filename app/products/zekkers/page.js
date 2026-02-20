@@ -2,7 +2,7 @@ import ProductLayout from "@/components/ProductLayout";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Zekkers - AI Job Marketplace | Prabas Digital",
+  title: "Zekkers - AI Job Marketplace | PraBaS Digital",
   description: "Zekkers connects students and early-career professionals with employers through AI-powered skill matching and predictive career roadmaps.",
 };
 

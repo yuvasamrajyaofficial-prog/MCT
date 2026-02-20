@@ -2,7 +2,7 @@ import ProductLayout from "@/components/ProductLayout";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Malola / Soulink - AI Wellness Platform | Prabas Digital",
+  title: "Malola / Soulink - AI Wellness Platform | PraBaS Digital",
   description: "Malola (Soulink) combines AI conversational support with Vedic astrology to provide holistic mental and spiritual wellness guidance.",
 };
 

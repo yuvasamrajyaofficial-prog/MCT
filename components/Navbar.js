@@ -41,7 +41,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
           <span className={styles.logoIcon}>P</span>
-          <span className={styles.logoText}>Prabas Digital</span>
+          <span className={styles.logoText}>PraBaS Digital</span>
         </Link>
 
         {/* Desktop nav */}

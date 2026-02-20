@@ -2,7 +2,7 @@ import ProductLayout from "@/components/ProductLayout";
 import Image from "next/image";
 
 export const metadata = {
-  title: "TioraS Studio - AI Fashion Design Platform | Prabas Digital",
+  title: "TioraS Studio - AI Fashion Design Platform | PraBaS Digital",
   description: "TioraS democratizes fashion design with AI. Generate custom embroidery designs from text prompts and order high-quality menswear instantly.",
 };
 

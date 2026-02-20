@@ -2,7 +2,7 @@ import ProductLayout from "@/components/ProductLayout";
 import Image from "next/image";
 
 export const metadata = {
-  title: "AI Fitness Trainer - Personal AI Coach | Prabas Digital",
+  title: "AI Fitness Trainer - Personal AI Coach | PraBaS Digital",
   description: "Your personal AI coach for customized workout plans, real-time form correction, and fitness progress tracking.",
 };
 

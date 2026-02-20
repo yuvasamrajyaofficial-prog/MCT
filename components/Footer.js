@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.content}>
           <div className={styles.brand}>
-            <h3 className={styles.logo}>Prabas Digital</h3>
+            <h3 className={styles.logo}>PraBaS Digital</h3>
             <p className={styles.quote}>&quot;Empowering businesses to thrive in the digital ecosystem through creative strategy and technical excellence.&quot;</p>
           </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.copyright}>
-          <p>&copy; {new Date().getFullYear()} Prabas Digital | Established in India.</p>
+          <p>&copy; {new Date().getFullYear()} PraBaS Digital | Established in India.</p>
         </div>
       </div>
     </footer>

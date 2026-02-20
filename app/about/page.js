@@ -39,7 +39,7 @@ export default function AboutPage() {
                 Built on <span className="text-gradient">Legacy</span>
               </h1>
               <p className={styles.subtitle}>
-                Prabas Digital is more than a business — it&apos;s a tribute to the values our father instilled in us: hard work, integrity, and the belief that anyone can grow.
+                PraBaS Digital is more than a business — it&apos;s a tribute to the values our father instilled in us: hard work, integrity, and the belief that anyone can grow.
               </p>
               <p className={styles.description}>
                 From the golden fields of Karnataka to the digital frontier, we carry forward the spirit of dedication. Every project we take on is powered by the same discipline and care our father taught us.

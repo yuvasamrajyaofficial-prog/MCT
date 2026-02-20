@@ -37,7 +37,7 @@ export default function RefundPolicyPage() {
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Overview</h2>
           <p className={styles.paragraph}>
-            At Prabas Digital, we are committed to delivering quality work. We understand that circumstances may change, and we have structured our refund policy to be fair to both parties. Please read this policy carefully before engaging our services.
+            At PraBaS Digital, we are committed to delivering quality work. We understand that circumstances may change, and we have structured our refund policy to be fair to both parties. Please read this policy carefully before engaging our services.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export default function RefundPolicyPage() {
           <h2 className={styles.sectionTitle}>Contact Us</h2>
           <p className={styles.paragraph}>For refund requests or questions about this policy:</p>
           <div className={styles.contactInfo}>
-            <p><strong>Prabas Digital</strong></p>
+            <p><strong>PraBaS Digital</strong></p>
             <p>Email: <a href="mailto:ph293815@gmail.com">ph293815@gmail.com</a></p>
             <p>WhatsApp: <a href="https://wa.me/919902857694">+91 99028 57694</a></p>
             <p>Location: Karnataka, India</p>

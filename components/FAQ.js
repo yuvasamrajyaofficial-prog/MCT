@@ -7,7 +7,7 @@ import styles from "./FAQ.module.css";
 
 const FAQ_DATA = [
   {
-    q: "What services does Prabas Digital offer?",
+    q: "What services does PraBaS Digital offer?",
     a: "We offer complete digital solutions including website design & development, social media management, SEO optimization, brand identity design, AI-powered tools, and ongoing digital marketing campaigns tailored to your business goals."
   },
   {

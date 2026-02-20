@@ -2,7 +2,7 @@ import ProductLayout from "@/components/ProductLayout";
 import Image from "next/image";
 
 export const metadata = {
-  title: "LOLA AI - Advanced AI Companion | Prabas Digital",
+  title: "LOLA AI - Advanced AI Companion | PraBaS Digital",
   description: "LOLA AI is an advanced AI companion designed for meaningful conversations, emotional support, and personal growth guidance.",
 };
 
