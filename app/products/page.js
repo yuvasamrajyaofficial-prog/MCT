@@ -1,13 +1,49 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Filter } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import styles from "./Portfolio.module.css";
 
 const PROJECTS = [
+  {
+    id: "mct-retail",
+    title: "MCT Retail",
+    category: "Enterprise OS",
+    image: "/images/mct-retail-screenshot.png",
+    description: "Enterprise Retail Operating System & 3D Point of Sale Suite engineered by Prashant Hiremath. Features offline-first PWA caching, high-concurrency inventory synchronization, and live sales analytics.",
+    link: "/products/mct-retail",
+    color: "#06b6d4"
+  },
+  {
+    id: "the-enforcer",
+    title: "The Enforcer",
+    category: "Productivity AI",
+    image: "/images/the-enforcer-screenshot.png",
+    description: "A strict personal accountability application featuring time-blocked work intervals, financial pacing monitors, habit streak tracking, and an interactive AI focus mentor.",
+    link: "/products/the-enforcer",
+    color: "#ef4444"
+  },
+  {
+    id: "bull-monk",
+    title: "BullMonk ($BMONK)",
+    category: "Web3 & Crypto",
+    image: "/images/bullmonk-screenshot.png",
+    description: "Enlightened crypto meme coin ecosystem uniting narrative-driven Neeti Lore, transparent tokenomics distribution, interactive roadmap, and decentralized Web3 community integration.",
+    link: "/products/bull-monk",
+    color: "#f59e0b"
+  },
+  {
+    id: "vaultcam",
+    title: "VaultCam / VaultID",
+    category: "Biometric Security",
+    image: "/images/vaultcam-screenshot.png",
+    description: "Next-generation biometric camera verification and encrypted locker app. Provides zero-knowledge client authentication and secure encrypted digital vaults on device.",
+    link: "/products/vaultcam",
+    color: "#a855f7"
+  },
   {
     id: "malola",
     title: "Malola / Soulink",
@@ -22,7 +58,7 @@ const PROJECTS = [
     title: "LOLA AI",
     category: "Voice Assistant",
     image: "/images/lola-ai-screenshot.png",
-    description: "A next-generation AI companion feauting real-time voice interaction, emotional intelligence, and safe-mode content filtering for a secure user experience.",
+    description: "A next-generation AI companion featuring real-time voice interaction, emotional intelligence, and safe-mode content filtering for a secure user experience.",
     link: "/products/lola-ai",
     color: "#ec4899"
   },
@@ -64,16 +100,17 @@ const PROJECTS = [
   }
 ];
 
-const FILTERS = ["All", "AI", "Web", "App"];
+const FILTERS = ["All", "AI", "Web", "App", "Enterprise"];
 
 export default function PortfolioPage() {
   const [filter, setFilter] = useState("All");
 
   const filteredProjects = PROJECTS.filter(p => {
     if (filter === "All") return true;
-    if (filter === "AI") return ["AI Platform", "Voice Assistant", "Computer Vision", "Generative AI"].includes(p.category);
-    if (filter === "Web") return ["Gig Marketplace", "Web Portal"].includes(p.category);
-    if (filter === "App") return ["Gig Marketplace"].includes(p.category); // Example logic
+    if (filter === "AI") return ["AI Platform", "Voice Assistant", "Computer Vision", "Generative AI", "Productivity AI", "Biometric Security"].includes(p.category);
+    if (filter === "Web") return ["Gig Marketplace", "Web Portal", "Web3 & Crypto", "Enterprise OS"].includes(p.category);
+    if (filter === "App") return ["Gig Marketplace", "Biometric Security", "Productivity AI", "Enterprise OS"].includes(p.category);
+    if (filter === "Enterprise") return ["Enterprise OS", "Web Portal", "Gig Marketplace"].includes(p.category);
     return true;
   });
 
@@ -96,11 +133,22 @@ export default function PortfolioPage() {
           >
             Building the future, one pixel at a time.
           </motion.p>
+          <div className={styles.filterContainer}>
+            {FILTERS.map((f) => (
+              <button
+                key={f}
+                className={`${styles.filterBtn} ${filter === f ? styles.activeFilter : ""}`}
+                onClick={() => setFilter(f)}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 
       <section className={styles.gallery}>
-        {filteredProjects.map((project, index) => (
+        {filteredProjects.map((project) => (
           <motion.div 
             key={project.id}
             initial={{ opacity: 0, y: 50 }}

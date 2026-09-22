@@ -8,6 +8,10 @@ import {
   ShoppingBag,
   MessageCircle,
   Activity,
+  Store,
+  ShieldAlert,
+  Coins,
+  LockKeyhole,
 } from "lucide-react";
 import Link from "next/link";
 import styles from "./ProductShowcase.module.css";
@@ -42,6 +46,70 @@ export default function ProductShowcase() {
           </button>
         </div>
         <div className={styles.grid}>
+          {/* MCT Retail */}
+          <Tilt options={defaultOptions} className={styles.cardWrapper}>
+            <Link href="/products/mct-retail" className={styles.cardLink}>
+              <div className={`${styles.card} glass-card`}>
+                <div className={styles.iconWrapper}>
+                  <Store size={48} color="#06B6D4" />
+                </div>
+                <h3 className={styles.cardTitle}>MCT Retail</h3>
+                <p className={styles.cardDesc}>
+                  Enterprise Retail OS & 3D POS Suite with offline PWA caching & multi-store sync.
+                </p>
+                <span className={`${styles.status} ${styles.live}`}>Live</span>
+              </div>
+            </Link>
+          </Tilt>
+
+          {/* The Enforcer */}
+          <Tilt options={defaultOptions} className={styles.cardWrapper}>
+            <Link href="/products/the-enforcer" className={styles.cardLink}>
+              <div className={`${styles.card} glass-card`}>
+                <div className={styles.iconWrapper}>
+                  <ShieldAlert size={48} color="#EF4444" />
+                </div>
+                <h3 className={styles.cardTitle}>The Enforcer</h3>
+                <p className={styles.cardDesc}>
+                  Strict Personal Accountability App with 55-min work blocks & AI focus mentor.
+                </p>
+                <span className={`${styles.status} ${styles.live}`}>Live</span>
+              </div>
+            </Link>
+          </Tilt>
+
+          {/* BullMonk */}
+          <Tilt options={defaultOptions} className={styles.cardWrapper}>
+            <Link href="/products/bull-monk" className={styles.cardLink}>
+              <div className={`${styles.card} glass-card`}>
+                <div className={styles.iconWrapper}>
+                  <Coins size={48} color="#FBBF24" />
+                </div>
+                <h3 className={styles.cardTitle}>BullMonk ($BMONK)</h3>
+                <p className={styles.cardDesc}>
+                  Enlightened Web3 Crypto Ecosystem with Neeti Lore, tokenomics & live roadmap.
+                </p>
+                <span className={`${styles.status} ${styles.live}`}>Live</span>
+              </div>
+            </Link>
+          </Tilt>
+
+          {/* VaultCam */}
+          <Tilt options={defaultOptions} className={styles.cardWrapper}>
+            <Link href="/products/vaultcam" className={styles.cardLink}>
+              <div className={`${styles.card} glass-card`}>
+                <div className={styles.iconWrapper}>
+                  <LockKeyhole size={48} color="#A855F7" />
+                </div>
+                <h3 className={styles.cardTitle}>VaultCam (VaultID)</h3>
+                <p className={styles.cardDesc}>
+                  Privacy-first Biometric Camera Verification & encrypted personal vault locker.
+                </p>
+                <span className={`${styles.status} ${styles.live}`}>Live</span>
+              </div>
+            </Link>
+          </Tilt>
+
           {/* Malola */}
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
             <Link href="/products/malola" className={styles.cardLink}>
