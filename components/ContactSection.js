@@ -42,14 +42,34 @@ export default function ContactSection() {
     setStatus("");
 
     const formData = new FormData(e.target);
-    formData.set("phone", "+91" + phone);
+    const fullPhone = "+91" + phone;
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message") || "";
+
+    formData.set("phone", fullPhone);
     formData.set("service", selectedService);
 
     try {
-      await fetch(
+      // 1. Save to internal database so it appears in Admin Dashboard
+      await fetch("/api/contacts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          phone: fullPhone,
+          service: selectedService,
+          message,
+        }),
+      });
+
+      // 2. Also forward to Google Apps Script backup
+      fetch(
         "https://script.google.com/macros/s/AKfycby0H7QhKhqCpu-ZMTO0q7kC77SiuurbE5feLgY0QQtrgneCw2JizOIRiVCMYY4HEPlJ0w/exec",
         { method: "POST", body: formData, mode: "no-cors" }
-      );
+      ).catch((err) => console.warn("Google Script sync warning:", err));
+
       setStatus("success");
       e.target.reset();
       setPhone("");

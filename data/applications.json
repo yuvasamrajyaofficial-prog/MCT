@@ -1,0 +1,62 @@
+[
+  {
+    "id": "app_201",
+    "fullName": "Aditya Hegde",
+    "email": "aditya.hegde@gmail.com",
+    "phone": "+919886043210",
+    "role": "AI Research Scientist",
+    "experience": "3-5 years",
+    "portfolio": "https://github.com/aditya-hegde-ai",
+    "skills": "PyTorch, LangChain, HuggingFace, RAG pipelines, Fine-tuning Llama 3",
+    "resumeNote": "Previously built autonomous agentic workflows at a Series-A healthtech startup. Passionate about LLM evals.",
+    "status": "reviewing",
+    "rating": 5,
+    "internalNotes": "Strong candidate. Excellent GitHub portfolio with published papers on arXiv.",
+    "appliedAt": "2026-09-23T09:45:42.162Z"
+  },
+  {
+    "id": "app_202",
+    "fullName": "Sneha Kulkarni",
+    "email": "sneha.kulkarni@devmail.io",
+    "phone": "+919740055443",
+    "role": "Senior Full Stack Engineer",
+    "experience": "5+ years",
+    "portfolio": "https://snehakulkarni.dev",
+    "skills": "Next.js 15, React 19, TypeScript, PostgreSQL, Prisma, AWS, Tailwind CSS",
+    "resumeNote": "Lead frontend architect for 3 enterprise web platforms. Designed 3D web applications with Three.js.",
+    "status": "interview",
+    "rating": 4,
+    "internalNotes": "Technical screening completed with flying colors. Next round with Prashant.",
+    "appliedAt": "2026-09-22T10:45:42.162Z"
+  },
+  {
+    "id": "app_203",
+    "fullName": "Rohan Iyer",
+    "email": "rohan.growth@gmail.com",
+    "phone": "+919900012399",
+    "role": "Digital Marketing Specialist",
+    "experience": "1-3 years",
+    "portfolio": "https://linkedin.com/in/rohan-growth-marketer",
+    "skills": "Performance Ads (Meta/Google), Technical SEO, Ahrefs, High-converting landing pages",
+    "resumeNote": "Generated over ₹2.4Cr in tracked client GMV using structured paid search & Instagram funnels.",
+    "status": "applied",
+    "rating": 3,
+    "internalNotes": "Reviewing campaign case studies.",
+    "appliedAt": "2026-09-21T14:45:42.162Z"
+  },
+  {
+    "id": "app_204",
+    "fullName": "Pooja Sharma",
+    "email": "pooja.designs@figma.community",
+    "phone": "+919611298877",
+    "role": "UI/UX Designer",
+    "experience": "3-5 years",
+    "portfolio": "https://dribbble.com/poojasharma-ux",
+    "skills": "Figma, Design Systems, Mobile App UI, Prototyping, Glassmorphism, Micro-interactions",
+    "resumeNote": "Crafted complete design systems for 2 FinTech apps with 500k+ downloads. Deep love for dark mode aesthetics.",
+    "status": "reviewing",
+    "rating": 4,
+    "internalNotes": "Dribbble showcase is top notch. Aesthetic matches PraBaS style.",
+    "appliedAt": "2026-09-20T14:45:42.162Z"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "cnt_101",
+    "name": "Vikram Malhotra",
+    "email": "vikram@malhotratech.com",
+    "phone": "+919845012345",
+    "service": "AI Sales Agent (₹9,999/mo)",
+    "message": "We need an automated conversational sales bot integrated with our WhatsApp Business API for lead qualification.",
+    "status": "new",
+    "notes": "High intent lead. Wants demo by Thursday.",
+    "createdAt": "2026-09-23T12:45:42.154Z"
+  },
+  {
+    "id": "cnt_102",
+    "name": "Ananya Deshmukh",
+    "email": "ananya@deshmukhjewels.in",
+    "phone": "+919820067890",
+    "service": "E-Commerce Website (₹29,999)",
+    "message": "Looking for an ultra-luxury online jewelry store with 3D product previews and instant UPI checkout.",
+    "status": "in_discussion",
+    "notes": "Shared proposal deck. Discussing payment gateway integration.",
+    "createdAt": "2026-09-22T14:45:42.154Z"
+  },
+  {
+    "id": "cnt_103",
+    "name": "Rahul Verma",
+    "email": "rahul@vfitstudio.com",
+    "phone": "+919731154321",
+    "service": "Social Growth Pro (₹12,999/mo)",
+    "message": "Need brand management and short-form video content creation for our 3 fitness gyms in Bangalore.",
+    "status": "contacted",
+    "notes": "Connected on WhatsApp. Scheduled discovery call for tomorrow 4 PM.",
+    "createdAt": "2026-09-21T14:45:42.154Z"
+  },
+  {
+    "id": "cnt_104",
+    "name": "Dr. Suresh Reddy",
+    "email": "suresh@careplusclinics.org",
+    "phone": "+919448098765",
+    "service": "Local SEO Lite (₹7,999/mo)",
+    "message": "Want our 4 diagnostic centers to rank #1 on Google Maps for local health checkup queries.",
+    "status": "closed_won",
+    "notes": "Advance payment received. SEO audit underway.",
+    "createdAt": "2026-09-19T14:45:42.154Z"
+  }
+]

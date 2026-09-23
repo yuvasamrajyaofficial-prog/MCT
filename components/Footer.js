@@ -21,6 +21,7 @@ export default function Footer() {
               <Link href="/blogs">Blogs</Link>
               <Link href="/team">Team</Link>
               <Link href="/careers">Careers</Link>
+              <Link href="/admin" style={{ opacity: 0.75, fontSize: "0.85rem" }}>Admin Portal 🔒</Link>
             </div>
             <div className={styles.column}>
               <h4>Legal</h4>
