@@ -41,26 +41,42 @@
 }
 
 .logoIcon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: var(--gradient-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #8B5CF6, #3B82F6, #06B6D4);
   background-size: 200% 200%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-space-grotesk);
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: #fff;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.logoBrand {
+  display: flex;
+  flex-direction: column;
 }
 
 .logoText {
   font-family: var(--font-space-grotesk);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   color: var(--foreground);
   letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.logoTagline {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 /* Desktop links */
@@ -91,6 +107,50 @@
 .link.active {
   color: var(--primary);
   background: color-mix(in srgb, var(--primary) 10%, transparent);
+}
+
+.raiseLink {
+  position: relative;
+  color: #38bdf8;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pulseDot {
+  width: 7px;
+  height: 7px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulseAnimation 1.5s infinite;
+}
+
+@keyframes pulseAnimation {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.navCta {
+  background: linear-gradient(135deg, #8B5CF6, #3B82F6);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  text-decoration: none;
+  margin-left: 10px;
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.35);
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+}
+
+.navCta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+  filter: brightness(1.1);
 }
 
 /* Theme toggle */

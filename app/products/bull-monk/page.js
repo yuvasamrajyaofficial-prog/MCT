@@ -1,7 +1,7 @@
 import ProductLayout from "@/components/ProductLayout";
 
 export const metadata = {
-  title: "BullMonk ($BMONK) — Web3 & Crypto Ecosystem | PraBaS Digital",
+  title: "BullMonk ($BMONK) — Web3 & Crypto Ecosystem | Malola Cosmic Tech (MCT)",
   description: "High-energy spiritual crypto meme coin platform featuring interactive lore, tokenomics, roadmap, and decentralized Web3 community integration.",
 };
 

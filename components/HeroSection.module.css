@@ -242,6 +242,128 @@
   animation: float 10s ease-in-out infinite reverse;
 }
 
+/* Investor Announcement Badge */
+.investorBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  backdrop-filter: blur(12px);
+  padding: 6px 16px;
+  border-radius: 9999px;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+}
+
+.investorBadge:hover {
+  border-color: rgba(56, 189, 248, 0.8);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.3);
+  transform: translateY(-2px);
+}
+
+.badgePulse {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulseBadge 1.6s infinite ease-in-out;
+}
+
+@keyframes pulseBadge {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.4); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+.badgeTag {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 2px 7px;
+  border-radius: 9999px;
+}
+
+.badgeText {
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.badgeArrow {
+  color: #38bdf8;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.ghostBtn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--glass-border);
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ghostBtn:hover {
+  color: var(--foreground);
+  border-color: var(--primary);
+  background: var(--glass-bg);
+}
+
+/* Stats Bar */
+.statsBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 2.5rem;
+  padding: 12px 24px;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statVal {
+  font-family: var(--font-space-grotesk);
+  font-size: 1.25rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.statLbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statDivider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 @media (max-width: 768px) {
   .animatedText {
     font-size: 2.8rem;
@@ -251,12 +373,21 @@
   }
   .ctaGroup {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 12px;
   }
   .headlineContainer {
     height: 70px;
   }
   .scrollIndicator {
     bottom: 20px;
+  }
+  .statsBar {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 12px 16px;
+  }
+  .statDivider {
+    display: none;
   }
 }

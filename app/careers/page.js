@@ -17,13 +17,13 @@ const JOBS = [
     id: "fullstack-eng",
     title: "Senior Full Stack Engineer",
     type: "Remote • Full-time",
-    desc: "Build scalable web applications using Next.js, React, and modern cloud infrastructure for our client projects.",
+    desc: "Build high-performance offline-first applications (MCT Retail), WebGL 3D floor map navigators, and scalable cloud sync infrastructure.",
   },
   {
-    id: "digital-marketing",
-    title: "Digital Marketing Specialist",
-    type: "Remote • Full-time",
-    desc: "Drive growth through SEO, social media, and paid advertising campaigns for businesses across multiple industries.",
+    id: "growth-merchant",
+    title: "Merchant Growth & Pilot Lead",
+    type: "Bangalore / Hybrid • Full-time",
+    desc: "Drive merchant onboarding, supermarket pilot rollouts, and commercial expansion for MCT Retail OS.",
   },
   {
     id: "uiux-designer",
@@ -204,7 +204,7 @@ export default function CareersPage() {
                       <Briefcase size={12} style={{ display: "inline", marginRight: "4px" }} />
                       {selectedJob}
                     </span>
-                    <h2 className={styles.modalTitle}>Join PraBaS Digital</h2>
+                    <h2 className={styles.modalTitle}>Join Malola Cosmic Tech (MCT)</h2>
                     <p className={styles.modalSubtitle}>
                       Submit your profile below. Our engineering & leadership team reviews every application.
                     </p>

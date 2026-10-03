@@ -1,7 +1,7 @@
 import ProductLayout from "@/components/ProductLayout";
 
 export const metadata = {
-  title: "The Enforcer — Strict Accountability Platform | PraBaS Digital",
+  title: "The Enforcer — Strict Accountability Platform | Malola Cosmic Tech (MCT)",
   description: "A strict personal accountability application featuring time-blocked work slots, income pacing, habit tracking, and an interactive AI focus coach.",
 };
 

@@ -36,16 +36,16 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h1 className={styles.title}>
-                Built on <span className="text-gradient">Legacy</span>
+                Built on <span className="text-gradient">Legacy & Cosmic Tech</span>
               </h1>
               <p className={styles.subtitle}>
-                PraBaS Digital is more than a business — it&apos;s a tribute to the values our father instilled in us: hard work, integrity, and the belief that anyone can grow.
+                Malola Cosmic Tech (MCT) is more than an enterprise software company — it&apos;s a tribute to the timeless values our father instilled in us: relentless discipline, unwavering integrity, and the sacred belief that human capability can transcend any boundary.
               </p>
               <p className={styles.description}>
-                From the golden fields of Karnataka to the digital frontier, we carry forward the spirit of dedication. Every project we take on is powered by the same discipline and care our father taught us.
+                From the golden fields of Karnataka to the global frontiers of deep tech, we carry forward the spirit of fearless innovation. Whether engineering the offline-first enterprise retail OS (MCT Retail) or training culturally-attuned AI companions, every line of code we ship is built with cosmic dedication.
               </p>
               <div className={styles.badge}>
-                <span>🇮🇳 Proudly Made in India</span>
+                <span>🇮🇳 Proudly Engineered in India | Malola Cosmic Tech</span>
               </div>
             </motion.div>
           </div>

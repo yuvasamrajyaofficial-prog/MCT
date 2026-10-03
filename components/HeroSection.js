@@ -36,12 +36,17 @@ function StarField(props) {
 
 export default function HeroSection() {
   const [headlineIndex, setHeadlineIndex] = useState(0);
-  const headlines = ["Growth.", "Visibility.", "Excellence."];
+  const headlines = [
+    "Enterprise Retail OS.",
+    "Offline-First 3D POS.",
+    "Cosmic Intelligence.",
+    "Deep Tech Commerce."
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setHeadlineIndex((prev) => (prev + 1) % headlines.length);
-    }, 2000);
+    }, 2500);
     return () => clearInterval(interval);
   }, [headlines.length]);
 
@@ -65,6 +70,20 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
+        {/* Investor Announcement Badge */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          <a href="/investors" className={styles.investorBadge}>
+            <span className={styles.badgePulse} />
+            <span className={styles.badgeTag}>FUNDING ROUND</span>
+            <span className={styles.badgeText}>MCT Retail Pre-Seed / Seed Round is Live</span>
+            <span className={styles.badgeArrow}>Explore Deck →</span>
+          </a>
+        </motion.div>
+
         <div className={styles.headlineContainer}>
           <AnimatePresence mode="wait">
             <motion.h1
@@ -86,7 +105,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          PraBaS Digital — Elevating Your Business in the Digital Age.
+          Malola Cosmic Tech (MCT) — Transcending Commerce & Intelligence.
         </motion.h2>
 
         <motion.p 
@@ -95,7 +114,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          We craft data-driven marketing strategies and world-class digital experiences to scale your brand.
+          We build resilient, offline-first enterprise software and AI systems. Backing our flagship innovation — <strong>MCT Retail</strong>, the 3D Point of Sale & Retail OS built for zero-downtime modern commerce.
         </motion.p>
 
         <motion.div 
@@ -104,18 +123,54 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
         >
-          <button 
-            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+          <a 
+            href="/investors"
             className={styles.primaryBtn}
           >
-            Explore Our Services
-          </button>
+            Invest in MCT Retail ⚡
+          </a>
+          <a 
+            href="https://mct-retail-production.up.railway.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.secondaryBtn}
+          >
+            Launch Live 3D POS Demo ↗
+          </a>
           <button 
              onClick={() => document.getElementById('innovations')?.scrollIntoView({ behavior: 'smooth' })}
-             className={styles.secondaryBtn}
+             className={styles.ghostBtn}
           >
-            View Portfolio
+            Tech Portfolio
           </button>
+        </motion.div>
+
+        {/* Quick Highlights Bar */}
+        <motion.div 
+          className={styles.statsBar}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
+        >
+          <div className={styles.statItem}>
+            <span className={styles.statVal}>100%</span>
+            <span className={styles.statLbl}>Offline Operable</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statVal}>&lt;50ms</span>
+            <span className={styles.statLbl}>Scan Latency</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statVal}>$40B+</span>
+            <span className={styles.statLbl}>Global POS TAM</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statVal}>85%+</span>
+            <span className={styles.statLbl}>Gross Margin</span>
+          </div>
         </motion.div>
       </motion.div>
 

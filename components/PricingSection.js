@@ -6,175 +6,175 @@ import { Check, X, Smartphone, Globe, BarChart3, Bot, MessageCircle, PenTool, Li
 import styles from "./PricingSection.module.css";
 
 const categories = [
-  { id: "web", label: "Web & App", icon: <Globe size={18} /> },
-  { id: "social", label: "Social & Brand", icon: <Linkedin size={18} /> },
-  { id: "content", label: "Content & SEO", icon: <PenTool size={18} /> },
+  { id: "retail", label: "MCT Retail OS", icon: <Globe size={18} /> },
+  { id: "custom", label: "Enterprise POS & Cloud", icon: <BarChart3 size={18} /> },
+  { id: "ai", label: "Applied AI & Custom Dev", icon: <Bot size={18} /> },
 ];
 
 const pricingData = {
-  web: [
+  retail: [
     {
-      title: "Business Starter",
-      price: "₹14,999",
-      period: "one-time",
-      description: "Professional website to establish your digital presence.",
+      title: "Starter Store",
+      price: "₹1,999",
+      period: "/month",
+      description: "Ideal for single-location retail shops, boutiques, and pharmacies.",
       popular: false,
       features: [
-        "5-Page Custom Website",
-        "Mobile Responsive Design",
-        "WhatsApp Chat Integration",
-        "Free Domain & Hosting (1 Year)",
-        "Contact Form with Email Alerts",
-        "Basic SEO Setup"
+        "Single Terminal POS (Offline-First PWA)",
+        "Sub-50ms Barcode Checkout Latency",
+        "Up to 5,000 SKUs Managed",
+        "Instant GST Digital & Thermal Invoices",
+        "UPI, Card & Cash Split Tenders",
+        "Automated Cloud Sync on Reconnect"
       ],
-      cta: "Book this Package",
-      message: "Hi, I am interested in the Business Starter Website package."
+      cta: "Deploy Starter Store",
+      message: "Hi, I am interested in deploying MCT Retail Starter Store for my shop."
     },
     {
-      title: "E-Commerce Pro",
-      price: "₹29,999",
-      period: "one-time",
+      title: "Multi-Store Pro",
+      price: "₹4,999",
+      period: "/month",
       popular: true,
-      description: "Full-featured online store with payment gateway.",
+      description: "Designed for high-traffic supermarkets and multi-branch retail outlets.",
       features: [
-        "Complete Online Store (50 Products)",
-        "Payment Gateway (UPI/Cards)",
-        "Admin Dashboard for Orders",
-        "Cart & Checkout System",
-        "1 Year Priority Support",
-        "User Login & Profiles"
+        "Up to 5 Synchronized Terminals",
+        "Interactive 3D Floor Plan Store Map",
+        "Multi-Location Stock Transfer & Heatmaps",
+        "Unlimited SKUs & Automated Reordering Alerts",
+        "Live Executive Margin & Cashier Telemetry",
+        "Priority 24/7 Deployment & Hardware Support"
       ],
-      cta: "Start Selling Now",
-      message: "Hi, I want to build an E-Commerce Website."
+      cta: "Launch Multi-Store Pro",
+      message: "Hi, I want to upgrade to MCT Retail Multi-Store Pro for my outlets."
     },
     {
-      title: "Custom App Dev",
+      title: "Enterprise Chain",
+      price: "₹14,999",
+      period: "/month",
+      description: "For regional supermarket chains and enterprise retail franchises.",
+      popular: false,
+      features: [
+        "Unlimited Terminals & Warehouse Clusters",
+        "Dedicated Private Cloud / Railway Instance",
+        "Custom ERP, SAP & Tally API Connectors",
+        "Custom Hardware Integration (Weighing Scales, RFID)",
+        "Zero-Downtime High-Concurrency Engine",
+        "Dedicated Solution Architect & SLA"
+      ],
+      cta: "Inquire Enterprise",
+      message: "Hi, I represent an enterprise retail chain and want to discuss custom MCT Retail licensing."
+    }
+  ],
+  custom: [
+    {
+      title: "POS Migration & Setup",
+      price: "₹19,999",
+      period: "one-time",
+      description: "Complete migration from legacy POS systems to MCT Retail.",
+      popular: false,
+      features: [
+        "Legacy SKU & Catalog Data Import",
+        "Barcode System Setup & Printer Testing",
+        "Staff Training (Cashiers & Store Managers)",
+        "Local Network & PWA Offline Configuration",
+        "GST Profile & HSN Code Setup",
+        "30 Days Dedicated Launch Support"
+      ],
+      cta: "Book Migration",
+      message: "Hi, I want help migrating my store's legacy POS to MCT Retail."
+    },
+    {
+      title: "3D Floor Map Digitization",
+      price: "₹29,999",
+      period: "per facility",
+      popular: true,
+      description: "Convert your physical store floor plan into an interactive 3D WebGL map.",
+      features: [
+        "3D Architectural Shelf & Aisle Modeling",
+        "WebGL Hardware-Accelerated Rendering",
+        "Zone-Based Cashier Navigation",
+        "Stock Depletion Visual Heatmap",
+        "Mobile & Desktop Tablet Responsive",
+        "Periodic Layout Update Support"
+      ],
+      cta: "Digitize Store Map",
+      message: "Hi, I want a 3D floor map modeled for my store in MCT Retail."
+    },
+    {
+      title: "Custom Cloud Infrastructure",
       price: "₹49,999",
       period: "starts from",
-      description: "Native Android/iOS app for your business.",
+      description: "Enterprise private cloud cluster with zero-trust security and SLA.",
       popular: false,
       features: [
-        "Android & iOS App (Flutter/React Native)",
-        "Push Notifications",
-        "User Authentication",
-        "Real-time Database",
-        "Google Maps / Location Services",
-        "App Store & Play Store Submission"
+        "Dedicated Multi-Region Database Cluster",
+        "Real-Time WebSocket Transaction Stream",
+        "Automated Hourly Cloud Backups",
+        "99.99% Uptime Service Level Agreement",
+        "Enterprise Role-Based Access Controls",
+        "Custom Security Audits & Compliance"
       ],
-      cta: "Discuss App Idea",
-      message: "Hi, I have an app idea and want to discuss development."
+      cta: "Consult Infrastructure",
+      message: "Hi, I want to discuss custom cloud infrastructure for enterprise retail."
     }
   ],
-  social: [
+  ai: [
     {
-      title: "Social Starter",
+      title: "Retail Demand AI",
       price: "₹9,999",
       period: "/month",
-      description: "Consistent presence on Instagram & Facebook.",
+      description: "AI-driven stock replenishment and consumer purchase prediction.",
       popular: false,
       features: [
-        "12 Creative Posts/Month",
-        "4 Reels/Shorts",
-        "Content Strategy & Hashtags",
-        "Community Engagement",
-        "Monthly Performance Report",
-        "WhatsApp Support"
+        "Automated Stock Depletion Prediction",
+        "Seasonal Demand Trend Forecasting",
+        "Dead Stock & Wastage Reduction Alerts",
+        "Supplier Purchase Order Generation",
+        "Weekly Profit Optimization Insights",
+        "Integration with MCT Retail Database"
       ],
-      cta: "Start Growing",
-      message: "Hi, I need help with Social Media Marketing (Starter)."
+      cta: "Add Demand AI",
+      message: "Hi, I want to integrate Retail Demand AI with my store."
     },
     {
-      title: "LinkedIn Personal Brand",
-      price: "₹19,999",
+      title: "Cognitive AI Assistant",
+      price: "₹24,999",
       period: "/month",
       popular: true,
-      description: "Build authority and generate leads on LinkedIn.",
+      description: "Custom conversational AI assistant powered by fine-tuned models.",
       features: [
-        "Profile Optimization & Revamp",
-        "3 High-Quality Posts/Week",
-        "Ghostwriting (Articles/Stories)",
-        "Network Growth Strategy",
-        "Lead Generation Tactics",
-        "Weekly Analytics Review"
+        "Culturally-Contextualized Knowledge Base",
+        "24/7 Automated WhatsApp / Web Support",
+        "Order Status & Inventory Tracking AI",
+        "Multi-Lingual (English, Hindi, Kannada, Tamil)",
+        "Zero Human Intervention for 80% Queries",
+        "Continuous Model Retraining"
       ],
-      cta: "Build My Brand",
-      message: "Hi, I want to build my Personal Brand on LinkedIn."
+      cta: "Deploy AI Assistant",
+      message: "Hi, I am interested in deploying a Cognitive AI Assistant for my brand."
     },
     {
-      title: "360° Brand Growth",
-      price: "₹34,999",
-      period: "/month",
-      description: "Complete domination across all platforms.",
+      title: "Custom Deep Tech R&D",
+      price: "Custom",
+      period: "milestone based",
+      description: "Tailored deep-tech, computer vision, or biometric systems for your business.",
       popular: false,
       features: [
-        "Manage Insta, FB, LinkedIn, Twitter",
-        "Daily Posting Schedule",
-        "8 Professional Reels/Month",
-        "Ad Campaign Management",
-        "Influencer Outreach Strategy",
-        "Dedicated Account Manager"
+        "Computer Vision & Pose Estimation Systems",
+        "Zero-Knowledge Biometric Identity Platforms",
+        "Custom Generative AI Architecture",
+        "Patentable IP & Full Source Code Handover",
+        "High-Speed Edge Device Optimization",
+        "Direct Collaboration with Founder Prashant"
       ],
-      cta: "Go Viral",
-      message: "Hi, I am interested in the 360° Brand Growth package."
-    }
-  ],
-  content: [
-    {
-      title: "Blogger Package",
-      price: "₹6,999",
-      period: "/month",
-      description: "Keep your website fresh and rank higher.",
-      popular: false,
-      features: [
-        "4 SEO-Optimized Blogs (Weekly)",
-        "Keyword Research & Strategy",
-        "Plagiarism-Free Content",
-        "Stock Images Included",
-        "Uploaded to Your Grid/CMS",
-        "Internal Linking Strategy"
-      ],
-      cta: "Start Blogging",
-      message: "Hi, I need weekly blog writing services."
-    },
-    {
-      title: "SEO Authority",
-      price: "₹14,999",
-      period: "/month",
-      popular: true,
-      description: "Aggressive SEO to capture #1 rankings.",
-      features: [
-        "8 High-Intent Blogs/Month",
-        "Technical SEO Audit & Fixes",
-        "Backlink Building Strategy",
-        "Competitor Analysis",
-        "Google My Business Optimization",
-        "Conversion Rate Optimization"
-      ],
-      cta: "Rank #1",
-      message: "Hi, I want to aggressively improve my SEO rankings."
-    },
-    {
-      title: "Email & Copy",
-      price: "₹9,999",
-      period: "/month",
-      description: "Nurture leads and close sales with words.",
-      popular: false,
-      features: [
-        "Weekly Newsletter Campaigns",
-        "Automated Drip Sequences",
-        "Landing Page Copywriting",
-        "Sales Email Scripts",
-        "A/B Testing Subject Lines",
-        "List Segmentation"
-      ],
-      cta: "Boost Sales",
-      message: "Hi, I need Email Marketing and Copywriting services."
+      cta: "Propose R&D Project",
+      message: "Hi Prashant, I want to discuss a custom Deep Tech / R&D project with Malola Cosmic Tech."
     }
   ]
 };
 
 export default function PricingSection() {
-  const [activeTab, setActiveTab] = useState("web");
+  const [activeTab, setActiveTab] = useState("retail");
 
   const handleWhatsAppClick = (message) => {
     const text = encodeURIComponent(message);
@@ -185,9 +185,18 @@ export default function PricingSection() {
     <section id="pricing" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
-          <h2 className={styles.title}>Transparent Pricing</h2>
+          <span style={{
+            fontSize: "0.75rem",
+            color: "#38bdf8",
+            fontWeight: 800,
+            letterSpacing: "0.12em",
+            textTransform: "uppercase"
+          }}>
+            COMMERCIAL & SUBSCRIPTION PLANS
+          </span>
+          <h2 className={styles.title} style={{ marginTop: "6px" }}>Enterprise & SaaS Licensing</h2>
           <p className={styles.subtitle}>
-            Scalable packages for businesses of all sizes. No hidden costs.
+            High-margin software subscription models powering zero-downtime offline retail storefronts and deep-tech innovation.
           </p>
         </div>
 

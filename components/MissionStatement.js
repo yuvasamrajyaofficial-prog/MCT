@@ -14,7 +14,7 @@ export default function MissionStatement() {
         className="container"
       >
         <p className={styles.text}>
-          &quot;We empower businesses to thrive in the digital ecosystem. Combining creative strategy with technical excellence, we turn your vision into measurable growth.&quot;
+          &quot;At Malola Cosmic Tech (MCT), we transcend the boundaries between ancient dedication and futuristic deep tech. From engineering the offline-first future of commerce with MCT Retail to building culturally-aware AI, we build resilient technologies that empower human potential.&quot;
         </p>
       </motion.div>
     </section>

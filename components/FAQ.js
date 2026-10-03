@@ -7,28 +7,28 @@ import styles from "./FAQ.module.css";
 
 const FAQ_DATA = [
   {
-    q: "What services does PraBaS Digital offer?",
-    a: "We offer complete digital solutions including website design & development, social media management, SEO optimization, brand identity design, AI-powered tools, and ongoing digital marketing campaigns tailored to your business goals."
+    q: "What is Malola Cosmic Tech (MCT)?",
+    a: "Malola Cosmic Tech (MCT) is an advanced deep-tech and enterprise software venture founded by Prashant Hiremath. We engineer resilient, offline-first operating systems for modern commerce (flagship: MCT Retail), alongside culturally-attuned AI platforms (Malola AI) and spatial 3D systems."
   },
   {
-    q: "How much does a website cost?",
-    a: "Our pricing depends on the scope and complexity. Starter websites begin at ₹15,000, professional sites at ₹30,000, and enterprise-grade applications are custom-quoted. We offer flexible payment plans with a 50-50 split — half upfront, half on delivery."
+    q: "What makes MCT Retail different from traditional POS systems?",
+    a: "Traditional POS systems crash during internet outages and lock merchants into expensive proprietary hardware ($2,500 - $5,000/terminal). MCT Retail is 100% offline-operable via PWA caching, works on any device (iPad, PC, tablet), features sub-50ms barcode scanning, 3D store floor mapping, and auto-syncs multi-warehouse inventory upon reconnection."
   },
   {
-    q: "How long does it take to build a website?",
-    a: "A standard business website takes 1–2 weeks. More complex projects like e-commerce platforms or AI-integrated applications typically take 3–6 weeks depending on features and revisions needed."
+    q: "How can investors participate in the MCT Retail Seed Round?",
+    a: "We are currently raising a $350,000 Pre-Seed / Seed round (SAFE / Equity) to scale our merchant acquisition and deploy pilots across 500+ storefronts. Investors can review our interactive pitch deck at /investors, request our data room, or reach Founder Prashant Hiremath directly on WhatsApp (+91 99028 57694)."
   },
   {
-    q: "Do you offer monthly maintenance packages?",
-    a: "Yes! Our monthly retainer packages include hosting management, security updates, content updates, performance monitoring, and priority support. Plans start at ₹5,000/month."
+    q: "Is there a working product demo of MCT Retail?",
+    a: "Yes! MCT Retail is already deployed and live in production on Railway Cloud (https://mct-retail-production.up.railway.app/). You can experience the actual 3D checkout terminal, offline resilience, and catalog engine directly in your web browser."
   },
   {
-    q: "Can you help with social media marketing?",
-    a: "Absolutely. We manage end-to-end social media campaigns including content creation, scheduling, community management, paid ads, and analytics reporting across Instagram, Facebook, LinkedIn, and more."
+    q: "What is the commercial SaaS pricing for merchants?",
+    a: "MCT Retail offers flexible tiers: Starter Store at ₹1,999/month (single terminal, offline POS), Multi-Store Pro at ₹4,999/month (up to 5 terminals, 3D map, multi-location stock transfer), and Enterprise Chain plans for regional supermarket networks."
   },
   {
-    q: "Do you provide SEO services?",
-    a: "Yes, SEO is core to our offering. We handle technical SEO, on-page optimization, keyword research, content strategy, backlink building, and local SEO to help your business rank higher on Google."
+    q: "What other products are in the Malola Cosmic Tech portfolio?",
+    a: "Our portfolio spans applied AI and deep tech: Malola AI / Soulink (AI Vedic wellness platform), Lola AI (voice emotional companion), The Enforcer (strict productivity mentor), BullMonk (Web3 ecosystem), and VaultCam (biometric security)."
   },
 ];
 

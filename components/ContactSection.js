@@ -4,14 +4,12 @@ import { useState } from "react";
 import styles from "./ContactSection.module.css";
 
 const SERVICES = [
-  { label: "Business Starter Website", price: "₹14,999", type: "one-time" },
-  { label: "E-Commerce Website", price: "₹29,999", type: "one-time" },
-  { label: "Local SEO Lite", price: "₹7,999/mo", type: "monthly" },
-  { label: "Social Growth Pro", price: "₹12,999/mo", type: "monthly" },
-  { label: "Market Dominator", price: "₹19,999/mo", type: "monthly" },
-  { label: "WhatsApp API Setup", price: "₹4,999", type: "one-time" },
-  { label: "AI Sales Agent", price: "₹9,999/mo", type: "monthly" },
-  { label: "Custom Requirement", price: "Let's Talk", type: "custom" },
+  { label: "MCT Retail — Seed Round / Investor Inquiry", price: "Seed Round ($350K)", type: "investment" },
+  { label: "MCT Retail — Merchant POS Pilot Demo", price: "Complimentary Pilot", type: "retail" },
+  { label: "MCT Retail — Single Store Deployment", price: "₹1,999/mo", type: "retail" },
+  { label: "MCT Retail — Multi-Store Pro Outlets", price: "₹4,999/mo", type: "retail" },
+  { label: "Applied AI & Malola Platform Partnership", price: "Strategic", type: "ai" },
+  { label: "Custom Deep Tech / Enterprise R&D", price: "Custom Scope", type: "custom" },
 ];
 
 export default function ContactSection() {
@@ -84,9 +82,9 @@ export default function ContactSection() {
   return (
     <section id="contact" className={styles.contact}>
       <div className="container">
-        <h2 className={styles.heading}>Get In Touch</h2>
+        <h2 className={styles.heading}>Connect with Malola Cosmic Tech</h2>
         <p className={styles.subheading}>
-          Choose a service and we&apos;ll reach out within 24 hours.
+          Whether you are an angel investor exploring our Seed Round or a merchant seeking zero-downtime 3D POS infrastructure, let&apos;s build the future together.
         </p>
 
         <div className={styles.wrapper}>

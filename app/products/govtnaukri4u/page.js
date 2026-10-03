@@ -2,7 +2,7 @@ import ProductLayout from "@/components/ProductLayout";
 import Image from "next/image";
 
 export const metadata = {
-  title: "GovtNaukri4U - Government Job Portal | PraBaS Digital",
+  title: "GovtNaukri4U - Government Job Portal | Malola Cosmic Tech (MCT)",
   description: "GovtNaukri4U simplifies government job notifications with automated PDF parsing and AI-driven data extraction for Karnataka aspirants.",
 };
 

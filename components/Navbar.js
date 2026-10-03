@@ -10,11 +10,11 @@ import styles from "./Navbar.module.css";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/products", label: "Work" },
+  { href: "/products/mct-retail", label: "MCT Retail" },
+  { href: "/investors", label: "Seed Round", isRaise: true },
+  { href: "/products", label: "Portfolio" },
   { href: "/about", label: "About" },
-  { href: "/blogs", label: "Blog" },
   { href: "/team", label: "Team" },
-  { href: "/careers", label: "Careers" },
   { href: "/#contact", label: "Contact" },
 ];
 
@@ -55,8 +55,11 @@ export default function Navbar() {
     >
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoIcon}>P</span>
-          <span className={styles.logoText}>PraBaS Digital</span>
+          <span className={styles.logoIcon}>MCT</span>
+          <div className={styles.logoBrand}>
+            <span className={styles.logoText}>Malola Cosmic Tech</span>
+            <span className={styles.logoTagline}>Transcending Tech</span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
@@ -66,13 +69,20 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`${styles.link} ${pathname === link.href ? styles.active : ""}`}
+                  className={`${styles.link} ${pathname === link.href ? styles.active : ""} ${
+                    link.isRaise ? styles.raiseLink : ""
+                  }`}
                 >
                   {link.label}
+                  {link.isRaise && <span className={styles.pulseDot} />}
                 </Link>
               </li>
             ))}
           </ul>
+
+          <Link href="/investors" className={styles.navCta}>
+            Invest
+          </Link>
 
           {/* Theme toggle */}
           <div className={styles.themeWrapper} ref={themeRef}>

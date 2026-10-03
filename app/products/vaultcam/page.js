@@ -1,7 +1,7 @@
 import ProductLayout from "@/components/ProductLayout";
 
 export const metadata = {
-  title: "VaultCam (VaultID) — Biometric Security Platform | PraBaS Digital",
+  title: "VaultCam (VaultID) — Biometric Security Platform | Malola Cosmic Tech (MCT)",
   description: "Privacy-first biometric camera verification and encrypted locker application built with React Native Web and Expo.",
 };
 

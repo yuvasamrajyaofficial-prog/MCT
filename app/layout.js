@@ -19,9 +19,21 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "PraBaS Digital | AI-Powered Digital Marketing Agency",
+  title: "Malola Cosmic Tech (MCT) | Enterprise Retail OS & Deep Tech Ventures",
   description:
-    "PraBaS Digital — Premium digital marketing, website development, AI solutions, and brand strategy for businesses that demand results.",
+    "Malola Cosmic Tech (MCT) — Engineering the future of offline-first enterprise retail (MCT Retail), spatial 3D systems, and next-generation AI platforms. Founded by Prashant Hiremath.",
+  keywords: [
+    "Malola Cosmic Tech",
+    "MCT",
+    "MCT Retail",
+    "3D POS",
+    "Retail Operating System",
+    "Offline POS",
+    "Deep Tech India",
+    "Prashant Hiremath",
+    "Startup Fundraising",
+    "Seed Round",
+  ],
 };
 
 export default function RootLayout({ children }) {

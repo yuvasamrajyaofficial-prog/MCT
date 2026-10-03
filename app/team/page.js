@@ -7,12 +7,12 @@ import styles from "./Team.module.css";
 const TEAM_MEMBERS = [
   {
     name: "Prashant Hiremath",
-    role: "Founder & Visionary",
-    bio: "Driving the mission to combine ancient wisdom with modern logic. Passionate about AI, education, and human potential.",
+    role: "Founder & Chief Architect",
+    bio: "Driving the mission of Malola Cosmic Tech (MCT) — uniting ancient dedication with high-performance deep tech. Lead engineer of MCT Retail, Malola AI, and distributed systems.",
     socials: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/prashant-hiremath-13pbh",
       twitter: "#",
-      website: "#"
+      website: "https://mct-retail-production.up.railway.app/"
     }
   },
   {
@@ -51,7 +51,7 @@ export default function TeamPage() {
             transition={{ delay: 0.1 }}
             className={styles.subtitle}
           >
-            The minds behind MCT, dedicated to building a future through AI-powered wellness and human potential.
+            The engineering and creative minds behind Malola Cosmic Tech (MCT), dedicated to building resilient enterprise retail infrastructure (MCT Retail) and transformative AI platforms.
           </motion.p>
         </div>
       </section>

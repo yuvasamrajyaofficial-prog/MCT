@@ -31,7 +31,7 @@ import {
 } from "lucide-react";
 import styles from "./Admin.module.css";
 
-const ADMIN_PIN = "prabas2025";
+const VALID_PINS = ["mct2025", "prabas2025"];
 
 export default function AdminPage() {
   const [unlocked, setUnlocked] = useState(false);
@@ -62,7 +62,7 @@ export default function AdminPage() {
 
   const handleUnlock = (e) => {
     e.preventDefault();
-    if (pinInput.trim() === ADMIN_PIN) {
+    if (VALID_PINS.includes(pinInput.trim())) {
       setUnlocked(true);
       localStorage.setItem("prabas_admin_auth", "true");
       setPinError("");
@@ -225,7 +225,7 @@ export default function AdminPage() {
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", `prabas_contacts_${Date.now()}.csv`);
+    link.setAttribute("download", `mct_contacts_${Date.now()}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -251,7 +251,7 @@ export default function AdminPage() {
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", `prabas_applications_${Date.now()}.csv`);
+    link.setAttribute("download", `mct_applications_${Date.now()}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -363,7 +363,7 @@ export default function AdminPage() {
             </form>
 
             <p className={styles.hintText}>
-              Default Security PIN: <code>prabas2025</code>
+              Default Security PIN: <code>mct2025</code>
             </p>
           </motion.div>
         </div>
@@ -378,7 +378,7 @@ export default function AdminPage() {
         <header className={styles.topNav}>
           <div className={styles.headerLeft}>
             <h1 className={styles.adminTitle}>
-              PraBaS <span className="text-gradient">Console</span>
+              Malola Cosmic Tech <span className="text-gradient">Console</span>
             </h1>
             <span className={styles.badgeLive}>
               <span className={styles.liveDot}></span> Live System
@@ -625,7 +625,7 @@ export default function AdminPage() {
                           <a
                             href={`https://wa.me/${contact.phone.replace(/\D/g, "")}?text=Hi%20${encodeURIComponent(
                               contact.name
-                            )},%20this%20is%20Prashant%20from%20PraBaS%20Digital%20regarding%20your%20inquiry.`}
+                            )},%20this%20is%20Prashant%20from%20Malola%20Cosmic%20Tech%20regarding%20your%20inquiry.`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.waBtn}
@@ -834,7 +834,7 @@ export default function AdminPage() {
                           <a
                             href={`https://wa.me/${app.phone.replace(/\D/g, "")}?text=Hi%20${encodeURIComponent(
                               app.fullName
-                            )},%20this%20is%20Prashant%20from%20PraBaS%20Digital%20regarding%20your%20application%20for%20${encodeURIComponent(
+                            )},%20this%20is%20Prashant%20from%20Malola%20Cosmic%20Tech%20regarding%20your%20application%20for%20${encodeURIComponent(
                               app.role
                             )}.`}
                             target="_blank"
@@ -847,7 +847,7 @@ export default function AdminPage() {
 
                         <a
                           href={`mailto:${app.email}?subject=${encodeURIComponent(
-                            `PraBaS Digital - ${app.role} Application`
+                            `Malola Cosmic Tech - ${app.role} Application`
                           )}`}
                           className={styles.mailBtn}
                         >

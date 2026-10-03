@@ -33,31 +33,51 @@ export default function ProductShowcase() {
     <section id="innovations" className={styles.showcase}>
       <div className="container">
         <div className={styles.header}>
-          <h2 className={styles.heading}>Our Work Portfolio</h2>
-          <button
-            onClick={() =>
-              document
-                .getElementById("contact")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-            className={styles.quickNav}
+          <div>
+            <span style={{ fontSize: "0.75rem", color: "#38bdf8", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase" }}>
+              INNOVATION ECOSYSTEM
+            </span>
+            <h2 className={styles.heading} style={{ marginTop: "4px" }}>Ventures & Deep Tech Portfolio</h2>
+          </div>
+          <a
+            href="/investors"
+            style={{
+              background: "linear-gradient(135deg, #8B5CF6, #3B82F6)",
+              color: "#fff",
+              padding: "10px 20px",
+              borderRadius: "9999px",
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px"
+            }}
           >
-            Jump to Contact ↓
-          </button>
+            MCT Retail Seed Round ⚡
+          </a>
         </div>
         <div className={styles.grid}>
           {/* MCT Retail */}
           <Tilt options={defaultOptions} className={styles.cardWrapper}>
             <Link href="/products/mct-retail" className={styles.cardLink}>
-              <div className={`${styles.card} glass-card`}>
-                <div className={styles.iconWrapper}>
-                  <Store size={48} color="#06B6D4" />
+              <div className={`${styles.card} glass-card`} style={{ borderColor: "rgba(6, 182, 212, 0.4)" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
+                  <div className={styles.iconWrapper} style={{ marginBottom: 0 }}>
+                    <Store size={44} color="#06B6D4" />
+                  </div>
+                  <span style={{ background: "#10b981", color: "#0f172a", fontSize: "0.68rem", fontWeight: 800, padding: "3px 8px", borderRadius: "9999px", letterSpacing: "0.06em" }}>
+                    NOW RAISING $350K
+                  </span>
                 </div>
                 <h3 className={styles.cardTitle}>MCT Retail</h3>
                 <p className={styles.cardDesc}>
                   Enterprise Retail OS & 3D POS Suite with offline PWA caching & multi-store sync.
                 </p>
-                <span className={`${styles.status} ${styles.live}`}>Live</span>
+                <div style={{ display: "flex", gap: "8px", marginTop: "12px", alignItems: "center" }}>
+                  <span className={`${styles.status} ${styles.live}`}>Live MVP</span>
+                  <span style={{ color: "#38bdf8", fontSize: "0.8rem", fontWeight: 600 }}>Explore Deck & Demo →</span>
+                </div>
               </div>
             </Link>
           </Tilt>

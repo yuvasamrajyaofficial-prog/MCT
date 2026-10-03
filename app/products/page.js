@@ -123,7 +123,7 @@ export default function PortfolioPage() {
             animate={{ opacity: 1, y: 0 }}
             className={styles.title}
           >
-            Our <span className="text-gradient">Work</span>
+            Innovations & <span className="text-gradient">Portfolio</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -131,7 +131,7 @@ export default function PortfolioPage() {
             transition={{ delay: 0.1 }}
             className={styles.subtitle}
           >
-            Building the future, one pixel at a time.
+            Engineering resilient offline-first enterprise retail systems (MCT Retail), spatial 3D interfaces, and culturally-grounded AI platforms.
           </motion.p>
           <div className={styles.filterContainer}>
             {FILTERS.map((f) => (
@@ -174,7 +174,7 @@ export default function PortfolioPage() {
                   <div className={`${styles.dot} ${styles.red}`}></div>
                   <div className={`${styles.dot} ${styles.yellow}`}></div>
                   <div className={`${styles.dot} ${styles.green}`}></div>
-                  <div className={styles.browserAddress}>prabas-digital.com/projects/{project.id}</div>
+                  <div className={styles.browserAddress}>malolacosmictech.com/ventures/{project.id}</div>
                 </div>
                 <Image 
                   src={project.image} 
